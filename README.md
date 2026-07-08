@@ -1,8 +1,12 @@
 # Speaker Series 2026
 
-![Status](https://img.shields.io/badge/Status-Planning-blue)
+![Status](https://img.shields.io/badge/Status-Planning-f97316)
 ![Year](https://img.shields.io/badge/Year-2026-0ea5e9)
 ![Repository](https://img.shields.io/badge/Repository-Speaker%20Series-111827)
+![License](https://img.shields.io/badge/License-MIT-22c55e)
+![Docs](https://img.shields.io/badge/Docs-Markdown-64748b)
+![Maintained](https://img.shields.io/badge/Maintained-Yes-14b8a6)
+![Platform](https://img.shields.io/badge/Platform-Windows-2563eb)
 
 This repository is the working space for planning, drafting, and organizing Speaker Series 2026 materials.
 
