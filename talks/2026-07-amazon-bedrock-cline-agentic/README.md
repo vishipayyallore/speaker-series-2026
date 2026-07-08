@@ -7,7 +7,7 @@
 **Format:** Live demo + interactive Q&A  
 **Level:** Beginner → intermediate (AI-curious developers)  
 **Hosts:** Viswanatha S., HEMA V.  
-**Status:** planned
+**Status:** delivered
 
 ---
 
@@ -74,7 +74,7 @@ Primary live demo is **Cline + Bedrock in the IDE**; Python samples reinforce AP
 
 ## Recording
 
--
+[YouTube — Exploring Amazon Bedrock Models + Cline + Vibe Coding + Agentic Coding](https://www.youtube.com/watch?v=M-bLxxdqV5I)
 
 ---
 
@@ -86,6 +86,6 @@ See [references.md](./references.md).
 
 ## Questions
 
-_Add common questions after the July 11 session._
+_Add common questions after the session._
 
 [meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>

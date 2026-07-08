@@ -3,8 +3,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-86c8a8?style=flat-square)
 ![Year](https://img.shields.io/badge/Year-2026-7eb8da?style=flat-square)
 ![Talks](https://img.shields.io/badge/Talks-3-b5a8d4?style=flat-square)
-![Delivered](https://img.shields.io/badge/Delivered-2-9bc4a8?style=flat-square)
-![Upcoming](https://img.shields.io/badge/Upcoming-1-e5b896?style=flat-square)
+![Delivered](https://img.shields.io/badge/Delivered-3-9bc4a8?style=flat-square)
+![Upcoming](https://img.shields.io/badge/Upcoming-0-e5b896?style=flat-square)
 ![Community](https://img.shields.io/badge/Community-Dot_Net_Learners_House-8fa8c4?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-b0b5c0?style=flat-square)
 
@@ -21,7 +21,7 @@ Each talk keeps **metadata** under `talks/`; shared media under `assets/`. Pytho
 | -------- | ---------------------- | ---------------------------- | ------ | ---- | ----------- | --------- |
 | Jan 2026 | Dot Net Learners House | [L1 · S5 — Mini Calculator](./talks/2026-01-python-l1-s5-mini-calculator/) | —      | ✅    | [External repo](https://github.com/vishipayyallore/python-fundamentals-in-practice) | [YouTube](https://www.youtube.com/watch?v=ocadh9LxMos) |
 | Feb 2026 | Dot Net Learners House | [L1 · S6 — Loops](./talks/2026-02-python-l1-s6-loops/) | —      | ✅    | [External repo](https://github.com/vishipayyallore/python-fundamentals-in-practice) | [YouTube](https://www.youtube.com/watch?v=vXePo4BOgPM) |
-| Jul 2026 | Dot Net Learners House | [Amazon Bedrock + Cline + Agentic Coding](./talks/2026-07-amazon-bedrock-cline-agentic/) | —      | ✅    | This repo   | —         |
+| Jul 2026 | Dot Net Learners House | [Amazon Bedrock + Cline + Agentic Coding](./talks/2026-07-amazon-bedrock-cline-agentic/) | —      | ✅    | This repo   | [YouTube](https://www.youtube.com/watch?v=M-bLxxdqV5I) |
 
 Legend: ✅ = delivered or ready · — = not yet published
 
@@ -29,9 +29,7 @@ Legend: ✅ = delivered or ready · — = not yet published
 
 ## Upcoming talks
 
-| When     | Talk | Folder |
-| -------- | ---- | ------ |
-| Jul 11, 2026 · 4:00 PM | [Amazon Bedrock + Cline + Agentic Coding](https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events) | [talks/2026-07-amazon-bedrock-cline-agentic/](./talks/2026-07-amazon-bedrock-cline-agentic/) |
+_None scheduled — add the next session here when announced._
 
 ---
 
@@ -41,8 +39,9 @@ Legend: ✅ = delivered or ready · — = not yet published
 | -------- | ---- | ----------- |
 | Jan 2026 | L1 · S5 — Mini Project: Simple Calculator | [Demo script](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md) · [Code](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S5) · [Recording](https://www.youtube.com/watch?v=ocadh9LxMos) |
 | Feb 2026 | L1 · S6 — Loops & Iteration | [Demo script](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S6.md) · [Code](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S6) · [Recording](https://www.youtube.com/watch?v=vXePo4BOgPM) |
+| Jul 2026 | Amazon Bedrock + Cline + Agentic Coding | [Talk folder](./talks/2026-07-amazon-bedrock-cline-agentic/) · [Demo script](./talks/2026-07-amazon-bedrock-cline-agentic/demo-script.md) · [Recording](https://www.youtube.com/watch?v=M-bLxxdqV5I) |
 
-Index stubs: [S5 folder](./talks/2026-01-python-l1-s5-mini-calculator/) · [S6 folder](./talks/2026-02-python-l1-s6-loops/)
+Index stubs: [S5 folder](./talks/2026-01-python-l1-s5-mini-calculator/) · [S6 folder](./talks/2026-02-python-l1-s6-loops/) · [Bedrock folder](./talks/2026-07-amazon-bedrock-cline-agentic/)
 
 ---
 

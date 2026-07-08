@@ -8,7 +8,7 @@
 | ----- | ---- |
 | Meetup (register / join) | [Jul 11 event][meetup-event] |
 | Slides | (add when ready) |
-| Recording | - |
+| Recording | [YouTube](https://www.youtube.com/watch?v=M-bLxxdqV5I) |
 | This talk folder | `talks/2026-07-amazon-bedrock-cline-agentic/` |
 
 [meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
