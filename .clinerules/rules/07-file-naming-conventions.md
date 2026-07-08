@@ -1,4 +1,4 @@
-# File Naming Conventions
+﻿# File Naming Conventions
 
 ## Talk folders
 

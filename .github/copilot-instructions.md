@@ -54,7 +54,7 @@ speaker-series-2026/
 
 ### Talk folder conventions
 
-- Prefix: `YYYY-MM-short-description` (example: `2026-07-11-amazon-bedrock-cline-agentic`)
+- Prefix: `YYYY-MM-DD-short-description` (example: `2026-07-11-amazon-bedrock-cline-agentic`)
 - **External curriculum talks** (Python): thin `README.md` only — link to session doc and code in the external repo
 - **In-repo demo talks** (Bedrock): full template set — `README.md`, `agenda.md`, `demo-script.md`, `references.md`, `links.md`, plus `src/`, `prompts/`, etc. as needed
 

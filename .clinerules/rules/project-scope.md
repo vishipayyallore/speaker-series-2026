@@ -1,4 +1,4 @@
-# Project scope
+﻿# Project scope
 
 This repository is **Speaker Series 2026** â€” a speaker portfolio and canonical index for meetup sessions (Dot Net Learners House and related events).
 
