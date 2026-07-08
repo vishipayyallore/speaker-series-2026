@@ -1,0 +1,76 @@
+# File Naming Conventions
+
+## Prohibited prefixes
+
+- **Never use `00-` or `00_`** for any file or folder name in this repository.
+- Prefer descriptive kebab-case names without placeholder prefixes.
+
+## Folders
+
+- Use kebab-case for top-level and nested folders where practical.
+- Numeric prefixes are optional and should only be used when they express intentional ordering.
+- Keep sibling names consistent within the same subtree.
+
+## Files
+
+- Use descriptive filenames such as `architecture-overview.md`, `sync-skills.ps1`, or `ci-checks.md`.
+- Keep extensions consistent with file purpose.
+- Avoid placeholder names such as `temp.md`, `new-file.py`, or `notes-final-final.md`.
+
+## Intra-folder learning order (numbered content files)
+
+Use a two-digit prefix when a folder holds multiple related notes that should
+be read in a deliberate learning sequence.
+
+### When to number
+
+- Number sibling content files inside topic bundles in `01-knowledge/`,
+  `02-patterns/`, and other pipeline folders when reading order matters.
+- Do **not** number `README.md` — it is the folder index and navigation hub.
+- Do **not** number one-off files, WIP drafts, or folders where order is arbitrary.
+- Keep sibling names consistent within the same folder.
+
+### Format
+
+- Preferred: `NN-descriptive-kebab-case.md` (example:
+  `01-classification-metrics-and-confusion-matrix.md`).
+- Use two-digit zero-padded prefixes: `01`, `02`, `03`, …
+- Some existing packs (for example `07-interview-prep/system-design/`) use
+  `NN_topic-name.md` with an underscore. Keep that separator within an existing
+  subtree; use the hyphen form for new bundles unless the local folder already
+  standardizes on underscores.
+
+### Ordering rule
+
+- Assign numbers by **incremental learning order** — `01` is the entry point,
+  each next number builds on the previous note.
+- Example learning path: evaluation metrics → underfitting → overfitting →
+  deployment artifacts.
+
+### README and cross-links
+
+- List numbered notes in order inside the folder `README.md` under a section
+  such as `## Notes` with `Read in order:` when sequence matters.
+- When adding, removing, or renumbering files, update:
+  - the folder `README.md` index
+  - relative links in sibling notes
+  - any upstream indexes that reference the folder
+
+### Folders vs files
+
+- Pipeline stage folders (`01-knowledge/` … `07-interview-prep/`) and some
+  role/topic folders may use numeric prefixes for **directory** ordering.
+- That top-level numbering is separate from **intra-folder file** numbering
+  described above — both may apply in the same path
+  (for example `01-knowledge/ai-ml/mlops/02-underfitting-high-bias-signals.md`).
+
+## Python files
+
+- Use snake_case for Python modules.
+- Prefer names that reflect the owning feature or utility.
+
+## Shared images
+
+- Repo-wide figures may live in `docs/images/` with kebab-case names.
+- Keep image names descriptive and specific to what they show.
+

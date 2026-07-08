@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/vishipayyallore/applied-engineering/discussions
+    about: Ask questions, share ideas, or discuss repository work
+  - name: 📚 Documentation
+    url: https://github.com/vishipayyallore/applied-engineering#readme
+    about: Check the README and repository documentation for more information
