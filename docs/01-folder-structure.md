@@ -12,8 +12,8 @@ speaker-series-2026/
 ├── .env.example              # AWS Bedrock demo variables
 │
 ├── talks/
-│   ├── 2026-01-python-l1-s5-mini-calculator/   # README only → external S5
-│   ├── 2026-02-python-l1-s6-loops/             # README only → external S6
+│   ├── 2026-01-python-l1-s5-mini-calculator/   # S5 · delivered Jul 4, 2026
+│   ├── 2026-02-python-l1-s6-loops/             # S6 · delivered Jul 8, 2026
 │   └── 2026-07-amazon-bedrock-cline-agentic/  # Bedrock + Cline + agentic demo
 │
 ├── assets/

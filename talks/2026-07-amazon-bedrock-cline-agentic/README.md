@@ -2,9 +2,9 @@
 
 **Event:** [Dot Net Learners House (Hyderabad)](https://www.meetup.com/dot-net-learners-house-hyderabad/)  
 **Meetup:** [Event page][meetup-event]  
-**Date:** Saturday, 11 July 2026 · 4:00 PM (online)  
-**Duration:** 30–45 minutes  
-**Format:** Live demo + interactive Q&A  
+**When:** Saturday, 11 July 2026 · 4:00–5:00 PM IST  
+**Format:** Online · live demo + interactive Q&A  
+**Duration:** 60 minutes  
 **Level:** Beginner → intermediate (AI-curious developers)  
 **Hosts:** Viswanatha S., HEMA V.  
 **Status:** delivered
@@ -75,6 +75,13 @@ Primary live demo is **Cline + Bedrock in the IDE**; Python samples reinforce AP
 ## Recording
 
 [YouTube — Exploring Amazon Bedrock Models + Cline + Vibe Coding + Agentic Coding](https://www.youtube.com/watch?v=M-bLxxdqV5I)
+
+---
+
+## Sponsors
+
+Thank you to **[JetBrains](https://www.jetbrains.com/)** for supporting Dot Net Learners House and
+empowering developers.
 
 ---
 

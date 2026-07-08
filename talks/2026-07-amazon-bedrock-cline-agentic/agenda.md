@@ -1,8 +1,8 @@
 # Agenda — Exploring Amazon Bedrock Models + Cline + Vibe Coding + Agentic Coding
 
-**Total duration:** 30–45 minutes  
-**Format:** Live demo + interactive Q&A  
-**Meetup:** [Jul 11, 2026 · 4:00 PM][meetup-event]
+**Total duration:** 60 minutes  
+**Format:** Online · live demo + interactive Q&A  
+**Meetup:** [Jul 11, 2026 · 4:00–5:00 PM IST · online][meetup-event]
 
 | Time | Topic | Notes |
 | ---- | ----- | ----- |
@@ -14,10 +14,11 @@
 | 0:28 | Vibe coding with AI assistance | Small feature in IDE |
 | 0:34 | Agentic coding vs traditional AI chat | [prompts/system-prompt.md](./prompts/system-prompt.md) |
 | 0:38 | Build a small app with AI guidance | End-to-end Cline flow |
-| 0:42 | Prompting techniques for better code | [prompts/](./prompts/) |
-| 0:45 | Q&A | [links.md](./links.md) |
+| 0:45 | Prompting techniques for better code | [prompts/](./prompts/) |
+| 0:50 | Q&A | [links.md](./links.md) |
+| 1:00 | Close | Thank [JetBrains](https://www.jetbrains.com/) sponsor |
 
-_Timing is flexible within the 30–45 minute window._
+_Timing is flexible within the 60-minute online session._
 
 ---
 
@@ -41,6 +42,6 @@ Aligned with the [Meetup listing][meetup-event]:
 - **Online event** — share screen early; keep Cline font size readable.
 - Warm up Bedrock + Cline before start ([cline-bedrock-setup.md](./cline-bedrock-setup.md)).
 - Mention **JetBrains** sponsor thank-you from the Meetup page.
-- Python demos in `src/` are backup depth, not required for the 45-minute slot.
+- Python demos in `src/` are backup depth, not required for the full 60-minute slot.
 
 [meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>

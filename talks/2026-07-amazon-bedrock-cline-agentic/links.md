@@ -6,10 +6,18 @@
 
 | Asset | Link |
 | ----- | ---- |
-| Meetup (register / join) | [Jul 11 event][meetup-event] |
-| Slides | (add when ready) |
+| Meetup event | [Jul 11, 2026 · online][meetup-event] |
 | Recording | [YouTube](https://www.youtube.com/watch?v=M-bLxxdqV5I) |
+| Slides | (add when ready) |
 | This talk folder | `talks/2026-07-amazon-bedrock-cline-agentic/` |
+
+---
+
+## Sponsors
+
+| Sponsor | Link | Notes |
+| ------- | ---- | ----- |
+| JetBrains | [jetbrains.com](https://www.jetbrains.com/) | Session sponsor — thank you for supporting Devs |
 
 [meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
 

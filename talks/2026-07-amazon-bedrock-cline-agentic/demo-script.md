@@ -1,6 +1,6 @@
 # Demo Script — Exploring Amazon Bedrock + Cline + Agentic Coding
 
-**Estimated demo time:** 30–35 minutes (within 30–45 min session)  
+**Estimated demo time:** 30–35 minutes (within 60-minute online session)  
 **Environment:** AWS Bedrock + Cline in VS Code (online screen share)
 
 ---

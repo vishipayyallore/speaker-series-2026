@@ -1,6 +1,8 @@
 # L1 · S6 — Loops & Iteration
 
 **Event:** Dot Net Learners House  
+**When:** Wednesday, 8 July 2026 · 9:00–10:00 AM IST  
+**Duration:** 60 minutes  
 **Status:** delivered  
 **Type:** external curriculum index (no duplicated lab content)
 

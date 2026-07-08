@@ -6,11 +6,15 @@
 
 | Resource | URL | Notes |
 | -------- | --- | ----- |
-| Meetup event | [Jul 11 event][meetup-event] | Jul 11, 2026 · online |
+| Meetup event | [Jul 11 event][meetup-event] | Sat 11 Jul 2026 · 4:00–5:00 PM IST · online |
+| Recording | [YouTube][youtube-recording] | Full session replay |
 | Dot Net Learners House | [Meetup group][dnlh-group] | Host group |
+| JetBrains | [jetbrains.com][jetbrains] | Session sponsor |
 
 [meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
+[youtube-recording]: <https://www.youtube.com/watch?v=M-bLxxdqV5I>
 [dnlh-group]: <https://www.meetup.com/dot-net-learners-house-hyderabad/>
+[jetbrains]: <https://www.jetbrains.com/>
 
 ---
 

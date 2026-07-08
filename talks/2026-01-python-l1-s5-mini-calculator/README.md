@@ -1,6 +1,8 @@
 # L1 · S5 — Mini Project: Simple Calculator
 
 **Event:** Dot Net Learners House  
+**When:** Saturday, 4 July 2026 · 4:00–5:00 PM IST  
+**Duration:** 60 minutes  
 **Status:** delivered  
 **Type:** external curriculum index (no duplicated lab content)
 
