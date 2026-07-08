@@ -1,6 +1,6 @@
-﻿---
+---
 name: speaker-series
-description: Work on the speaker-series-2026 repository â€” speaker portfolio, talk indexing, meetup delivery docs, in-repo demos, and assistant configuration.
+description: Work on the speaker-series-2026 repository — speaker portfolio, talk indexing, meetup delivery docs, in-repo demos, and assistant configuration.
 canonical: ".github/skills/speaker-series/SKILL.md"
 ---
 
@@ -9,22 +9,22 @@ canonical: ".github/skills/speaker-series/SKILL.md"
 **Scope:** Speaker portfolio for Dot Net Learners House. See `README.md` and
 `.cursor/rules/project-scope.mdc`.
 
-**Core role:** Senior Software Engineer and Systems Architect â€” see
+**Core role:** Senior Software Engineer and Systems Architect — see
 `.cursor/rules/09_core-agent-role.mdc` and `.github/copilot-instructions.md`.
 
 ## Layout
 
-- **`talks/`** â€” one folder per session (`YYYY-MM-name`)
-- **`assets/`** â€” slides, diagrams, images, recordings
-- **`templates/`** â€” scaffold for new in-repo talks
-- **`docs/`** â€” cross-talk reference
-- **`src/`** â€” repo-wide utilities only (per-talk code stays under `talks/{id}/`)
+- **`talks/`** — one folder per session (`YYYY-MM-name`)
+- **`assets/`** — slides, diagrams, images, recordings
+- **`templates/`** — scaffold for new in-repo talks
+- **`docs/`** — cross-talk reference
+- **`src/`** — repo-wide utilities only (per-talk code stays under `talks/{id}/`)
 
 ## Talk types
 
 | Type | Example | Files in `talks/{id}/` |
 | ---- | ------- | ------------------------ |
-| External curriculum | Python L1 Â· S5, S6 | `README.md` only (links out) |
+| External curriculum | Python L1 · S5, S6 | `README.md` only (links out) |
 | In-repo demo | Bedrock + Cline | Full template set + `src/`, `prompts/`, etc. |
 
 External Python curriculum:

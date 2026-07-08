@@ -8,7 +8,9 @@ Planned evolution of the Speaker Series 2026 portfolio.
 
 - [x] Repository layout: `talks/`, `assets/`, `templates/`, `docs/`
 - [x] Index Python L1 · S5 and S6 with minimal talk stubs
-- [ ] Deliver [Amazon Bedrock + Cline session (Jul 11)](https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events) and publish slides
+- [ ] Deliver [Amazon Bedrock + Cline session (Jul 11)][bedrock-meetup] and publish slides
+
+[bedrock-meetup]: https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events
 
 ---
 

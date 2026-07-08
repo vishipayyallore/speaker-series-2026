@@ -1,10 +1,10 @@
-﻿---
+---
 name: ci-checks
 description: Run CI-aligned quality checks locally for Speaker Series 2026. Use when asked to run CI, lint, test, or verify docs, tracked Python, and mirrored skills.
 canonical: ".github/skills/ci-checks/SKILL.md"
 ---
 
-# CI Checks â€” Local Runner (Speaker Series 2026)
+# CI Checks — Local Runner (Speaker Series 2026)
 
 Use `.github/workflows/` as the source of truth.
 

@@ -57,7 +57,8 @@ Canonical: `.github/agents/`. Mirrors: `.clinerules/agents/`, `.opencode/agents/
 | `.claude/` | Claude Code style and config |
 | `.copilot/` | Copilot editor settings |
 
-**Workflow:** edit canonical paths → run `scripts/sync-assistant-mirrors.ps1` → verify with `ci-skills-parity` and workspace-review checklist.
+**Workflow:** edit canonical paths → run `scripts/sync-assistant-mirrors.ps1` → verify with
+`ci-skills-parity` and the workspace-review checklist.
 
 ## Prompts
 

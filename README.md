@@ -4,7 +4,10 @@
 ![Year](https://img.shields.io/badge/Year-2026-0ea5e9)
 ![Talks](https://img.shields.io/badge/Talks-3-111827)
 
-Speaker portfolio and canonical index for 2026 meetup sessions at **Dot Net Learners House**. Each talk keeps **metadata** under `talks/`; shared media under `assets/`; Python labs stay in [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice).
+Speaker portfolio and canonical index for 2026 meetup sessions at **Dot Net Learners House**.
+
+Each talk keeps **metadata** under `talks/`; shared media under `assets/`. Python labs stay in
+[python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice).
 
 ---
 

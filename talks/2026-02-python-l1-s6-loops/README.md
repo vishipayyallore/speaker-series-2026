@@ -2,13 +2,16 @@
 
 **Event:** Dot Net Learners House  
 **Status:** delivered  
-**Curriculum:** [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice) · Level 1 · Session 6
+**Curriculum:**
+[python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice)
+· Level 1 · Session 6
 
 ---
 
 ## Abstract
 
-Loops and iteration: `for` / `while`, `break` / `continue` / `pass`, boolean precedence in loop conditions, and the calculator loop capstone.
+Loops and iteration: `for` / `while`, `break` / `continue` / `pass`, boolean precedence
+in loop conditions, and the calculator loop capstone.
 
 ---
 
@@ -16,7 +19,7 @@ Loops and iteration: `for` / `while`, `break` / `continue` / `pass`, boolean pre
 
 **Canonical session doc** (agenda, 30-minute flow, practice file map):
 
-https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S6.md
+[S6.md](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S6.md)
 
 ---
 
@@ -24,7 +27,7 @@ https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/doc
 
 **Practice files** (`src/L1/S6/`):
 
-https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S6
+[src/L1/S6](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S6)
 
 | File | Focus |
 | ---- | ----- |
@@ -60,4 +63,5 @@ python src/L1/S6/04_calculator_loop.py
 
 ## Next in series
 
-[S7 — Debugging](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S7.md) in the practice repo
+[S7 — Debugging](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S7.md)
+in the practice repo

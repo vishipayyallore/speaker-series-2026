@@ -1,7 +1,8 @@
 # Exploring Amazon Bedrock Models + Cline + Vibe Coding + Agentic Coding
 
 **Event:** [Dot Net Learners House (Hyderabad)](https://www.meetup.com/dot-net-learners-house-hyderabad/)  
-**Meetup:** [Event page](https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events)  
+**Meetup:**
+[Event page](https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events)  
 **Date:** Saturday, 11 July 2026 · 4:00 PM (online)  
 **Duration:** 30–45 minutes  
 **Format:** Live demo + interactive Q&A  
@@ -13,13 +14,18 @@
 
 ## Abstract
 
-Live walkthrough of Amazon Bedrock foundation models, configuring **Cline** to use Bedrock, **vibe coding** with AI assistance, and how **agentic coding** differs from traditional chat. Attendees see model selection (including Amazon vs Qwen tradeoffs), practical prompting, and a small application built with AI guidance.
+Live walkthrough of Amazon Bedrock foundation models, configuring **Cline** to use Bedrock,
+**vibe coding** with AI assistance, and how **agentic coding** differs from traditional chat.
+
+Attendees see model selection (Amazon vs Qwen tradeoffs), practical prompting, and a small
+application built with AI guidance.
 
 ---
 
 ## Audience
 
-Developers new to or curious about generative AI on AWS — especially .NET and general software engineers attending Dot Net Learners House.
+Developers new to or curious about generative AI on AWS — especially .NET and general
+software engineers attending Dot Net Learners House.
 
 ---
 

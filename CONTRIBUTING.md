@@ -1,6 +1,8 @@
 # Contributing
 
-Thank you for helping grow the Speaker Series portfolio. This repository separates **talk metadata** (under `talks/`) from **shared assets** (under `assets/`).
+Thank you for helping grow the Speaker Series portfolio.
+
+This repository separates **talk metadata** (under `talks/`) from **shared assets** (under `assets/`).
 
 ---
 
@@ -14,11 +16,17 @@ Thank you for helping grow the Speaker Series portfolio. This repository separat
    - `references.md`
    - `links.md`
 3. **Fill in every section** in the talk `README.md` using the standard outline:
-   - Title, Abstract, Audience, Prerequisites, Agenda, Demo, Hands-on Code, Slides, Recording, References, Questions
+   - Title, Abstract, Audience, Prerequisites, Agenda, Demo, Hands-on Code,
+     Slides, Recording, References, Questions
 4. **Decide where code lives:**
-   - **External curriculum** (Python track): add `talks/YYYY-MM-name/README.md` with links to the session doc (e.g. `S5.md`) and `src/` path in [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice). Do not copy lab code or duplicate agenda/demo markdown here.
-   - **In-repo demo** (Bedrock pattern): add `src/`, `prompts/`, `notebooks/`, or `infra/` inside the talk folder only.
-5. **Add shared media** under `assets/slides/`, `assets/diagrams/`, `assets/images/`, or `assets/recordings/` — not inside `talks/` unless the file is tiny and talk-specific (prefer assets for binaries).
+   - **External curriculum** (Python track): add `talks/YYYY-MM-name/README.md` with
+     links to the session doc (e.g. `S5.md`) and `src/` in
+     [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice).
+     Do not copy lab code or duplicate agenda/demo markdown here.
+   - **In-repo demo** (Bedrock pattern): add `src/`, `prompts/`, `notebooks/`, or
+     `infra/` inside the talk folder only.
+5. **Add shared media** under `assets/slides/`, `assets/diagrams/`, `assets/images/`,
+   or `assets/recordings/` — prefer `assets/` for binaries, not inside `talks/`.
 6. **Update the root [README.md](./README.md)** talk index table and Upcoming/Completed sections.
 7. **Optional:** add a row to [docs/meetup-history.md](./docs/meetup-history.md) after delivery.
 
@@ -48,7 +56,8 @@ Canonical sources and mirror policy: [AGENTS.md](./AGENTS.md).
 
 - Copy [.env.example](./.env.example) to `.env` for AWS Bedrock demos.
 - Never commit `.env`, API keys, or account-specific ARNs.
-- Use [infra/bedrock-policy.yaml](./talks/2026-07-amazon-bedrock-cline-agentic/infra/bedrock-policy.yaml) as a starting point for least-privilege IAM.
+- Use [infra/bedrock-policy.yaml](./talks/2026-07-amazon-bedrock-cline-agentic/infra/bedrock-policy.yaml)
+  as a starting point for least-privilege IAM.
 
 ---
 

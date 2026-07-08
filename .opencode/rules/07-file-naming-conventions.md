@@ -1,4 +1,4 @@
-﻿# File Naming Conventions
+# File Naming Conventions
 
 ## Talk folders
 
@@ -32,4 +32,4 @@ Name media to match talk id:
 
 ## Templates
 
-Copy from `templates/` when creating a new **in-repo** talk. Rename `talk-readme.md` â†’ `README.md`.
+Copy from `templates/` when creating a new **in-repo** talk. Rename `talk-readme.md` → `README.md`.

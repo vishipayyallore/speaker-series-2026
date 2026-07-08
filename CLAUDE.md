@@ -22,7 +22,9 @@ See `.cursor/rules/project-scope.mdc` and `README.md`.
 
 - `talks/` — talk metadata; demo code only where the talk owns it
 - `assets/` — shared media
-- Python labs — link to [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice); do not duplicate
+- Python labs — link to
+  [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice);
+  do not duplicate
 
 ## Key files
 

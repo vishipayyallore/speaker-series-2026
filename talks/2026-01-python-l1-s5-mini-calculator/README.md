@@ -2,13 +2,16 @@
 
 **Event:** Dot Net Learners House  
 **Status:** delivered  
-**Curriculum:** [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice) · Level 1 · Session 5
+**Curriculum:**
+[python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice)
+· Level 1 · Session 5
 
 ---
 
 ## Abstract
 
-Hands-on mini project: CLI calculator with input validation, branching, divide-by-zero handling, and PEP 8 style review. Integrates Sessions 1–4 from the practice repo.
+Hands-on mini project: CLI calculator with input validation, branching, divide-by-zero
+handling, and PEP 8 style review. Integrates Sessions 1–4 from the practice repo.
 
 ---
 
@@ -16,7 +19,7 @@ Hands-on mini project: CLI calculator with input validation, branching, divide-b
 
 **Canonical session doc** (agenda, demo flow, acceptance checklist):
 
-https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md
+[S5.md](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md)
 
 ---
 
@@ -24,7 +27,7 @@ https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/doc
 
 **Practice files** (`src/L1/S5/`):
 
-https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S5
+[src/L1/S5](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S5)
 
 | File | Purpose |
 | ---- | ------- |
