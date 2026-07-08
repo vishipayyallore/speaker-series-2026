@@ -56,7 +56,7 @@ Write-Host "Root: $repoRoot" -ForegroundColor Gray
 Write-Host "Scan: $scanRoot" -ForegroundColor Gray
 Write-Host ""
 
-Write-Host "📁 Folder Structure:" -ForegroundColor Yellow
+Write-Host "Folder Structure:" -ForegroundColor Yellow
 $expectedFolders = @()
 if ($config.ContainsKey('ExpectedFolders') -and $null -ne $config['ExpectedFolders']) {
     $expectedFolders = @($config['ExpectedFolders'])
@@ -69,16 +69,16 @@ $structureOk = $true
 foreach ($folder in $expectedFolders) {
     $fullPath = Join-Path $repoRoot $folder
     if (Test-Path -LiteralPath $fullPath) {
-        Write-Host "  ✅ $folder" -ForegroundColor Green
+        Write-Host "  OK $folder" -ForegroundColor Green
     } else {
-        Write-Host "  ❌ $folder - MISSING" -ForegroundColor Red
+        Write-Host "  MISSING $folder" -ForegroundColor Red
         $structureOk = $false
     }
 }
 
 Write-Host ""
 
-Write-Host "📄 Markdown Files:" -ForegroundColor Yellow
+Write-Host "Markdown Files:" -ForegroundColor Yellow
 $mdFiles = @(Get-ChildItem -Path $scanRoot -Recurse -Filter '*.md' -ErrorAction SilentlyContinue |
     Where-Object { $_.FullName -notmatch 'node_modules|\\.git' })
 
@@ -91,7 +91,7 @@ foreach ($dir in $byDir) {
 
 Write-Host ""
 
-Write-Host "📋 YAML + Line-Length (Warnings):" -ForegroundColor Yellow
+Write-Host "YAML + Line-Length (Warnings):" -ForegroundColor Yellow
 $yamlCheckRoots = @('src')
 if ($config.ContainsKey('YamlCheckRoots') -and $null -ne $config['YamlCheckRoots']) {
     $yamlCheckRoots = @($config['YamlCheckRoots'])
@@ -127,22 +127,22 @@ foreach ($file in $checkedFiles) {
     }
 }
 
-Write-Host "  ✅ Files with YAML: $filesWithYaml" -ForegroundColor Green
+Write-Host "  With YAML: $filesWithYaml" -ForegroundColor Green
 if ($filesWithoutYaml -gt 0) {
-    Write-Host "  ⚠️  Files without YAML: $filesWithoutYaml" -ForegroundColor Yellow
+    Write-Host "  WARN Files without YAML: $filesWithoutYaml" -ForegroundColor Yellow
 }
 if ($filesOverLimit -gt 0) {
-    Write-Host "  ⚠️  Files over 150 lines: $filesOverLimit" -ForegroundColor Yellow
+    Write-Host "  WARN Files over 150 lines: $filesOverLimit" -ForegroundColor Yellow
 }
 
 Write-Host ""
 
 Write-Host "=== Summary ===" -ForegroundColor Cyan
 if ($structureOk) {
-    Write-Host "✅ Health Check: PASSED" -ForegroundColor Green
+    Write-Host "Health Check: PASSED" -ForegroundColor Green
     return
 }
 
-Write-Host "❌ Health Check: FAILED" -ForegroundColor Red
+Write-Host "Health Check: FAILED" -ForegroundColor Red
 Write-Host "  - Missing expected folders" -ForegroundColor Red
 throw "Health Check failed: missing expected folders."
