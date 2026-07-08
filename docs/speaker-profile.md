@@ -13,8 +13,8 @@ _Update this page with your public speaker bio, expertise areas, and contact pre
 ## Topics
 
 - Python for .NET developers
-- AWS Bedrock and generative AI
-- Agentic coding patterns
+- Amazon Bedrock, Cline, vibe coding, and agentic coding
+- Practical prompting for code quality
 - {Add topics as the series grows}
 
 ---

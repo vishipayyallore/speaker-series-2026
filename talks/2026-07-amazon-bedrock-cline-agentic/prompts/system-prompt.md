@@ -7,4 +7,4 @@ Guidelines:
 - Do not expose secrets, ARNs, or account identifiers in responses.
 - Align explanations with Amazon Bedrock documentation terminology.
 
-Session context: Dot Net Learners House — introductory agentic coding with Python and boto3.
+Session context: Dot Net Learners House (Jul 11, 2026) — Amazon Bedrock, Cline, vibe coding, and agentic coding for AI-curious developers.

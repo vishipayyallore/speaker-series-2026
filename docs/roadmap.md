@@ -7,14 +7,20 @@ Planned evolution of the Speaker Series 2026 portfolio.
 ## Q1 2026 (in progress)
 
 - [x] Repository layout: `talks/`, `assets/`, `templates/`, `docs/`
-- [ ] Deliver Python Session 1 and publish slides
-- [ ] Deliver Python Session 2 and publish slides
-- [ ] Deliver AWS Bedrock session with reproducible in-repo demo
-- [ ] Replace `{your-org}` placeholders with real GitHub org/user links
+- [x] Index Python L1 · S5 and S6 with minimal talk stubs
+- [ ] Deliver [Amazon Bedrock + Cline session (Jul 11)](https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events) and publish slides
 
 ---
 
-## Q2 2026 (candidates)
+## Q3 2026
+
+| Date | Topic | Folder |
+| ---- | ----- | ------ |
+| Jul 11 | Amazon Bedrock + Cline + Agentic Coding | [2026-07-amazon-bedrock-cline-agentic](../talks/2026-07-amazon-bedrock-cline-agentic/) |
+
+---
+
+## Later 2026 (candidates)
 
 | Month | Topic | Folder (proposed) |
 | ----- | ----- | ----------------- |

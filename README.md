@@ -2,9 +2,9 @@
 
 ![Status](https://img.shields.io/badge/Status-Active-blue)
 ![Year](https://img.shields.io/badge/Year-2026-0ea5e9)
-![Talks](https://img.shields.io/badge/Talks-3%20planned-111827)
+![Talks](https://img.shields.io/badge/Talks-3-111827)
 
-Speaker portfolio and canonical index for 2026 meetup sessions at **Dot Net Learners House**. Each talk keeps **metadata and delivery notes** under `talks/`; shared media lives under `assets/`; hands-on Python exercises stay in a separate repository.
+Speaker portfolio and canonical index for 2026 meetup sessions at **Dot Net Learners House**. Each talk keeps **metadata** under `talks/`; shared media under `assets/`; Python labs stay in [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice).
 
 ---
 
@@ -12,11 +12,11 @@ Speaker portfolio and canonical index for 2026 meetup sessions at **Dot Net Lear
 
 | Date     | Event                  | Topic                        | Slides | Demo | Code        | Recording |
 | -------- | ---------------------- | ---------------------------- | ------ | ---- | ----------- | --------- |
-| Jan 2026 | Dot Net Learners House | [Python Session 1](./talks/2026-01-python-session-01/) | —      | ✅    | [External repo](https://github.com/{your-org}/python-fundamentals-in-practice) | —         |
-| Feb 2026 | Dot Net Learners House | [Python Session 2](./talks/2026-02-python-session-02/) | —      | ✅    | [External repo](https://github.com/{your-org}/python-fundamentals-in-practice) | —         |
-| Mar 2026 | Dot Net Learners House | [AWS Bedrock + Agentic Coding](./talks/2026-03-aws-bedrock-agentic/) | —      | ✅    | This repo   | —         |
+| Jan 2026 | Dot Net Learners House | [L1 · S5 — Mini Calculator](./talks/2026-01-python-l1-s5-mini-calculator/) | —      | ✅    | [External repo](https://github.com/vishipayyallore/python-fundamentals-in-practice) | —         |
+| Feb 2026 | Dot Net Learners House | [L1 · S6 — Loops](./talks/2026-02-python-l1-s6-loops/) | —      | ✅    | [External repo](https://github.com/vishipayyallore/python-fundamentals-in-practice) | —         |
+| Jul 2026 | Dot Net Learners House | [Amazon Bedrock + Cline + Agentic Coding](./talks/2026-07-amazon-bedrock-cline-agentic/) | —      | ✅    | This repo   | —         |
 
-Legend: ✅ = planned or available · — = not yet published
+Legend: ✅ = delivered or ready · — = not yet published
 
 ---
 
@@ -24,15 +24,18 @@ Legend: ✅ = planned or available · — = not yet published
 
 | When     | Talk | Folder |
 | -------- | ---- | ------ |
-| Jan 2026 | Python Session 1 | [talks/2026-01-python-session-01/](./talks/2026-01-python-session-01/) |
-| Feb 2026 | Python Session 2 | [talks/2026-02-python-session-02/](./talks/2026-02-python-session-02/) |
-| Mar 2026 | AWS Bedrock + Agentic Coding | [talks/2026-03-aws-bedrock-agentic/](./talks/2026-03-aws-bedrock-agentic/) |
+| Jul 11, 2026 · 4:00 PM | [Amazon Bedrock + Cline + Agentic Coding](https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events) | [talks/2026-07-amazon-bedrock-cline-agentic/](./talks/2026-07-amazon-bedrock-cline-agentic/) |
 
 ---
 
 ## Completed talks
 
-_No sessions marked delivered yet. Move rows here after each event and add recording links._
+| When     | Talk | Session doc |
+| -------- | ---- | ----------- |
+| Jan 2026 | L1 · S5 — Mini Project: Simple Calculator | [S5.md](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md) |
+| Feb 2026 | L1 · S6 — Loops & Iteration | [S6.md](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S6.md) |
+
+Index stubs: [S5 folder](./talks/2026-01-python-l1-s5-mini-calculator/) · [S6 folder](./talks/2026-02-python-l1-s6-loops/)
 
 ---
 
@@ -53,8 +56,8 @@ _No sessions marked delivered yet. Move rows here after each event and add recor
 
 | Repository | Role |
 | ---------- | ---- |
-| **speaker-series-2026** (this repo) | Talk index, agendas, demo scripts, Bedrock demo code |
-| [python-fundamentals-in-practice](https://github.com/{your-org}/python-fundamentals-in-practice) | Hands-on Python labs — linked, not duplicated |
+| **speaker-series-2026** (this repo) | Talk index; Bedrock/Cline demo code |
+| [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice) | Python curriculum, session docs, and all lab code |
 
 ---
 
@@ -68,15 +71,15 @@ _Add LinkedIn, GitHub, meetup group, and other profiles in [docs/speaker-profile
 
 ```text
 speaker-series-2026/
-├── talks/           # One folder per session (metadata + talk-specific code)
+├── talks/           # Per-session index (minimal for external-repo Python talks)
 ├── assets/          # Slides, diagrams, images, recordings
-├── templates/       # Copy before each new talk
+├── templates/       # Full template set for in-repo talks (e.g. Bedrock)
 ├── docs/            # Cross-talk reference
 ├── README.md        # This portfolio index
-└── CONTRIBUTING.md  # How to add a talk
+└── CONTRIBUTING.md
 ```
 
-Talk folders use chronological prefixes (`2026-01-…`) so they stay sorted as the series grows.
+Python meetups that use an external repo need only a thin `README.md` under `talks/` — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ---
 

@@ -4,28 +4,33 @@
 
 ## Where is the Python exercise code?
 
-In the separate repository [python-fundamentals-in-practice](https://github.com/{your-org}/python-fundamentals-in-practice). This repo only links to it from the Python session talk folders.
+In [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice). Session docs (e.g. [S5.md](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md), [S6.md](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S6.md)) are the canonical demo scripts.
+
+This repo keeps a **thin index** per delivered Python talk under `talks/` — usually `README.md` only.
+
+---
+
+## Why so little in the Python talk folders?
+
+Agenda, demo flow, exercises, and troubleshooting live in the practice repo. Duplicating them here would drift out of sync. The speaker portfolio only needs title, status, and links.
 
 ---
 
 ## Where is the Bedrock demo code?
 
-Inside [talks/2026-03-aws-bedrock-agentic/](../talks/2026-03-aws-bedrock-agentic/). Clone this repository, copy `.env.example` to `.env`, and follow that talk’s README.
+Inside [talks/2026-07-amazon-bedrock-cline-agentic/](../talks/2026-07-amazon-bedrock-cline-agentic/). Clone this repository, copy `.env.example` to `.env`, and follow that talk’s README and [cline-bedrock-setup.md](../talks/2026-07-amazon-bedrock-cline-agentic/cline-bedrock-setup.md).
 
 ---
 
 ## How do I add a new session?
 
-Copy files from [templates/](../templates/), create a new folder under `talks/` with a `YYYY-MM-name` prefix, and update the root [README.md](../README.md). See [CONTRIBUTING.md](../CONTRIBUTING.md).
+- **External curriculum:** add `talks/YYYY-MM-name/README.md` with links to the session doc and code.
+- **In-repo demo:** copy [templates/](../templates/) and fill in all files.
+
+See [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ---
 
 ## Where do slides and recordings go?
 
-Under `assets/slides/` and `assets/recordings/`, named to match the talk folder (example: `2026-03-aws-bedrock-agentic.pdf`).
-
----
-
-## Why split metadata and assets?
-
-So the repo scales to dozens of talks: markdown and scripts stay easy to diff in `talks/`, while large binaries stay in `assets/` without cluttering each talk folder.
+Under `assets/slides/` and `assets/recordings/`, named to match the talk folder (example: `2026-07-amazon-bedrock-cline-agentic.pdf`).

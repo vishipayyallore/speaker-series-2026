@@ -16,7 +16,7 @@ Thank you for helping grow the Speaker Series portfolio. This repository separat
 3. **Fill in every section** in the talk `README.md` using the standard outline:
    - Title, Abstract, Audience, Prerequisites, Agenda, Demo, Hands-on Code, Slides, Recording, References, Questions
 4. **Decide where code lives:**
-   - **External repo** (Python track pattern): link from `links.md` and `README.md`; do not copy exercise code here.
+   - **External curriculum** (Python track): add `talks/YYYY-MM-name/README.md` with links to the session doc (e.g. `S5.md`) and `src/` path in [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice). Do not copy lab code or duplicate agenda/demo markdown here.
    - **In-repo demo** (Bedrock pattern): add `src/`, `prompts/`, `notebooks/`, or `infra/` inside the talk folder only.
 5. **Add shared media** under `assets/slides/`, `assets/diagrams/`, `assets/images/`, or `assets/recordings/` — not inside `talks/` unless the file is tiny and talk-specific (prefer assets for binaries).
 6. **Update the root [README.md](./README.md)** talk index table and Upcoming/Completed sections.
@@ -38,7 +38,7 @@ Thank you for helping grow the Speaker Series portfolio. This repository separat
 
 - Copy [.env.example](./.env.example) to `.env` for AWS Bedrock demos.
 - Never commit `.env`, API keys, or account-specific ARNs.
-- Use [infra/bedrock-policy.yaml](./talks/2026-03-aws-bedrock-agentic/infra/bedrock-policy.yaml) as a starting point for least-privilege IAM.
+- Use [infra/bedrock-policy.yaml](./talks/2026-07-amazon-bedrock-cline-agentic/infra/bedrock-policy.yaml) as a starting point for least-privilege IAM.
 
 ---
 
