@@ -41,7 +41,11 @@ _None scheduled — add the next session here when announced._
 | Jul 8, 2026 · 9:00–10:00 AM IST | L1 · S6 — Loops & Iteration | [Demo script](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S6.md) · [Code](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S6) · [Recording](https://www.youtube.com/watch?v=vXePo4BOgPM) |
 | Jul 11, 2026 · 4:00–5:00 PM IST · online | Amazon Bedrock + Cline + Agentic Coding | [Talk folder](./talks/2026-07-11-amazon-bedrock-cline-agentic/) · [Demo script](./talks/2026-07-11-amazon-bedrock-cline-agentic/demo-script.md) · [Recording](https://www.youtube.com/watch?v=M-bLxxdqV5I) · Sponsor: [JetBrains](https://www.jetbrains.com/) |
 
-Index stubs: [S5 folder](./talks/2026-07-04-python-l1-s5-mini-calculator/) · [S6 folder](./talks/2026-07-08-python-l1-s6-loops/) · [Bedrock folder](./talks/2026-07-11-amazon-bedrock-cline-agentic/)
+Index stubs:
+
+- [S5 folder](./talks/2026-07-04-python-l1-s5-mini-calculator/)
+- [S6 folder](./talks/2026-07-08-python-l1-s6-loops/)
+- [Bedrock folder](./talks/2026-07-11-amazon-bedrock-cline-agentic/)
 
 ---
 
