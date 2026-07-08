@@ -1,10 +1,10 @@
----
+﻿---
 name: workspace-review
 description: Review Speaker Series 2026 for portfolio alignment, assistant mirror parity, and cross-repo contamination.
 canonical: ".github/skills/workspace-review/SKILL.md"
 ---
 
-# Workspace Review — Speaker Series 2026
+# Workspace Review â€” Speaker Series 2026
 
 Use when auditing the repository or after importing assistant configuration.
 
@@ -17,7 +17,7 @@ Use when auditing the repository or after importing assistant configuration.
 
 ## Assistant parity
 
-- [ ] `.github/skills/` ↔ `.cursor/skills/` ↔ `.opencode/skills/` byte-identical
+- [ ] `.github/skills/` â†” `.cursor/skills/` â†” `.opencode/skills/` byte-identical
 - [ ] `.cursor/rules/*.mdc` synced to `.clinerules/rules/*.md` and `.opencode/rules/*.md`
 - [ ] `.github/agents/` synced to `.clinerules/agents/` and `.opencode/agents/`
 - [ ] No references to `applied-engineering`, `01-knowledge/`, or unrelated repos

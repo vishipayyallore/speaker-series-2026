@@ -1,4 +1,4 @@
-# External curriculum rules
+﻿# External curriculum rules
 
 ## Python hands-on content
 
@@ -8,7 +8,7 @@ All Python lab code and session docs live in:
 
 This repo stores only:
 
-- talk index stub (`talks/YYYY-MM-python-…/README.md`)
+- talk index stub (`talks/YYYY-MM-python-â€¦/README.md`)
 - links to `docs/sessions/L1/S5.md`, `S6.md`, etc.
 - clone/run commands for attendees
 

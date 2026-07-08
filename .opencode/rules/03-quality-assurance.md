@@ -1,4 +1,4 @@
-# Quality Assurance
+﻿# Quality Assurance
 
 ## Documentation checklist
 

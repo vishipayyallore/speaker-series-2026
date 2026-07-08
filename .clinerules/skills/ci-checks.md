@@ -1,10 +1,10 @@
----
+﻿---
 name: ci-checks
 description: Run CI-aligned quality checks locally for Speaker Series 2026. Use when asked to run CI, lint, test, or verify docs, tracked Python, and mirrored skills.
 canonical: ".github/skills/ci-checks/SKILL.md"
 ---
 
-# CI Checks — Local Runner (Speaker Series 2026)
+# CI Checks â€” Local Runner (Speaker Series 2026)
 
 Use `.github/workflows/` as the source of truth.
 
@@ -34,8 +34,8 @@ if ($py.Count -gt 0) { python -m py_compile @py } else { Write-Host 'No tracked 
 
 Same globs as `ci-documentation.yml`:
 
-```powershell
-npx --yes markdownlint-cli2 `
+```bash
+npx --yes markdownlint-cli2 --config .markdownlint-cli2.yaml `
   "README.md" "CONTRIBUTING.md" "AGENTS.md" "CLAUDE.md" `
   "docs/**/*.md" "talks/**/*.md" "templates/**/*.md" "src/**/*.md"
 ```

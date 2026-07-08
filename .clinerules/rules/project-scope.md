@@ -1,9 +1,9 @@
-# Project scope
+﻿# Project scope
 
-This repository is **Speaker Series 2026** — a speaker portfolio and canonical index for meetup sessions (Dot Net Learners House and related events).
+This repository is **Speaker Series 2026** â€” a speaker portfolio and canonical index for meetup sessions (Dot Net Learners House and related events).
 
 1. Keep repository guidance, links, labels, and folder references specific to `speaker-series-2026`.
-2. Remove imported assumptions from unrelated repos (for example Applied Engineering learning pipeline `01-knowledge/` … `07-interview-prep/`) before treating files as canonical here.
+2. Remove imported assumptions from unrelated repos (for example Applied Engineering learning pipeline `01-knowledge/` â€¦ `07-interview-prep/`) before treating files as canonical here.
 3. Do not describe this repository as a general-purpose engineering notebook unless it actually evolves in that direction.
 
 ## Do
@@ -16,11 +16,11 @@ This repository is **Speaker Series 2026** — a speaker portfolio and canonical
 ## Folder model
 
 ```text
-talks/       — per-session metadata, scripts, and talk-specific demo code
-assets/      — slides, diagrams, images, recordings
-templates/   — copy before each new talk
-docs/        — cross-talk reference (profile, FAQ, roadmap)
-src/         — optional repo-wide utilities only (not per-talk demos)
+talks/       â€” per-session metadata, scripts, and talk-specific demo code
+assets/      â€” slides, diagrams, images, recordings
+templates/   â€” copy before each new talk
+docs/        â€” cross-talk reference (profile, FAQ, roadmap)
+src/         â€” optional repo-wide utilities only (not per-talk demos)
 ```
 
 Talk folders use chronological prefixes: `2026-01-python-l1-s5-mini-calculator`, `2026-07-amazon-bedrock-cline-agentic`, etc.

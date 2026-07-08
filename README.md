@@ -1,8 +1,12 @@
 # Speaker Series 2026
 
-![Status](https://img.shields.io/badge/Status-Active-blue)
-![Year](https://img.shields.io/badge/Year-2026-0ea5e9)
-![Talks](https://img.shields.io/badge/Talks-3-111827)
+![Status](https://img.shields.io/badge/Status-Active-86c8a8?style=flat-square)
+![Year](https://img.shields.io/badge/Year-2026-7eb8da?style=flat-square)
+![Talks](https://img.shields.io/badge/Talks-3-b5a8d4?style=flat-square)
+![Delivered](https://img.shields.io/badge/Delivered-2-9bc4a8?style=flat-square)
+![Upcoming](https://img.shields.io/badge/Upcoming-1-e5b896?style=flat-square)
+![Community](https://img.shields.io/badge/Community-Dot_Net_Learners_House-8fa8c4?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-b0b5c0?style=flat-square)
 
 Speaker portfolio and canonical index for 2026 meetup sessions at **Dot Net Learners House**.
 

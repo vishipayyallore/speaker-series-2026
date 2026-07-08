@@ -1,18 +1,18 @@
-# Copilot Instructions Extract
+﻿# Copilot Instructions Extract
 
 Source: `.github/copilot-instructions.md`  
 Repository: `speaker-series-2026`
 
 ## Core role
 
-Senior Software Engineer and Systems Architect — speaker portfolio and talk assets.
+Senior Software Engineer and Systems Architect â€” speaker portfolio and talk assets.
 
 ## Structure
 
-- `talks/` — session metadata and optional in-repo demos
-- `assets/` — shared media
-- `templates/` — in-repo talk scaffolding
-- `docs/` — cross-talk reference
+- `talks/` â€” session metadata and optional in-repo demos
+- `assets/` â€” shared media
+- `templates/` â€” in-repo talk scaffolding
+- `docs/` â€” cross-talk reference
 - External Python: [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice)
 
 ## Rules

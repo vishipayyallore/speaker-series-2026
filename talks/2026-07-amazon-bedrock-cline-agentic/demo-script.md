@@ -54,7 +54,8 @@ prompt from
 
 ### 4. Vibe coding (7 min)
 
-**Say:** Vibe coding is iterative, conversational building — you steer intent; the model drafts and refines.
+**Say:** Vibe coding is iterative, conversational building — you steer intent;
+the model drafts and refines.
 
 **Do:** In Cline, describe a small feature in plain language (for example a CLI that reads
 JSON and prints a summary table). Accept/refine suggestions across 2–3 turns.
@@ -65,12 +66,14 @@ JSON and prints a summary table). Accept/refine suggestions across 2–3 turns.
 
 ### 5. Agentic coding vs chat (5 min)
 
-**Say:** Chat answers once; agentic flows plan, use tools, read files, and loop until the task completes.
+**Say:** Chat answers once; agentic flows plan, use tools, read files, and loop
+until the task completes.
 
 **Do:** Contrast a one-shot chat question with Cline agent mode (or multi-step task:
 create file, add tests, run them).
 
-**Show:** Tool/file steps in Cline vs single reply. Reference [prompts/system-prompt.md](./prompts/system-prompt.md).
+**Show:** Tool/file steps in Cline vs single reply. Reference
+[prompts/system-prompt.md](./prompts/system-prompt.md).
 
 **Optional backup:** Run `python src/agent.py` to show a minimal routing loop in code.
 
@@ -78,7 +81,8 @@ create file, add tests, run them).
 
 ### 6. Build a small application with AI guidance (8 min)
 
-**Say:** We assemble a tiny end-to-end slice — structure, implementation, and a sanity check — guided by Cline.
+**Say:** We assemble a tiny end-to-end slice — structure, implementation, and a
+sanity check — guided by Cline.
 
 **Do:** Pick one scoped app (for example Bedrock model list helper, config validator, or
 minimal API client). Let Cline scaffold; you review and run.
@@ -109,7 +113,7 @@ Verify: run {test command} and show output
 
 | Failure | Backup |
 | ------- | ------ |
-| Bedrock/API error | Walk through recorded screenshots in `assets/images/` + explain setup doc |
+| Bedrock/API error | Walk through screenshots in `assets/images/` + setup doc |
 | Cline misconfigured | Show [cline-bedrock-setup.md](./cline-bedrock-setup.md) and pre-recorded clip |
 | Time short | Compress §6; keep §3–§5 and Q&A |
 

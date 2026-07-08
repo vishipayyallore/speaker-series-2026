@@ -1,4 +1,4 @@
-# Talk and portfolio content rules
+﻿# Talk and portfolio content rules
 
 **Context:** Talk folders, templates, portfolio docs  
 **Priority:** HIGH
@@ -7,7 +7,7 @@
 
 ### Repository fit
 
-- This is a speaker portfolio — not a general learning pipeline.
+- This is a speaker portfolio â€” not a general learning pipeline.
 - Remove stale references to Applied Engineering, `01-knowledge/`, or unrelated repos.
 - Python curriculum stays in [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice).
 
@@ -31,7 +31,7 @@
 
 ## Surfaces
 
-- Root `README.md` — portfolio index
-- `talks/{id}/` — per-session content
-- `templates/` — new talk scaffolding
-- `docs/` — cross-talk reference
+- Root `README.md` â€” portfolio index
+- `talks/{id}/` â€” per-session content
+- `templates/` â€” new talk scaffolding
+- `docs/` â€” cross-talk reference

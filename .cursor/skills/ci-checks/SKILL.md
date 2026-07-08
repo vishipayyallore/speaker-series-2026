@@ -33,8 +33,8 @@ if ($py.Count -gt 0) { python -m py_compile @py } else { Write-Host 'No tracked 
 
 Same globs as `ci-documentation.yml`:
 
-```powershell
-npx --yes markdownlint-cli2 `
+```bash
+npx --yes markdownlint-cli2 --config .markdownlint-cli2.yaml `
   "README.md" "CONTRIBUTING.md" "AGENTS.md" "CLAUDE.md" `
   "docs/**/*.md" "talks/**/*.md" "templates/**/*.md" "src/**/*.md"
 ```
