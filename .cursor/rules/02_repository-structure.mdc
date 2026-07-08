@@ -30,7 +30,7 @@ Follow the convention of the surface you edit:
 1. Identify whether content belongs in this repo or the external Python repo
 2. Rewrite imported assistant config to match speaker-series scope
 3. Remove stale repo names, URLs, and folder models
-4. Run `scripts/sync-assistant-mirrors.ps1` after governance edits
+4. Run `tools/psscripts/sync-assistant-mirrors.ps1` after governance edits
 
 ## Guidance
 

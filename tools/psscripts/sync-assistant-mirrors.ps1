@@ -6,15 +6,15 @@
 #   .cursor/rules/*.mdc -> .clinerules/rules/*.md, .opencode/rules/*.md
 #
 # Usage:
-#   ./scripts/sync-assistant-mirrors.ps1
-#   ./scripts/sync-assistant-mirrors.ps1 -VerifyOnly
+#   ./tools/psscripts/sync-assistant-mirrors.ps1
+#   ./tools/psscripts/sync-assistant-mirrors.ps1 -VerifyOnly
 
 param(
     [switch]$VerifyOnly
 )
 
 $ErrorActionPreference = 'Stop'
-$Root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
+$Root = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 Set-Location $Root
 
 function Sync-Directory {

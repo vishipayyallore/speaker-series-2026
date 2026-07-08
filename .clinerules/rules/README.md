@@ -1,6 +1,6 @@
 # Rules (Cline mirror)
 
-Synced from `.cursor/rules/*.mdc` via `scripts/sync-assistant-mirrors.ps1`.
+Synced from `.cursor/rules/*.mdc` via `tools/psscripts/sync-assistant-mirrors.ps1`.
 
 | File | Cursor source |
 | ---- | ------------- |

@@ -22,6 +22,13 @@ Use `.github/workflows/` as the source of truth.
 
 ## Commands (PowerShell, repo root)
 
+Local wrappers in `tools/psscripts/` mirror CI where possible:
+
+```powershell
+.\tools\psscripts\Run-MarkdownLintAndLychee.ps1 -MarkdownOnly
+.\tools\psscripts\sync-assistant-mirrors.ps1 -VerifyOnly
+```
+
 ### 1. Python byte-compile
 
 ```powershell
@@ -36,12 +43,12 @@ Same globs as `ci-documentation.yml`:
 ```bash
 npx --yes markdownlint-cli2 --config .markdownlint-cli2.yaml `
   "README.md" "CONTRIBUTING.md" "AGENTS.md" "CLAUDE.md" `
-  "docs/**/*.md" "talks/**/*.md" "templates/**/*.md" "src/**/*.md"
+  "docs/**/*.md" "talks/**/*.md" "templates/**/*.md" "src/**/*.md" "tools/**/*.md"
 ```
 
 ### 3. Skills parity
 
-Run `scripts/sync-assistant-mirrors.ps1 -VerifyOnly` or see `.github/skills/README.md`.
+Run `tools/psscripts/sync-assistant-mirrors.ps1 -VerifyOnly` or see `.github/skills/README.md`.
 
 ## Optional: Lychee
 

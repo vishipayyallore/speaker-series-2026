@@ -5,7 +5,7 @@ OpenCode plugin config. **Canonical:** `.github/copilot-instructions.md`, `.curs
 ## Sync
 
 ```powershell
-./scripts/sync-assistant-mirrors.ps1
+./tools/psscripts/sync-assistant-mirrors.ps1
 ```
 
 ## Layout

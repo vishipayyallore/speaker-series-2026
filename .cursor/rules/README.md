@@ -18,4 +18,4 @@ Cursor rule files (`.mdc`) for this repository. Mirrors: `.clinerules/rules/*.md
 | `08_copilot-instructions-extract.mdc` | Copilot instructions summary |
 | `09_core-agent-role.mdc` | Professional stance |
 
-After editing rules, run `scripts/sync-assistant-mirrors.ps1`.
+After editing rules, run `tools/psscripts/sync-assistant-mirrors.ps1`.

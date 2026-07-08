@@ -24,6 +24,10 @@ speaker-series-2026/
 │
 ├── templates/                # Copy before each new talk
 │
+├── tools/                    # Repo maintenance (not talk demos)
+│   ├── psscripts/            # PowerShell — CI, health, mirror sync
+│   └── pyscripts/            # Python — parity checks, optional media utils
+│
 └── docs/
     ├── 01-folder-structure.md
     ├── speaker-profile.md

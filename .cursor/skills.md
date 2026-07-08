@@ -9,4 +9,4 @@ Bundled skills:
 - `ci-checks` — local CI commands
 - `workspace-review` — audit checklist
 
-Sync: `scripts/sync-assistant-mirrors.ps1`
+Sync: `tools/psscripts/sync-assistant-mirrors.ps1`

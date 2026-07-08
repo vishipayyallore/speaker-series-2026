@@ -57,8 +57,11 @@ Write-Host "Scan: $scanRoot" -ForegroundColor Gray
 Write-Host ""
 
 Write-Host "📁 Folder Structure:" -ForegroundColor Yellow
-$expectedFolders = if ($config.ContainsKey('ExpectedFolders')) { @($config['ExpectedFolders']) } else { @() }
-if (-not $expectedFolders -or @($expectedFolders).Count -eq 0) {
+$expectedFolders = @()
+if ($config.ContainsKey('ExpectedFolders') -and $null -ne $config['ExpectedFolders']) {
+    $expectedFolders = @($config['ExpectedFolders'])
+}
+if ($expectedFolders.Count -eq 0) {
     throw "RepoConfig.psd1 must define ExpectedFolders"
 }
 
@@ -89,8 +92,11 @@ foreach ($dir in $byDir) {
 Write-Host ""
 
 Write-Host "📋 YAML + Line-Length (Warnings):" -ForegroundColor Yellow
-$yamlCheckRoots = if ($config.ContainsKey('YamlCheckRoots')) { @($config['YamlCheckRoots']) } else { @() }
-if (-not $yamlCheckRoots -or @($yamlCheckRoots).Count -eq 0) {
+$yamlCheckRoots = @('src')
+if ($config.ContainsKey('YamlCheckRoots') -and $null -ne $config['YamlCheckRoots']) {
+    $yamlCheckRoots = @($config['YamlCheckRoots'])
+}
+if ($yamlCheckRoots.Count -eq 0) {
     $yamlCheckRoots = @('src')
 }
 

@@ -35,7 +35,7 @@ This repository separates **talk metadata** (under `talks/`) from **shared asset
 After editing `.github/skills/`, `.github/agents/`, or `.cursor/rules/`:
 
 ```powershell
-./scripts/sync-assistant-mirrors.ps1
+./tools/psscripts/sync-assistant-mirrors.ps1
 ```
 
 Canonical sources and mirror policy: [AGENTS.md](./AGENTS.md).

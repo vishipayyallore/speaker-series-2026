@@ -83,7 +83,7 @@ Index only via links (for example `docs/sessions/L1/S5.md`).
 - **Python:** `ci-python.yml` — byte-compile all tracked `.py` files
 - **Docs:** `ci-documentation.yml` — markdownlint on portfolio surfaces
 - **Skills:** `ci-skills-parity.yml` — `.github/skills/` ↔ `.cursor/skills/` identical
-- **Mirrors:** After editing canonical files, sync `.clinerules/` and `.opencode/` per `scripts/sync-assistant-mirrors.ps1`
+- **Mirrors:** After editing canonical files, sync `.clinerules/` and `.opencode/` per `tools/psscripts/sync-assistant-mirrors.ps1`
 
 ## Assistant parity (canonical → mirrors)
 

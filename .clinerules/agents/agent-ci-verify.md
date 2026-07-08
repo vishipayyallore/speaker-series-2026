@@ -14,7 +14,7 @@ You are validating **speaker-series-2026** after code, documentation, or governa
 
 1. Read `.github/skills/ci-checks/SKILL.md`.
 2. Run required checks from repository root using PowerShell.
-3. If skills or rules were touched, run `scripts/sync-assistant-mirrors.ps1 -VerifyOnly`.
+3. If skills or rules were touched, run `tools/psscripts/sync-assistant-mirrors.ps1 -VerifyOnly`.
 
 ## Output
 

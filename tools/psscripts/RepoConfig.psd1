@@ -1,23 +1,26 @@
 @{
-  RepoName = 't2-machine-learning'
+  RepoName = 'speaker-series-2026'
 
   ExpectedFolders = @(
-    '.copilot'
-    '.cursor'
-    '.claude'
+    'talks'
+    'assets'
+    'templates'
     'docs'
-    'source-material'
     'src'
-    'quizzes'
     'tools'
     'tools\psscripts'
+    'tools\pyscripts'
     '.github'
+    '.cursor'
     '.cursor\rules'
+    '.github\skills'
   )
 
   YamlCheckRoots = @(
     'docs'
+    'talks'
   )
 
+  # Speaker portfolio — no interview-prep language scan
   DisallowInterviewLanguage = $false
 }

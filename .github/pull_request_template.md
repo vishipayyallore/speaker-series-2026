@@ -17,7 +17,7 @@ Short description and why it belongs in speaker-series-2026.
 - [ ] Root README talk table updated if talks changed
 - [ ] Python content links out (no duplicated curriculum)
 - [ ] No Applied Engineering / learning-pipeline references introduced
-- [ ] `scripts/sync-assistant-mirrors.ps1` run if rules/skills/agents changed
+- [ ] `tools/psscripts/sync-assistant-mirrors.ps1` run if rules/skills/agents changed
 - [ ] Portable paths; no secrets committed
 
 ## Type of change

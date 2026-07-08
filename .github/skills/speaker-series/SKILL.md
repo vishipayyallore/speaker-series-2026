@@ -33,7 +33,7 @@ External Python curriculum:
 
 - **Portfolio:** keep root README talk table, upcoming, and completed sections current
 - **No duplication:** do not copy session docs or lab code from the Python repo
-- **Parity:** after governance edits, run `scripts/sync-assistant-mirrors.ps1`
+- **Parity:** after governance edits, run `tools/psscripts/sync-assistant-mirrors.ps1`
 - **Contamination:** remove Applied Engineering / learning-pipeline references
 
 ## Related

@@ -35,7 +35,7 @@ See `docs/01-folder-structure.md` for talk types (external index vs in-repo demo
 
 Bundled skills: `speaker-series`, `ci-checks`, `workspace-review` — see `.github/skills/README.md`.
 
-After editing `.github/skills/`, copy to `.cursor/skills/` and `.opencode/skills/`, or run `scripts/sync-assistant-mirrors.ps1`.
+After editing `.github/skills/`, copy to `.cursor/skills/` and `.opencode/skills/`, or run `tools/psscripts/sync-assistant-mirrors.ps1`.
 
 ## Subagents (canonical → mirror)
 
@@ -57,7 +57,7 @@ Canonical: `.github/agents/`. Mirrors: `.clinerules/agents/`, `.opencode/agents/
 | `.claude/` | Claude Code style and config |
 | `.copilot/` | Copilot editor settings |
 
-**Workflow:** edit canonical paths → run `scripts/sync-assistant-mirrors.ps1` → verify with
+**Workflow:** edit canonical paths → run `tools/psscripts/sync-assistant-mirrors.ps1` → verify with
 `ci-skills-parity` and the workspace-review checklist.
 
 ## Prompts

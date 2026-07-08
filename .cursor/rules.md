@@ -20,7 +20,7 @@ Python curriculum: [python-fundamentals-in-practice](https://github.com/vishipay
 1. Per-talk demo code under `talks/{id}/src/`
 2. Portable paths; no secrets in repo
 3. Update root README when adding or delivering talks
-4. After governance edits: `scripts/sync-assistant-mirrors.ps1`
+4. After governance edits: `tools/psscripts/sync-assistant-mirrors.ps1`
 
 ## Quality gate
 

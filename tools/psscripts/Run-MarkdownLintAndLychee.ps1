@@ -76,7 +76,12 @@ if (-not $SkipMarkdownLint) {
   if (-not $MarkdownGlobs -or $MarkdownGlobs.Count -eq 0) {
     $MarkdownGlobs = @(
       "README.md",
+      "CONTRIBUTING.md",
+      "AGENTS.md",
+      "CLAUDE.md",
       "docs/**/*.md",
+      "talks/**/*.md",
+      "templates/**/*.md",
       "src/**/*.md",
       "tools/**/*.md"
     )
@@ -95,7 +100,7 @@ if (-not $SkipMarkdownLint) {
   # markdownlint-cli2 treats arguments as globs. We'll install/run it via npx.
   # NOTE: We do not auto-fix; this is a reporting/validation script.
   try {
-    & npx --yes markdownlint-cli2 @MarkdownGlobs
+    & npx --yes markdownlint-cli2 --config .markdownlint-cli2.yaml @MarkdownGlobs
     $mdExitCode = $LASTEXITCODE
   } catch {
     $mdExitCode = 1

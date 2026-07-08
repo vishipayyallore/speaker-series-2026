@@ -6,4 +6,4 @@ Tags: `speaker-series-2026`, `audit`, `parity`
 2. Audit portfolio alignment and assistant mirror parity
 3. Report high / medium / low issues
 
-Run `./scripts/sync-assistant-mirrors.ps1` if mirrors are out of date.
+Run `./tools/psscripts/sync-assistant-mirrors.ps1` if mirrors are out of date.

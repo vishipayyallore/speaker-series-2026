@@ -26,4 +26,4 @@ Python labs: [python-fundamentals-in-practice](https://github.com/vishipayyallor
 
 - State which talk folder or surface you are editing
 - Do not duplicate external curriculum
-- After governance edits, mention `scripts/sync-assistant-mirrors.ps1`
+- After governance edits, mention `tools/psscripts/sync-assistant-mirrors.ps1`

@@ -7,7 +7,7 @@ Mirrors Cursor/GitHub governance for Cline.
 ## Sync
 
 ```powershell
-./scripts/sync-assistant-mirrors.ps1
+./tools/psscripts/sync-assistant-mirrors.ps1
 ```
 
 | Cline path | Canonical |

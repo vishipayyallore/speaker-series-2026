@@ -33,7 +33,7 @@ See `.cursor/rules/project-scope.mdc` and `README.md`.
 - `.github/copilot-instructions.md` — canonical assistant rules
 - `.claude/config.md` — explanation sequence
 - `docs/01-folder-structure.md` — layout reference
-- `scripts/sync-assistant-mirrors.ps1` — sync rules/skills/agents to mirrors
+- `tools/psscripts/sync-assistant-mirrors.ps1` — sync rules/skills/agents to mirrors
 
 ## Verification
 

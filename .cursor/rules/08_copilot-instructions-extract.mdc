@@ -23,7 +23,7 @@ Senior Software Engineer and Systems Architect — speaker portfolio and talk as
 
 - Thin README for external curriculum talks; full template set for in-repo demos
 - No Applied Engineering / learning-pipeline assumptions
-- Sync mirrors via `scripts/sync-assistant-mirrors.ps1`
+- Sync mirrors via `tools/psscripts/sync-assistant-mirrors.ps1`
 - Skills canonical path: `.github/skills/`
 
 ## Quality

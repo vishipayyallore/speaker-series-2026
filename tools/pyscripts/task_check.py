@@ -29,13 +29,24 @@ def iter_matches(root: Path, patterns: Iterable[str]) -> Iterable[Path]:
 def build_report(root: Path) -> dict[str, object]:
     md_patterns = [
         "README.md",
+        "CONTRIBUTING.md",
+        "AGENTS.md",
+        "CLAUDE.md",
         "docs/**/*.md",
+        "talks/**/*.md",
+        "templates/**/*.md",
         "src/**/*.md",
         "tools/**/*.md",
-        "source-material/**/*.md",
     ]
-    notebook_patterns = ["src/**/*.ipynb", "source-material/**/*.ipynb"]
-    ref_patterns = ["README.md", "docs/**/*.md", "src/**/*.md", "tools/**/*.md"]
+    notebook_patterns = ["talks/**/*.ipynb", "src/**/*.ipynb"]
+    ref_patterns = [
+        "README.md",
+        "docs/**/*.md",
+        "talks/**/*.md",
+        "templates/**/*.md",
+        "src/**/*.md",
+        "tools/**/*.md",
+    ]
 
     hashes: dict[str, list[str]] = {}
     for path in iter_matches(root, md_patterns):

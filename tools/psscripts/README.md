@@ -1,169 +1,64 @@
 # PowerShell Scripts
 
-**Location**: `tools/psscripts/`
+**Location**: `tools/psscripts/`  
+**Repo**: Speaker Series 2026
 
-**Purpose**: Automation scripts for validation and repository maintenance (Windows 11 + PowerShell).
-
----
-
-## 📋 Script Set (Standardized)
-
-### Health Check & Validation
-
-#### `RepoConfig.psd1`
-
-Per-repo settings consumed by shared scripts (keeps behavior consistent across repos while allowing repo-specific structure/policy).
+Automation for validation, CI-aligned checks, and assistant mirror sync (Windows + PowerShell).
 
 ---
 
-#### `Quick-HealthCheck.ps1`
+## Essential scripts
 
-Fast workspace health check. Reads expected folders from `RepoConfig.psd1`.
+| Script | Purpose |
+| ------ | ------- |
+| `RepoConfig.psd1` | Expected folders and scan roots for this repo |
+| `Quick-HealthCheck.ps1` | Folder structure + markdown counts |
+| `Run-MarkdownLintAndLychee.ps1` | Same surfaces as CI (`markdownlint-cli2` + Lychee) |
+| `sync-assistant-mirrors.ps1` | Sync `.github/skills/` → mirrors; rules → `.clinerules/`, `.opencode/` |
+| `Validate-FileReferences.ps1` | Broken relative links in markdown |
 
-**Usage:**
+---
+
+## Quick start
 
 ```powershell
 .\tools\psscripts\Quick-HealthCheck.ps1
-```
-
----
-
-#### `Validate-FileReferences.ps1`
-
-Validates markdown file references point to existing files.
-
-**Usage:**
-
-```powershell
-.\tools\psscripts\Validate-FileReferences.ps1
-.\tools\psscripts\Validate-FileReferences.ps1 -Path "src"
-```
-
----
-
-#### `Test-ContentCompliance.ps1`
-
-Repository content-policy checks (rules vary by repo via `RepoConfig.psd1`).
-
-**Usage:**
-
-```powershell
-.\tools\psscripts\Test-ContentCompliance.ps1
-```
-
----
-
-#### `Verify-ZeroCopy.ps1`
-
-Zero-copy policy verification for content in `src/` (see .cursor rules and copilot-instructions for policy).
-
-**Usage:**
-
-```powershell
-.\tools\psscripts\Verify-ZeroCopy.ps1
-.\tools\psscripts\Verify-ZeroCopy.ps1 -Strict
-```
-
----
-
-### Linting & Link Checking
-
-#### `Run-MarkdownLintAndLychee.ps1`
-
-Runs Markdown lint (`markdownlint-cli2`) and link checking (Lychee) using repo `lychee.toml`.
-
-**Usage:**
-
-```powershell
 .\tools\psscripts\Run-MarkdownLintAndLychee.ps1
-.\tools\psscripts\Run-MarkdownLintAndLychee.ps1 -IncludeSourceMaterials
+.\tools\psscripts\sync-assistant-mirrors.ps1 -VerifyOnly
 ```
 
----
-
-### Repo Stats / Utilities
-
-- `Get-RepoStats.ps1`
-- `Get-FileStats.ps1`
-- `Get-MarkdownSummary.ps1`
-- `Compare-DocFiles.ps1`
-- `Find-DuplicateContent.ps1`
-
----
-
-### Diagram Management
-
-#### `Export-Diagrams.ps1`
-
-Exports all Mermaid diagram source files (`.mmd`) to PNG format with consistent configuration.
-
-**Usage:**
+After governance edits:
 
 ```powershell
-# Export all diagrams with default settings
-.\tools\psscripts\Export-Diagrams.ps1
-
-# Custom path and settings
-.\tools\psscripts\Export-Diagrams.ps1 -DiagramsPath "docs\diagrams" -Width 2560 -BackgroundColor "white" -Scale 2
-
-# Export and automatically stage PNG files for git
-.\tools\psscripts\Export-Diagrams.ps1 -StageForGit
+.\tools\psscripts\sync-assistant-mirrors.ps1
 ```
 
-**Parameters:**
-
-- `-DiagramsPath`: Path to diagrams directory (default: `docs\diagrams`)
-- `-Width`: PNG width in pixels (default: 1920)
-- `-BackgroundColor`: Background color (default: `white`, use `transparent` for dark mode)
-- `-Scale`: Scale factor for retina displays (default: 2)
-- `-StageForGit`: Automatically stage exported PNG files for git commit
-
-**Requirements:**
-
-- Mermaid CLI installed: `npm install -g @mermaid-js/mermaid-cli`
-- Node.js installed
-- Configuration file: `docs/diagrams/mermaid-config.json` (optional but recommended)
-
-**Output:**
-
-- Generates `.png` files alongside `.mmd` source files
-- Uses high-resolution (1920px default) for professional quality
-- Reports total file size and success count
-
----
-
-### One-off Maintenance
-
-#### `Convert-SourceMaterialToMarkdown.ps1`
-
-Batch-converts **PDF**, **HTML**, **PPTX**, and **Word (DOCX/DOC)** under `source-material/` to colocated `.md` files via `pdf_to_md.py`, `html_to_md.py`, `pptx_to_md.py`, and `docx_to_md.py`.
-
-Legacy `.doc` files use pandoc when supported; on Windows the script falls back to **Microsoft Word COM** (Word must be installed).
+Markdown lint only / Lychee only:
 
 ```powershell
-.\tools\psscripts\Convert-SourceMaterialToMarkdown.ps1
-```
-
----
-
-## 🚀 Quick Start
-
-```powershell
-.\tools\psscripts\Quick-HealthCheck.ps1
-.\tools\psscripts\Validate-FileReferences.ps1
-.\tools\psscripts\Run-MarkdownLintAndLychee.ps1
-
-# Run checks independently
 .\tools\psscripts\Run-MarkdownLintAndLychee.ps1 -MarkdownOnly
 .\tools\psscripts\Run-MarkdownLintAndLychee.ps1 -LycheeOnly
 ```
 
 ---
 
-## 🔗 Related Documentation
+## Optional utilities
 
-Cursor rule files (`.cursor/rules/*.mdc`) are IDE-local and excluded from CI link checks. Use these public references instead:
+| Script | Purpose |
+| ------ | ------- |
+| `Get-RepoStats.ps1` / `Get-FileStats.ps1` | Repo and file metrics |
+| `Get-MarkdownSummary.ps1` | Markdown inventory |
+| `Export-Diagrams.ps1` | Export `.mmd` → PNG under `assets/diagrams/` |
+| `Test-ContentCompliance.ps1` | Policy checks via `RepoConfig.psd1` |
+| `Run-AllPSScripts.ps1` | Batch runner (review before use) |
 
-- [Repository structure](../../docs/01_repository-structure.md) — four-layer companions, naming, and quiz conventions
-- [CLAUDE.md](../../CLAUDE.md) — governance index, CI commands, and key rule-file table
-- [Agent skills and CI](../../docs/agent-skills.md) — local checks aligned with GitHub Actions
+`Convert-SourceMaterialToMarkdown.ps1` is for optional `source-material/` staging — not used
+by default in this speaker portfolio repo.
+
+---
+
+## Related docs
+
+- [Folder layout](../../docs/01-folder-structure.md)
+- [CI checks skill](../../.github/skills/ci-checks/SKILL.md)
+- [CONTRIBUTING.md](../../CONTRIBUTING.md)

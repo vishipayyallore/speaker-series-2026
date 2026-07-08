@@ -46,7 +46,8 @@ jobs:
             "docs/**/*.md" \
             "talks/**/*.md" \
             "templates/**/*.md" \
-            "src/**/*.md" | tee .ci-logs/01-markdownlint.log
+            "src/**/*.md" \
+            "tools/**/*.md" | tee .ci-logs/01-markdownlint.log
       - name: Upload documentation CI logs artifact
         if: always()
         uses: actions/upload-artifact@v4
@@ -86,7 +87,7 @@ jobs:
           # Use the existing lychee.toml configuration
           args: >-
             --config lychee.toml --cache --max-cache-age 1d
-            README.md CONTRIBUTING.md AGENTS.md CLAUDE.md docs/**/*.md talks/**/*.md templates/**/*.md src/**/*.md
+            README.md CONTRIBUTING.md AGENTS.md CLAUDE.md docs/**/*.md talks/**/*.md templates/**/*.md src/**/*.md tools/**/*.md
           # Fail on broken links
           fail: true
         env:

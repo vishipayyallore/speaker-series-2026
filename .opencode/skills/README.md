@@ -11,13 +11,13 @@
 Edit `.github/skills/` first, then run:
 
 ```powershell
-./scripts/sync-assistant-mirrors.ps1
+./tools/psscripts/sync-assistant-mirrors.ps1
 ```
 
 ## Verify parity (PowerShell)
 
 ```powershell
-./scripts/sync-assistant-mirrors.ps1 -VerifyOnly
+./tools/psscripts/sync-assistant-mirrors.ps1 -VerifyOnly
 ```
 
 Or rely on CI: `.github/workflows/ci-skills-parity.yml`
