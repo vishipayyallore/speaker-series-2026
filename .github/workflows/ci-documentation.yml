@@ -40,16 +40,13 @@ jobs:
           # Run markdownlint-cli2 on the canonical documentation surfaces.
           npx --yes markdownlint-cli2 \
             "README.md" \
+            "CONTRIBUTING.md" \
+            "AGENTS.md" \
+            "CLAUDE.md" \
             "docs/**/*.md" \
-            "src/**/*.md" \
-            "tools/**/*.md" \
-            "01-knowledge/**/*.md" \
-            "02-patterns/**/*.md" \
-            "03-labs/**/*.md" \
-            "04-projects/**/*.md" \
-            "05-playbooks/**/*.md" \
-            "06-research/**/*.md" \
-            "07-interview-prep/**/*.md" | tee .ci-logs/01-markdownlint.log
+            "talks/**/*.md" \
+            "templates/**/*.md" \
+            "src/**/*.md" | tee .ci-logs/01-markdownlint.log
       - name: Upload documentation CI logs artifact
         if: always()
         uses: actions/upload-artifact@v4
@@ -89,11 +86,7 @@ jobs:
           # Use the existing lychee.toml configuration
           args: >-
             --config lychee.toml --cache --max-cache-age 1d
-            README.md docs/**/*.md src/**/*.md tools/**/*.md
-            01-knowledge/**/*.md 02-patterns/**/*.md
-            03-labs/**/*.md 04-projects/**/*.md
-            05-playbooks/**/*.md 06-research/**/*.md
-            07-interview-prep/**/*.md
+            README.md CONTRIBUTING.md AGENTS.md CLAUDE.md docs/**/*.md talks/**/*.md templates/**/*.md src/**/*.md
           # Fail on broken links
           fail: true
         env:

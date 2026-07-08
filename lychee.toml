@@ -1,5 +1,5 @@
 # https://raw.githubusercontent.com/lycheeverse/lychee/master/lychee.example.toml
-# Lychee link checker configuration for Applied Engineering.
+# Lychee link checker configuration for Speaker Series 2026.
 verbose = "info"
 no_progress = true
 max_retries = 2
@@ -11,11 +11,11 @@ timeout = 20
 
 # Optional staged source material should be ignored by link scans when present.
 exclude_path = [
-  "source-material/**",
-  "docs/reviews/**",
   ".venv/**",
   ".cursor/**",
-  ".github/**"
+  ".github/**",
+  ".clinerules/**",
+  ".opencode/**"
 ]
 
 # Repo-relevant excludes only. Add a new entry here when a domain or URL

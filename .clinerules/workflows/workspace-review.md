@@ -1,7 +1,9 @@
-# Workspace review (Cline workflow)
+# Workspace review
 
-1. Read `.clinerules/skills/workspace-review.md`.
-2. Walk the checklist: structure, assistant parity, source-material, content spot-check.
-3. Return findings table and up to five next steps.
+Tags: `speaker-series-2026`, `audit`, `parity`
 
-Tags: `applied-engineering`, `audit`, `parity`
+1. Read `.github/skills/workspace-review/SKILL.md`
+2. Audit portfolio alignment and assistant mirror parity
+3. Report high / medium / low issues
+
+Run `./scripts/sync-assistant-mirrors.ps1` if mirrors are out of date.

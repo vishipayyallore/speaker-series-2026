@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 💬 Discussions
-    url: https://github.com/vishipayyallore/applied-engineering/discussions
-    about: Ask questions, share ideas, or discuss repository work
-  - name: 📚 Documentation
-    url: https://github.com/vishipayyallore/applied-engineering#readme
-    about: Check the README and repository documentation for more information
+  - name: GitHub Discussions
+    url: https://github.com/vishipayyallore/speaker-series-2026/discussions
+    about: Ask questions about talks and portfolio structure
+  - name: README
+    url: https://github.com/vishipayyallore/speaker-series-2026#readme
+    about: Speaker portfolio index

@@ -1,7 +1,9 @@
-# Run CI checks (Cline workflow)
+# Run CI checks locally
 
-1. Read `.clinerules/skills/ci-checks.md` (canonical: `.github/skills/ci-checks/SKILL.md`).
-2. Run from repository root with PowerShell.
-3. Return PASS/FAIL summary table to the user.
+Tags: `speaker-series-2026`, `ci`, `verify`
 
-Tags: `applied-engineering`, `ci`, `verify`
+1. Read `.github/skills/ci-checks/SKILL.md`
+2. Run checks from repository root (PowerShell)
+3. If skills changed, run `./scripts/sync-assistant-mirrors.ps1 -VerifyOnly`
+
+Report PASS/FAIL table.

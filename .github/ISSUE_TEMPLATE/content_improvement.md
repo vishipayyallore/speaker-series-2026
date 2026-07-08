@@ -1,50 +1,25 @@
 ---
-name: Content Improvement
-about: Suggest improvements to existing content
-title: '[CONTENT] '
+name: Talk Improvement
+about: Suggest improvements to a talk folder or portfolio doc
+title: '[TALK] '
 labels: enhancement, documentation
 assignees: ''
 ---
 
-## Description
+## Talk / doc
 
-A clear description of the content improvement you're suggesting.
+- **Folder or file:** `talks/…` or `docs/…`
+- **Talk type:** external index / in-repo demo
 
-## Content Location
+## Suggested change
 
-**File(s)**:
+What should be updated?
 
-- `path/to/file.md`
+## Why
 
-**Section(s)**:
+Attendee clarity, link accuracy, demo reproducibility, etc.
 
-- Section name or topic
+## Links
 
-## Current Content
-
-What is the current content or explanation? (Quote or describe)
-
-## Suggested Improvement
-
-What would you like to see changed or added?
-
-## Rationale
-
-Why is this improvement valuable?
-
-- Does it clarify a concept?
-- Does it fix an error?
-- Does it add missing information?
-- Does it improve implementation or workflow clarity?
-
-## Additional Context
-
-- **Content Type**: [Docs / Template / Prompt / Workflow / Utility / Config]
-- **Topic/Section**: [Relevant file, folder, or section name]
-- **Related Files**: Any related files or components
-
-## Examples (Optional)
-
-If you have examples, diagrams, or code snippets that would help, please include them.
-
----
+- External session doc (if Python):
+- Meetup event (if applicable):

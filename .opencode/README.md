@@ -1,45 +1,35 @@
-# OpenCode — Applied Engineering
+# OpenCode — Speaker Series 2026
 
-OpenCode plugin config for this repository. **Canonical sources:**
-`.github/copilot-instructions.md`, `.cursor/rules/`, `.github/skills/`, and
-`.github/agents/`.
+OpenCode plugin config. **Canonical:** `.github/copilot-instructions.md`, `.cursor/rules/`, `.github/skills/`, `.github/agents/`
+
+## Sync
+
+```powershell
+./scripts/sync-assistant-mirrors.ps1
+```
 
 ## Layout
 
 ```text
-01-knowledge/ … 07-interview-prep/   # learning pipeline
-docs/  src/  templates/  scripts/  tools/  sandbox/
-.github/  .cursor/  .claude/  .copilot/  .vscode/
+talks/  assets/  templates/  docs/  src/
 ```
-
-## Rules
-
-`rules/` mirrors `.cursor/rules/*.mdc` (project-scope + numbered `01`–`09`).
 
 ## Skills
 
-Same bundles as `.github/skills/` plus `workspace-review` — see `skills/README.md`.
+Same bundles as `.github/skills/`: `speaker-series`, `ci-checks`, `workspace-review`
 
 ## Agents
 
 | Agent | Use when |
 | --- | --- |
-| `agent-ci-verify` | After code, docs, or governance edits |
-| `content-quality-review` | Auditing pipeline teaching content |
-| `docs-originality-review` | Spot-checking doc rewrites |
+| `agent-ci-verify` | After governance edits |
+| `talk-content-review` | Talk folders and portfolio docs |
+| `docs-originality-review` | Import / repo fit review |
 
-## CI workflows
+## CI
 
-| Workflow | Scope |
-| --- | --- |
-| `ci-python.yml` | Tracked `.py` byte-compile |
-| `ci-documentation.yml` | Markdown lint |
-| `ci-skills-parity.yml` | `.github/skills/` ↔ `.cursor/skills/` mirror |
-
-Local runner: `skills/ci-checks/SKILL.md` (canonical: `.github/skills/ci-checks/SKILL.md`).
+`ci-python.yml`, `ci-documentation.yml`, `ci-skills-parity.yml`
 
 ## Package
 
 `package.json` pins `@opencode-ai/plugin` for local OpenCode integration.
-
-When editing governance, update canonical paths first, then resync this tree.

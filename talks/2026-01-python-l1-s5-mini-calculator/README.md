@@ -8,21 +8,32 @@
 
 ## Abstract
 
-Hands-on mini project: build a CLI calculator with input validation, branching, divide-by-zero handling, and PEP 8 style review.
+Hands-on mini project: CLI calculator with input validation, branching, divide-by-zero handling, and PEP 8 style review. Integrates Sessions 1–4 from the practice repo.
 
 ---
 
-## Canonical materials (external repo)
+## Demo script
 
-All agenda, demo flow, exercises, and acceptance criteria live in the practice repo — not duplicated here.
+**Canonical session doc** (agenda, demo flow, acceptance checklist):
 
-| Resource | Link |
-| -------- | ---- |
-| Session doc (demo script) | [docs/sessions/L1/S5.md](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md) |
-| Practice code | [src/L1/S5/](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S5) |
-| Repository | [vishipayyallore/python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice) |
+https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md
 
-**Run from repo root:**
+---
+
+## Code
+
+**Practice files** (`src/L1/S5/`):
+
+https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S5
+
+| File | Purpose |
+| ---- | ------- |
+| `01_PEP8_naming_and_spacing.py` | PEP 8 examples |
+| `02_del_and_bool_arithmetic.py` | `del` and bool arithmetic |
+| `03_simple_calculator.py` | Main calculator project |
+| `calculator_utils.py` | `is_valid_number_text()` helper |
+
+**Run from practice repo root:**
 
 ```bash
 git clone https://github.com/vishipayyallore/python-fundamentals-in-practice.git

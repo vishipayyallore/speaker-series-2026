@@ -1,57 +1,21 @@
 ---
 title: Cursor Rules Index
-version: 1.0
-last_updated: 2026-05-03
-project: Applied Engineering
+project: Speaker Series 2026
 ---
 
-This folder contains the Cursor rule files (`.mdc`) used to guide edits in this repository.
+Cursor rule files (`.mdc`) for this repository. Mirrors: `.clinerules/rules/*.md`, `.opencode/rules/*.md`.
 
----
+| File | Purpose |
+| ---- | ------- |
+| `project-scope.mdc` | Scope and anti-contamination (always applied) |
+| `01_educational-content-rules.mdc` | Talk and portfolio content rules |
+| `02_repository-structure.mdc` | Folder layout |
+| `03_quality-assurance.mdc` | QA checklist |
+| `04_markdown-standards.mdc` | Markdown conventions |
+| `05_primary-directives.mdc` | Project focus |
+| `06_source_material_rules.mdc` | External Python curriculum policy |
+| `07_file-naming-conventions.mdc` | Talk and asset naming |
+| `08_copilot-instructions-extract.mdc` | Copilot instructions summary |
+| `09_core-agent-role.mdc` | Professional stance |
 
-## 📋 Rule Files
-
-### `project-scope.mdc`
-
-Repository scope and anti-contamination rules (always applied)
-
-### `01_educational-content-rules.mdc`
-
-Core principles for repository-specific documentation and imported content cleanup
-
-### `02_repository-structure.mdc`
-
-Repository structure guidance for the current workspace
-
-### `03_quality-assurance.mdc`
-
-Quality checklist and verification expectations
-
-### `04_markdown-standards.mdc`
-
-Markdown and documentation standards
-
-### `05_primary-directives.mdc`
-
-Project focus and documentation accuracy rules
-
-### `06_source_material_rules.mdc`
-
-Rules for handling read-only imported material when such folders exist
-
-### `07_file-naming-conventions.mdc`
-
-File naming conventions for this repository, including two-digit intra-folder
-learning order for sequenced topic bundles (`01-topic.md`, …; `README.md` stays unnumbered)
-
-### `08_copilot-instructions-extract.mdc`
-
-Project-specific Copilot instruction summary
-
-### `09_core-agent-role.mdc`
-
-Single professional stance (senior software engineer and architect) and Cursor workflow
-
----
-
-**Note**: Cursor automatically loads all `.mdc` files in `.cursor/rules/`.
+After editing rules, run `scripts/sync-assistant-mirrors.ps1`.

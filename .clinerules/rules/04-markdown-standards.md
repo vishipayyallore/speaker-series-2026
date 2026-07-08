@@ -1,8 +1,8 @@
-# Markdown Standards
+﻿# Markdown Standards
 
 ## Documentation Files
 
-- Use proper heading hierarchy (H1 → H2 → H3)
+- Use proper heading hierarchy (H1 â†’ H2 â†’ H3)
 - Include code fence language specifications
 - Use UTF-8 encoding
 - Keep line length reasonable (~120 chars)
@@ -20,4 +20,3 @@
 - Verify all file references point to existing files
 - Update references when files are moved/renamed
 - Remove imported references that point to another repository
-

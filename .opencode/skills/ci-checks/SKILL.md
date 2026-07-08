@@ -1,31 +1,26 @@
 ---
 name: ci-checks
-description: Run CI-aligned quality checks locally for Applied Engineering. Use when asked to run CI, lint, test, or verify docs, tracked Python, and mirrored skills.
-license: MIT
-compatibility: opencode
+description: Run CI-aligned quality checks locally for Speaker Series 2026. Use when asked to run CI, lint, test, or verify docs, tracked Python, and mirrored skills.
 ---
 
-# CI Checks — Local Runner (Applied Engineering)
+# CI Checks — Local Runner (Speaker Series 2026)
 
-Use the workflow files under `.github/workflows/` as the source of truth.
-
-## CI-aligned checks (required)
-
-- Python byte-compilation for tracked `.py` files (`ci-python.yml`)
-- Markdown lint for documentation (`ci-documentation.yml`)
-- Skills parity between `.github/skills/` and `.cursor/skills/` (`ci-skills-parity.yml`)
-
-The repository may temporarily contain no Python files. Checks should skip
-cleanly in that case.
-
-## Prerequisites
-
-- **Python 3.12** (or the version in `.python-version`)
-- **Node.js 20.x** for `markdownlint-cli2`
+Use `.github/workflows/` as the source of truth.
 
 ## Required checks
 
-Report each as PASS or FAIL with output.
+| # | Check | Workflow |
+| - | ----- | -------- |
+| 1 | Python byte-compile | `ci-python.yml` |
+| 2 | Markdown lint | `ci-documentation.yml` |
+| 3 | Skills parity | `ci-skills-parity.yml` (when skills changed) |
+
+## Prerequisites
+
+- **Python 3.12** (or version in `.python-version`)
+- **Node.js 20.x** for `markdownlint-cli2`
+
+## Commands (PowerShell, repo root)
 
 ### 1. Python byte-compile
 
@@ -36,55 +31,29 @@ if ($py.Count -gt 0) { python -m py_compile @py } else { Write-Host 'No tracked 
 
 ### 2. markdownlint-cli2
 
-Same globs as `ci-documentation.yml` (`.archive/**` is excluded via
-`.markdownlint-cli2.yaml` ignores):
+Same globs as `ci-documentation.yml`:
 
 ```powershell
-npx --yes markdownlint-cli2 "README.md" "docs/**/*.md" "src/**/*.md" "tools/**/*.md" "01-knowledge/**/*.md" "02-patterns/**/*.md" "03-labs/**/*.md" "04-projects/**/*.md" "05-playbooks/**/*.md" "06-research/**/*.md" "07-interview-prep/**/*.md"
+npx --yes markdownlint-cli2 `
+  "README.md" "CONTRIBUTING.md" "AGENTS.md" "CLAUDE.md" `
+  "docs/**/*.md" "talks/**/*.md" "templates/**/*.md" "src/**/*.md"
 ```
 
-### 3. Skills parity (when skills changed)
+### 3. Skills parity
 
-See the PowerShell snippet in `.github/skills/README.md`, or push and rely on
-`ci-skills-parity.yml`.
+Run `scripts/sync-assistant-mirrors.ps1 -VerifyOnly` or see `.github/skills/README.md`.
 
-## Optional local checks
-
-### Lychee (link checker)
-
-If the `lychee` CLI is installed and `lychee.toml` exists:
+## Optional: Lychee
 
 ```powershell
-lychee --config lychee.toml --cache --max-cache-age 1d README.md docs/**/*.md src/**/*.md tools/**/*.md 01-knowledge/**/*.md 02-patterns/**/*.md 03-labs/**/*.md 04-projects/**/*.md 05-playbooks/**/*.md 06-research/**/*.md 07-interview-prep/**/*.md
+lychee --config lychee.toml --cache --max-cache-age 1d `
+  README.md CONTRIBUTING.md docs/**/*.md talks/**/*.md templates/**/*.md src/**/*.md
 ```
-
-### Python style (only when `src/` has tracked `.py` files)
-
-Run only if you have project dev tools installed locally:
-
-```powershell
-$py = @(git ls-files 'src/**/*.py')
-if ($py.Count -eq 0) { Write-Host 'No tracked src Python; skipping style checks.'; return }
-python -m isort --check-only --diff @py
-python -m black --check --line-length 127 --target-version py312 @py
-python -m flake8 @py --count --select=E9,F63,F7,F82 --show-source --statistics
-```
-
-### Tests (only when `tests/` exists)
-
-```powershell
-if (Test-Path tests) { python -m pytest tests/ -q --tb=short }
-```
-
-## On failure
-
-- **py_compile / markdownlint:** report file and line when available.
-- **Skills parity:** sync `.github/skills/` to `.cursor/skills/` per `.github/skills/README.md`.
 
 ## Summary format
 
 | # | Check | Status | Notes |
-|---|--------|--------|-------|
+| - | ----- | ------ | ----- |
 | 1 | py_compile | | |
 | 2 | markdownlint | | |
 | 3 | skills parity | | optional unless skills changed |

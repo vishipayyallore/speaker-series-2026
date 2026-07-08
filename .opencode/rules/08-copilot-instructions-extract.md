@@ -1,39 +1,28 @@
-# Copilot Instructions Extract
+﻿# Copilot Instructions Extract
 
-Source: `.github/copilot-instructions.md`
+Source: `.github/copilot-instructions.md`  
+Repository: `speaker-series-2026`
 
 ## Core role
 
-Act as a Senior Software Engineer and Systems Architect focused on practical,
-repository-specific engineering work.
-
-## Repository context
-
-- This repo is `applied-engineering`.
-- Keep `README.md` aligned with the repo's current or intended structure.
-- Remove imported repo assumptions before leaving files in place.
+Senior Software Engineer and Systems Architect â€” speaker portfolio and talk assets.
 
 ## Structure
 
-- `docs/` for shared documentation assets
-- `src/` for code, examples, experiments, or topic-oriented work
-- assistant config under `.github/`, `.cursor/`, `.claude/`, `.copilot/`, and `.vscode/`
+- `talks/` â€” session metadata and optional in-repo demos
+- `assets/` â€” shared media
+- `templates/` â€” in-repo talk scaffolding
+- `docs/` â€” cross-talk reference
+- External Python: [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice)
 
-## Numbered topic bundles
+## Rules
 
-- Prefix sequenced content files with `01-`, `02-`, … in incremental learning order.
-- Leave folder `README.md` unnumbered; use it as the ordered index.
-- Update README links and sibling cross-links when renumbering.
+- Thin README for external curriculum talks; full template set for in-repo demos
+- No Applied Engineering / learning-pipeline assumptions
+- Sync mirrors via `scripts/sync-assistant-mirrors.ps1`
+- Skills canonical path: `.github/skills/`
 
-## Source material rules
+## Quality
 
-- Never modify, overwrite, or delete files in `source-material/` when it exists.
-- Keep converted artifacts next to their source inputs.
-- Publish repo-specific derived content into the correct destination for this repo.
-
-## Quality rules
-
-- Keep documentation, prompts, and templates aligned with the current project.
-- Write clear code with meaningful names and portable paths.
-- Validate docs, workflows, and mirrored skills after editing them.
-- Remove stale repo names, links, and labels.
+- CI: `ci-python.yml`, `ci-documentation.yml`, `ci-skills-parity.yml`
+- Local: `.github/skills/ci-checks/SKILL.md`

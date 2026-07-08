@@ -1,160 +1,112 @@
-# GitHub Copilot Instructions for Applied Engineering
+# GitHub Copilot Instructions — Speaker Series 2026
 
-**Version**: 1.0
-**Last Updated**: May 31, 2026
-**Repository**: `applied-engineering`
+**Version**: 1.0  
+**Last Updated**: July 8, 2026  
+**Repository**: `speaker-series-2026`
 
-**Environment**: Windows, PowerShell, Markdown-first, optional Python and Node.js tooling
+**Environment**: Windows, PowerShell, Markdown-first, optional Python (Bedrock demos)
 
 ---
 
 ## Scope
 
-This repository is an Applied Engineering workspace for practical notes,
-experiments, reference implementations, automation, and architecture-oriented
-documentation. Keep all assistant-facing files aligned with the current
-repository purpose and remove imported assumptions from unrelated repositories.
+This repository is a **speaker portfolio and talk index** for Dot Net Learners House
+and related meetups. It centralizes talk metadata, delivery notes, in-repo demo code
+(for example AWS Bedrock + Cline), and links to external curriculum
+([python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice)).
+
+Remove imported assumptions from unrelated repositories (for example Applied
+Engineering, learning pipeline `01-knowledge/` … `07-interview-prep/`).
 
 ## Core role
 
-Act as a Senior Software Engineer and Systems Architect helping shape and
-maintain a pragmatic engineering knowledge base.
+Act as a Senior Software Engineer and Systems Architect helping maintain a clear
+speaker portfolio and reproducible talk assets.
 
-You should optimize for:
+Optimize for:
 
-- practical implementation over generic theory
-- accurate repository-specific documentation
-- readable, maintainable examples and utilities
-- lightweight automation that matches the actual repo state
-- fast detection and removal of cross-repo contamination
+- accurate talk indexing and portfolio README
+- minimal duplication of external curriculum
+- self-contained in-repo demos under `talks/{id}/`
+- assistant mirror parity across `.github/`, `.cursor/`, `.claude/`, `.clinerules/`, `.opencode/`, `.copilot/`
+- fast detection of cross-repo contamination
 
 When solving problems:
 
-1. Clarify the target outcome.
-2. Identify the nearest controlling file, workflow, or template.
+1. Clarify the target outcome and owning surface (`talks/`, `assets/`, `docs/`, assistant config).
+2. Identify the nearest controlling file or template.
 3. Implement the smallest coherent change.
 4. Validate with the narrowest relevant check.
 
-## Repository purpose
-
-Use this repository to capture applied engineering work such as:
-
-- architecture notes and references
-- experiments and prototypes
-- reusable snippets or utilities under `src/`
-- documentation, prompts, and automation for the workspace itself
-
 ## Repository structure
 
-Keep `README.md` and `docs/01-folder-structure.md` aligned with the actual
-repository layout.
+Keep `README.md` and `docs/01-folder-structure.md` aligned with the actual layout.
 
-The repository uses a **three-category folder model**:
+```text
+speaker-series-2026/
+├── talks/        # One folder per session (metadata + optional in-repo demo code)
+├── assets/       # Slides, diagrams, images, recordings (shared media)
+├── templates/    # Copy before each new in-repo talk
+├── docs/         # Cross-talk reference (profile, FAQ, roadmap)
+├── src/          # Optional repo-wide utilities only — not per-talk demos
+└── .github/ …    # Assistant and CI configuration
+```
 
-### 1. Learning pipeline (numbered, 01–07)
+### Talk folder conventions
 
-Each folder is a stage in the progression from theory to production readiness.
+- Prefix: `YYYY-MM-short-description` (example: `2026-07-amazon-bedrock-cline-agentic`)
+- **External curriculum talks** (Python): thin `README.md` only — link to session doc and code in the external repo
+- **In-repo demo talks** (Bedrock): full template set — `README.md`, `agenda.md`, `demo-script.md`, `references.md`, `links.md`, plus `src/`, `prompts/`, etc. as needed
 
-| Folder               | Stage    | Question answered                           |
-|----------------------|----------|---------------------------------------------|
-| `01-knowledge/`      | Learn    | What is it?                                 |
-| `02-patterns/`       | Pattern  | How is this problem usually solved?         |
-| `03-labs/`           | Practice | Can I make it work?                         |
-| `04-projects/`       | Apply    | Can I use this to solve a business problem? |
-| `05-playbooks/`      | Operate  | How do I run this in production?            |
-| `06-research/`       | Explore  | What is emerging and worth exploring?       |
-| `07-interview-prep/` | Defend   | Can I explain and defend my knowledge?      |
+### External Python curriculum
 
-### 2. Shared reference material
+Do **not** copy lab code or session markdown from
+[python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice).
+Index only via links (for example `docs/sessions/L1/S5.md`).
 
-- `docs/` — shared documentation, diagrams, and references
-- `assets/` — diagrams, images, screenshots, datasets
-- `source-material/` — read-only staging for imported content
+## Documentation rules
 
-### 3. Repository infrastructure (no numeric prefix)
-
-- `templates/` — content creation accelerators used across all stages
-- `scripts/` — automation, indexing, setup
-- `tools/` — repository tooling (e.g. `Export-FolderStructure.ps1`)
-- `sandbox/` — throwaway experiments and spikes
-- `src/` — owned code, examples, and implementation slices
-- `.github/`, `.cursor/`, `.claude/`, `.copilot/`, `.vscode/` — agent and editor configuration
-
-When adding new content, place it in the pipeline stage folder that best
-matches its purpose. When adding tooling or scaffolding, use the
-infrastructure folders.
-
-## Documentation and content rules
-
-- Rewrite imported material so it fits this repository before making it canonical.
-- Remove old repository names, links, labels, and workflow assumptions.
-- Keep explanations concise, concrete, and implementation-aware.
-- Prefer original synthesis over pasted material.
-
-### Teaching quality (knowledge, patterns, and interview prep)
-
-When authoring or reviewing Markdown in `01-knowledge/`, `02-patterns/`, or `07-interview-prep/`:
-
-- **Minimum**: For each concept, provide at least one of **(A)** a plain-English explanation or **(B)** a concrete worked example.
-- **Beginner-friendly default**: Simple wording first, technical precision second. Define specialist terms on first use.
-- **Layman explanation**: Everyday language before formal definitions or jargon.
-- **Business use case**: Connect the concept to at least one realistic engineering scenario.
-- **Formulas and notation**: Do not leave notation unexplained — add a plain-English line and a numeric walkthrough.
-- **Diagrams**: Where a concept benefits from visual explanation, use a Mermaid diagram. Follow every Mermaid block with an ASCII text fallback for environments that do not render it.
-
-### Topic layering
-
-The same topic often appears across multiple pipeline stages — each for a
-different purpose. This is intentional, not duplication:
-
-| Stage    | Role for the topic                    |
-|----------|---------------------------------------|
-| Knowledge | Concept — what it is and why it exists |
-| Patterns | Reusable solution — how it is applied  |
-| Labs     | Implementation — can I build it?       |
-| Projects | Application — does it solve a real problem? |
-| Interview | Defense — can I explain trade-offs?   |
-
-Example: Clean Architecture appears in `01-knowledge/software-architecture/`,
-`02-patterns/architectural-patterns/`, `03-labs/architecture/`, and
-`04-projects/architecture-case-studies/` — all correct, all distinct.
-
-Do not consolidate these into a single top-level topic folder. The stage
-separation is the learning value.
-
-### Intra-folder file numbering
-
-When a topic folder contains multiple related notes meant to be read in sequence:
-
-- Prefix content files with two-digit order: `01-topic-name.md`, `02-topic-name.md`, …
-- Assign numbers by **incremental learning order** (`01` = entry point).
-- Keep `README.md` unnumbered; list ordered notes there under `Read in order:`.
-- Never use a `00-` or `00_` prefix.
-- When renumbering, update the folder README and all sibling cross-links.
-- Prefer hyphen separators for new bundles; keep underscore style within subtrees that already use it (for example some system-design packs).
-
-See `.cursor/rules/07_file-naming-conventions.mdc` for the full convention.
+- Rewrite imported material before treating it as canonical.
+- Keep root README as the speaker portfolio table (index, upcoming, completed).
+- Use consistent talk README sections for in-repo talks: Title → Abstract → Audience → Prerequisites → Agenda → Demo → Hands-on Code → Slides → Recording → References → Questions
+- Prefer tables and links over duplicating long-form curriculum.
 
 ## Code guidance
 
-- Write clear, readable code.
-- Use meaningful names and portable paths.
-- Keep examples and utilities easy to run locally.
-- Avoid over-engineering when the repository only needs lightweight scaffolding.
+- Per-talk demo code lives under `talks/{id}/src/`, not repo root `src/`.
+- Use portable paths (`pathlib`, relative paths).
+- Bedrock demos: never commit secrets; use `.env` from `.env.example`.
+- Keep Python samples minimal and runnable.
 
-## Verification guidance
+## Verification
 
-- Use PowerShell syntax for local commands when commands are needed.
-- Documentation checks should align with `.github/workflows/ci-documentation.yml`.
-- Python checks should align with `.github/workflows/ci-python.yml`.
-- When changing mirrored skills, keep `.github/skills/` and `.cursor/skills/` identical.
-- When changing repository guidance, update prompts, templates, and rules together.
+- **Python:** `ci-python.yml` — byte-compile all tracked `.py` files
+- **Docs:** `ci-documentation.yml` — markdownlint on portfolio surfaces
+- **Skills:** `ci-skills-parity.yml` — `.github/skills/` ↔ `.cursor/skills/` identical
+- **Mirrors:** After editing canonical files, sync `.clinerules/` and `.opencode/` per `scripts/sync-assistant-mirrors.ps1`
 
-## Prompting guidance
+## Assistant parity (canonical → mirrors)
 
-When asking Copilot for help:
+| Canonical | Mirrors |
+| --- | --- |
+| `.github/copilot-instructions.md` | extract in `.cursor/rules/08_copilot-instructions-extract.mdc`; `.clinerules/rules/08-copilot-instructions-extract.md` |
+| `.github/skills/` | `.cursor/skills/`, `.opencode/skills/` (byte-identical SKILL.md) |
+| `.github/agents/` | `.clinerules/agents/`, `.opencode/agents/` |
+| `.cursor/rules/*.mdc` | `.clinerules/rules/*.md`, `.opencode/rules/*.md` |
+| `AGENTS.md`, `CLAUDE.md` | `.clinerules/AGENTS.md`, `.claude/CLAUDE.md` |
 
-- name the file, folder, workflow, or behavior to change
-- describe the desired end state, not just the symptom
-- include repository-specific constraints
-- ask for verification when the change affects docs, CI, or automation
+**Edit order:** `.github/` and `.cursor/rules/` first → run sync script → verify parity.
+
+## Bundled skills
+
+- `speaker-series` — domain context for this repository
+- `ci-checks` — local commands aligned with CI workflows
+- `workspace-review` — structure, mirror parity, contamination audit
+
+## Subagents
+
+| Agent | Use when |
+| --- | --- |
+| `agent-ci-verify` | After code, docs, or governance edits |
+| `talk-content-review` | Reviewing talk folders, templates, portfolio docs |
+| `docs-originality-review` | Spot-checking imports for repo fit |

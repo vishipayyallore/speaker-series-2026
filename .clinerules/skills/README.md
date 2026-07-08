@@ -1,11 +1,11 @@
-# Agent skills (Cline mirror)
+# Bundled skills (Cline stubs)
 
-Canonical source: `.github/skills/`. Edit there first, then resync this folder.
+Canonical SKILL.md files: `.github/skills/`
 
-| Skill | Canonical |
+| Stub | Canonical |
 | --- | --- |
-| `applied-engineering.md` | `.github/skills/applied-engineering/SKILL.md` |
+| `speaker-series.md` | `.github/skills/speaker-series/SKILL.md` |
 | `ci-checks.md` | `.github/skills/ci-checks/SKILL.md` |
 | `workspace-review.md` | `.github/skills/workspace-review/SKILL.md` |
 
-**CI:** Pushes that touch skills run `.github/workflows/ci-skills-parity.yml` (`.github` ↔ `.cursor`).
+Regenerate stubs: `./scripts/sync-assistant-mirrors.ps1`

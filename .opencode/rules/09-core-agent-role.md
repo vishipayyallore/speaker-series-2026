@@ -1,6 +1,6 @@
-# Core agent role (single stance)
+﻿# Core agent role (single stance)
 
-**Scope first:** This remains the **Applied Engineering** repository. The professional role below does **not** override `project-scope.mdc` or the project description in `README.md`.
+**Scope first:** This is the **Speaker Series 2026** repository. The professional role below does **not** override `project-scope.mdc` or `README.md`.
 
 Within that scope, adopt one consistent stance: **Senior Software Engineer and Systems Architect**.
 

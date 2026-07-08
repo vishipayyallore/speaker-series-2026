@@ -2,41 +2,31 @@
 
 ## Coverage
 
-- [ ] Code, examples, or experiments (`src/**`, `03-labs/**`, `04-projects/**`)
-- [ ] Documentation (`README.md`, `docs/**`)
-- [ ] Interview prep or templates (`07-interview-prep/**`, `templates/**`)
-- [ ] Prompts, skills, or assistant rules (`.github/**`, `.cursor/**`, `.claude/**`)
-- [ ] Editor or local task config (`.vscode/**`, `.copilot/**`)
-- [ ] Top-level repo metadata (`AGENTS.md`, `CLAUDE.md`, `LICENSE`, `.gitignore`)
-
-## Area
-
-<!-- e.g. docs, workflows, prompts, experiments, utilities -->
+- [ ] Talk content (`talks/**`, `templates/**`)
+- [ ] Portfolio docs (`README.md`, `docs/**`, `CONTRIBUTING.md`)
+- [ ] In-repo demo code (`talks/**/src/**`)
+- [ ] Assistant config (`.github/**`, `.cursor/**`, `.claude/**`, `.clinerules/**`, `.opencode/**`)
+- [ ] CI workflows (`.github/workflows/**`)
 
 ## What this PR covers
 
-Short description of the change and why it belongs in this repository.
+Short description and why it belongs in speaker-series-2026.
 
 ## Checklist
 
-- [ ] Matches the repo scope in `README.md`
-- [ ] Removes or avoids copied cross-repo assumptions
-- [ ] Uses repository-specific wording where imported content was involved
-- [ ] Python is readable and uses portable paths if code was touched
-- [ ] Links, labels, and metadata point to this repository
+- [ ] Root README talk table updated if talks changed
+- [ ] Python content links out (no duplicated curriculum)
+- [ ] No Applied Engineering / learning-pipeline references introduced
+- [ ] `scripts/sync-assistant-mirrors.ps1` run if rules/skills/agents changed
+- [ ] Portable paths; no secrets committed
 
 ## Type of change
 
-- [ ] Bug fix
-- [ ] New documentation or implementation content
-- [ ] Documentation or meta cleanup
-- [ ] Refactor with no intended meaning change
-- [ ] CI or tooling
-
-## Files touched
-
-- `path/to/file`
+- [ ] New or updated talk index
+- [ ] In-repo demo code
+- [ ] Portfolio / docs
+- [ ] Assistant or CI governance
 
 ## Related issues
 
-Closes #(issue) / Related to #(issue)
+Closes #(issue)

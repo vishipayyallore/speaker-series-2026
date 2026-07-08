@@ -1,15 +1,12 @@
-# Repository skills (Applied Engineering)
+# Repository skills (Speaker Series 2026)
 
-This file is local to `applied-engineering`. It complements `.cursor/rules/*.mdc` and `.github/copilot-instructions.md` with concise guidance for assistants editing this repo.
+**Canonical:** `.github/skills/`  
+**Cursor mirror:** `.cursor/skills/` (byte-identical — edit canonical only)
 
-**Project scope:** This repo is an Applied Engineering workspace. See `README.md` and `.cursor/rules/project-scope.mdc`.
+Bundled skills:
 
-**Core role:** `.cursor/rules/09_core-agent-role.mdc` and `.github/copilot-instructions.md` define the single professional stance used in this repo.
+- `speaker-series` — portfolio and talk context
+- `ci-checks` — local CI commands
+- `workspace-review` — audit checklist
 
-**Bundled agent skills:** `.github/skills/` is canonical and `.cursor/skills/` is the mirror. Bundles: `applied-engineering` and `ci-checks`.
-
-## CI expectations
-
-- Docs: Markdown lint and Lychee per `ci-documentation.yml`
-- Python: tracked-file compilation per `ci-python.yml`
-- Skills: mirror parity per `ci-skills-parity.yml`
+Sync: `scripts/sync-assistant-mirrors.ps1`

@@ -1,43 +1,34 @@
-# Repository Structure
+﻿# Repository Structure
 
-**Project**: Applied Engineering
+**Project:** Speaker Series 2026
 
 ## Primary layout
 
-- `README.md` — repository overview and current structure
-- `docs/` — shared documentation and diagrams
-- `src/` — code, experiments, utilities, prototypes, or topic-oriented work
-- `.github/`, `.cursor/`, `.claude/`, `.copilot/`, `.vscode/` — tooling and assistant configuration
+```text
+talks/        â€” per-session metadata and talk-specific demo code
+assets/       â€” slides, diagrams, images, recordings
+templates/    â€” copy before each new in-repo talk
+docs/         â€” speaker profile, FAQ, roadmap, folder layout
+src/          â€” optional repo-wide utilities only
+.github/ â€¦    â€” assistant and CI configuration
+```
 
 ## Working rule
 
-Follow the local convention of the surface you are editing. If a subtree later
-adopts a stricter bundle pattern, document it in `README.md` and related
-assistant files before assuming it everywhere.
+Follow the convention of the surface you edit:
 
-## Topic bundle numbering
-
-Multi-file topic folders in the learning pipeline may use numbered content
-files to express read order:
-
-- `01-knowledge/ai-ml/mlops/` — example bundle with ordered notes
-- `07-interview-prep/system-design/02-multi-tenant-saas-platform/` — phased design pack
-
-Rules:
-
-- Number only sequenced content files; keep each folder `README.md` unnumbered.
-- Use two-digit prefixes in incremental learning order.
-- Prefer `NN-kebab-case.md`; match an existing underscore style within the same subtree if already established.
+- **External Python talks:** thin `README.md` linking out
+- **In-repo demos:** self-contained under `talks/{id}/`
+- **Shared media:** `assets/`, not scattered in talk folders
 
 ## Imported material
 
-1. Identify the intended destination in this repository
-2. Rewrite the imported content to match local naming and scope
-3. Remove stale references to the original repo
-4. Validate links, file references, and workflow assumptions
+1. Identify whether content belongs in this repo or the external Python repo
+2. Rewrite imported assistant config to match speaker-series scope
+3. Remove stale repo names, URLs, and folder models
+4. Run `scripts/sync-assistant-mirrors.ps1` after governance edits
 
 ## Guidance
 
-- Do not hardcode nonexistent folder models into templates or prompts.
-- Keep `README.md`, issue templates, prompts, and rules aligned with the actual repo state.
-- Prefer flexible, explicit structure over copied conventions from another repository.
+- Keep `README.md`, `docs/01-folder-structure.md`, and assistant files aligned
+- Do not add `01-knowledge/` â€¦ `07-interview-prep/` pipeline folders

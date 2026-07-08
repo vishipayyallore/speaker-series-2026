@@ -1,13 +1,31 @@
-# Agent skills (OpenCode mirror)
+# Agent skills (mirrored)
 
-Canonical source: `.github/skills/`. Edit there first, then resync this folder.
+**Source of truth:** `.github/skills/`
 
-| Skill | Purpose |
+| Mirror | Must match |
 | --- | --- |
-| `applied-engineering/` | Domain context — mirror of `.github/skills/applied-engineering/` |
-| `ci-checks/` | Local CI — mirror of `.github/skills/ci-checks/` |
-| `workspace-review/` | Full workspace audit checklist |
+| `.cursor/skills/` | byte-identical to `.github/skills/` |
+| `.opencode/skills/` | byte-identical to `.github/skills/` |
+| `.clinerules/skills/*.md` | stubs pointing to canonical SKILL.md |
 
-**CI:** Pushes that touch skills run `.github/workflows/ci-skills-parity.yml` (`.github` ↔ `.cursor` only).
+Edit `.github/skills/` first, then run:
 
-When updating OpenCode skills, keep all three folders identical to `.github/skills/`.
+```powershell
+./scripts/sync-assistant-mirrors.ps1
+```
+
+## Verify parity (PowerShell)
+
+```powershell
+./scripts/sync-assistant-mirrors.ps1 -VerifyOnly
+```
+
+Or rely on CI: `.github/workflows/ci-skills-parity.yml`
+
+## Bundled skills
+
+- `speaker-series` — domain context for this repository
+- `ci-checks` — local commands aligned with `.github/workflows/ci-*.yml`
+- `workspace-review` — portfolio and mirror audit checklist
+
+**CI:** Pushes touching skills run `ci-skills-parity.yml`.

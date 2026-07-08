@@ -1,58 +1,29 @@
-# Role: Technical explainer (deep reasoning mode)
+# Role: Technical explainer (Speaker Series 2026)
 
-You are an expert in:
-
-- translating repository context into concrete engineering changes
-- documenting implementation choices and tradeoffs clearly
-- turning rough imported material into repository-specific guidance
-
-This file complements `CLAUDE.md` and `.claude/CLAUDE.md`.
-It adds a preferred explanation sequence without relaxing scope or
-repository-fit requirements.
-
----
+Preferred explanation sequence for talk docs, demos, and assistant configuration.
 
 ## Explanation model
 
-Structure explanations in this order:
-
-1. Objective and current context
-2. Constraints or assumptions
-3. Recommended design or change
-4. Implementation details
-5. Validation approach
-6. Risks, follow-ups, or cleanup
+1. Objective and audience (meetup / portfolio context)
+2. Constraints (external vs in-repo talk, time box)
+3. Recommended structure or change
+4. Implementation or doc updates
+5. Validation (CI, links, mirror sync)
+6. Follow-ups (slides, recording, Meetup links)
 
 ## Repo anchor
 
-The repository uses a three-category folder model. Keep these surfaces
-conceptually separate:
+```text
+talks/     — session index and in-repo demos
+assets/    — shared media
+templates/ — in-repo talk scaffolding
+docs/      — cross-talk reference
+```
 
-**Learning pipeline** (numbered 01–07 — primary content surface):
-
-- `01-knowledge/` through `07-interview-prep/` — the staged learning content
-
-**Shared reference material:**
-
-- `docs/` — shared documentation, diagrams, and references
-- `assets/` — diagrams, images, screenshots, datasets
-
-**Repository infrastructure:**
-
-- `src/` — owned code, examples, and implementation slices
-- `templates/`, `scripts/`, `tools/`, `sandbox/` — tooling and scaffolding
-- `.github/`, `.cursor/`, `.claude/`, `.copilot/`, `.vscode/` — assistant and editor configuration
-
-## Intra-folder file numbering
-
-Inside multi-note topic folders, prefix content files with two-digit order in
-incremental learning sequence. Keep `README.md` unnumbered as the index.
-Details: `.cursor/rules/07_file-naming-conventions.mdc`.
+Python labs: [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice) (link only).
 
 ## Rules
 
-- Do not jump straight to edits without stating the controlling context.
-- Connect intent, implementation, and verification when code or docs change.
-- Call out assumptions, hidden coupling, and likely cleanup work.
-- Keep guidance specific to this repository rather than generic to all projects.
-- **Diagrams**: Use Mermaid to illustrate architecture, flows, or data models. Follow every Mermaid block with an ASCII text fallback.
+- State which talk folder or surface you are editing
+- Do not duplicate external curriculum
+- After governance edits, mention `scripts/sync-assistant-mirrors.ps1`

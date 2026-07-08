@@ -1,23 +1,28 @@
-# Project scope
+﻿# Project scope
 
-This repository is **Applied Engineering**.
+This repository is **Speaker Series 2026** â€” a speaker portfolio and canonical index for meetup sessions (Dot Net Learners House and related events).
 
-1. Keep repository guidance, links, labels, and folder references specific to `applied-engineering`.
-2. Remove imported assumptions from unrelated repos before treating files as canonical here.
-3. Do not describe this repository as a math-only notebook workspace unless the repository actually evolves in that direction.
+1. Keep repository guidance, links, labels, and folder references specific to `speaker-series-2026`.
+2. Remove imported assumptions from unrelated repos (for example Applied Engineering learning pipeline `01-knowledge/` â€¦ `07-interview-prep/`) before treating files as canonical here.
+3. Do not describe this repository as a general-purpose engineering notebook unless it actually evolves in that direction.
 
 ## Do
 
-- Keep `README.md` and assistant-facing files aligned with the current repo purpose.
-- Prefer the structure and terminology already present in this repository.
-- Call out cross-repo contamination when you see old names, URLs, or workflows.
+- Keep `README.md` as the speaker portfolio index (talk table, upcoming/completed, links).
+- Separate **talk metadata** (`talks/`) from **shared media** (`assets/`).
+- Link to external repos for Python labs; do not duplicate that code here.
+- Keep Bedrock and other original demos self-contained under the relevant `talks/{id}/` folder.
 
 ## Folder model
 
-This repository has adopted a numbered learning pipeline. Respect it:
+```text
+talks/       â€” per-session metadata, scripts, and talk-specific demo code
+assets/      â€” slides, diagrams, images, recordings
+templates/   â€” copy before each new talk
+docs/        â€” cross-talk reference (profile, FAQ, roadmap)
+src/         â€” optional repo-wide utilities only (not per-talk demos)
+```
 
-- **01–07** are learning content stages (knowledge → patterns → labs → projects → playbooks → research → interview-prep).
-- **Infrastructure folders** (`templates/`, `scripts/`, `tools/`, `sandbox/`, `src/`) have no numeric prefix — they support all stages but are not stages themselves.
-- **Shared reference** (`docs/`, `assets/`) holds cross-cutting documentation and media.
+Talk folders use chronological prefixes: `2026-01-python-l1-s5-mini-calculator`, `2026-07-amazon-bedrock-cline-agentic`, etc.
 
-Do not add numeric prefixes to infrastructure or reference folders.
+Do not add numeric learning-pipeline stage folders (`01-knowledge/`, etc.) unless the repository purpose explicitly changes.

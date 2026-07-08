@@ -1,36 +1,25 @@
-# Quality Assurance
+﻿# Quality Assurance
 
-## Code Quality Checklist
+## Documentation checklist
 
-### Python scripts
+- [ ] Root README talk table matches `talks/` folders
+- [ ] Python talks link to [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice)
+- [ ] No duplicated Python session markdown
+- [ ] Assistant files describe speaker-series scope (not Applied Engineering)
+- [ ] Mirror parity after governance edits (`sync-assistant-mirrors.ps1`)
 
-- [ ] Follows PEP 8 style guide.
-- [ ] Type hints used where they improve clarity.
-- [ ] Comments explain non-obvious logic.
-- [ ] No hardcoded paths (use `pathlib` or relative paths).
+## Python (Bedrock demos)
 
-### Documentation and config
+- [ ] Code under `talks/{id}/src/`
+- [ ] Portable paths; no hardcoded machine paths
+- [ ] `.env` not committed; `.env.example` documented
 
-- [ ] README and templates match the current repository.
-- [ ] Links and repo references point to the correct destination.
-- [ ] Imported names and labels from other repos are removed.
+## Automation
 
-## Automation checks
+- [ ] CI globs include `talks/` and `templates/`
+- [ ] Skills parity between `.github/skills/` and `.cursor/skills/`
 
-- [ ] Workflow names and summaries match the project purpose.
-- [ ] Local tasks and CI commands work with tracked files only when appropriate.
-- [ ] Mirror rules are preserved when `.github/skills/` and `.cursor/skills/` are both used.
+## Content review
 
-## Content review checklist
-
-- [ ] Imported text has been rewritten to fit this repo.
-- [ ] Examples and commands are relevant to the touched files.
-- [ ] Added guidance does not imply unsupported structure or tooling.
-
-## Documentation Quality
-
-- README.md must match actual implementation.
-- Usage guides must be accurate.
-- Code comments explain complex logic where needed.
-- File references and labels must remain internally consistent.
-
+- [ ] Talk links resolve
+- [ ] Meetup URLs current for upcoming sessions

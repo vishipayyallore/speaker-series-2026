@@ -32,8 +32,8 @@ Legend: ✅ = delivered or ready · — = not yet published
 
 | When     | Talk | Session doc |
 | -------- | ---- | ----------- |
-| Jan 2026 | L1 · S5 — Mini Project: Simple Calculator | [S5.md](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md) |
-| Feb 2026 | L1 · S6 — Loops & Iteration | [S6.md](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S6.md) |
+| Jan 2026 | L1 · S5 — Mini Project: Simple Calculator | [Demo script](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md) · [Code](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S5) |
+| Feb 2026 | L1 · S6 — Loops & Iteration | [Demo script](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S6.md) · [Code](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S6) |
 
 Index stubs: [S5 folder](./talks/2026-01-python-l1-s5-mini-calculator/) · [S6 folder](./talks/2026-02-python-l1-s6-loops/)
 

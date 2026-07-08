@@ -22,6 +22,16 @@ Thank you for helping grow the Speaker Series portfolio. This repository separat
 6. **Update the root [README.md](./README.md)** talk index table and Upcoming/Completed sections.
 7. **Optional:** add a row to [docs/meetup-history.md](./docs/meetup-history.md) after delivery.
 
+## Assistant configuration
+
+After editing `.github/skills/`, `.github/agents/`, or `.cursor/rules/`:
+
+```powershell
+./scripts/sync-assistant-mirrors.ps1
+```
+
+Canonical sources and mirror policy: [AGENTS.md](./AGENTS.md).
+
 ---
 
 ## Naming conventions

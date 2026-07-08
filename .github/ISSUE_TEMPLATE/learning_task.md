@@ -1,36 +1,29 @@
 ---
-name: Work task
-about: Plan or track a repository work slice
-title: '[TASK] '
-labels: enhancement
+name: New talk / session
+about: Plan or index a new meetup session
+title: '[TALK] '
+labels: documentation
 assignees: ''
 ---
 
-## Area
+## Session
 
-<!-- e.g. docs, prompts, workflows, experiments, utilities -->
+- **Title:**
+- **Date:**
+- **Type:** external curriculum / in-repo demo
 
-## Work surface
+## Folder name
 
-- [ ] Repository content under `01-knowledge/`, `02-patterns/`, `05-playbooks/`, or `06-research/`
-- [ ] Practice or delivery material under `03-labs/`, `04-projects/`, or `07-interview-prep/`
-- [ ] Implementation slice under `src/`
-- [ ] Documentation under `docs/`
-- [ ] Prompt, rule, or assistant config
-- [ ] CI, editor task, or automation file
-- [ ] Documentation or config cleanup
+Proposed: `talks/YYYY-MM-…`
 
-## Goal
+## Links
 
-<!-- What should be changed or built -->
+- Meetup event:
+- External session doc (if Python):
+- Code location:
 
-## Done criteria
+## Checklist
 
-- [ ] Imported wording is rewritten where content writing is involved
-- [ ] Validation is defined for the touched surface
-- [ ] Code is modular and named clearly if code is added
-- [ ] Links, labels, and repo metadata point to this repository
-
-## Notes
-
-<!-- Links to files, open questions -->
+- [ ] Talk folder created
+- [ ] Root README updated
+- [ ] Templates copied (if in-repo demo)
