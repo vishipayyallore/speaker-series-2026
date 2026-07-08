@@ -12,9 +12,9 @@ speaker-series-2026/
 ├── .env.example              # AWS Bedrock demo variables
 │
 ├── talks/
-│   ├── 2026-01-python-l1-s5-mini-calculator/   # S5 · delivered Jul 4, 2026
-│   ├── 2026-02-python-l1-s6-loops/             # S6 · delivered Jul 8, 2026
-│   └── 2026-07-amazon-bedrock-cline-agentic/  # Bedrock + Cline + agentic demo
+│   ├── 2026-07-04-python-l1-s5-mini-calculator/   # S5 · delivered Jul 4, 2026
+│   ├── 2026-07-08-python-l1-s6-loops/             # S6 · delivered Jul 8, 2026
+│   └── 2026-07-11-amazon-bedrock-cline-agentic/  # Bedrock + Cline + agentic demo
 │
 ├── assets/
 │   ├── slides/
@@ -42,7 +42,7 @@ speaker-series-2026/
 
 ## Design rules
 
-1. **One folder per talk** — chronological prefix `YYYY-MM-…` for automatic sorting.
+1. **One folder per talk** — delivery-date prefix `YYYY-MM-DD-…` for automatic sorting.
 2. **File set depends on talk type**:
    - **External curriculum** (Python): `README.md` only with links to session doc and code.
    - **In-repo demo** (Bedrock and similar): `README.md`, `agenda.md`, `demo-script.md`,

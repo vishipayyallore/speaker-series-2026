@@ -8,7 +8,7 @@ This repository separates **talk metadata** (under `talks/`) from **shared asset
 
 ## Adding a new talk
 
-1. **Pick a folder name** using `YYYY-MM-short-description` (example: `2026-04-mcp-from-scratch`).
+1. **Pick a folder name** using `YYYY-MM-DD-short-description` (example: `2026-07-15-mcp-from-scratch`).
 2. **Copy templates** from `templates/` into the new talk folder:
    - `talk-readme.md` → `README.md`
    - `agenda.md`
@@ -19,7 +19,7 @@ This repository separates **talk metadata** (under `talks/`) from **shared asset
    - Title, Abstract, Audience, Prerequisites, Agenda, Demo, Hands-on Code,
      Slides, Recording, References, Questions
 4. **Decide where code lives:**
-   - **External curriculum** (Python track): add `talks/YYYY-MM-name/README.md` with
+   - **External curriculum** (Python track): add `talks/YYYY-MM-DD-name/README.md` with
      links to the session doc (e.g. `S5.md`) and `src/` in
      [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice).
      Do not copy lab code or duplicate agenda/demo markdown here.
@@ -46,9 +46,9 @@ Canonical sources and mirror policy: [AGENTS.md](./AGENTS.md).
 
 | Item | Convention | Example |
 | ---- | ---------- | ------- |
-| Talk folder | `YYYY-MM-kebab-case` | `2026-05-agentic-ai` |
-| Slide file | match talk id | `assets/slides/2026-05-agentic-ai.pdf` |
-| Recording | match talk id | `assets/recordings/2026-05-agentic-ai.mp4` |
+| Talk folder | `YYYY-MM-DD-kebab-case` | `2026-07-04-python-l1-s5-mini-calculator` |
+| Slide file | match talk id | `assets/slides/2026-07-11-amazon-bedrock-cline-agentic.pdf` |
+| Recording | match talk id | `assets/recordings/2026-07-11-amazon-bedrock-cline-agentic.mp4` |
 
 ---
 
@@ -56,7 +56,7 @@ Canonical sources and mirror policy: [AGENTS.md](./AGENTS.md).
 
 - Copy [.env.example](./.env.example) to `.env` for AWS Bedrock demos.
 - Never commit `.env`, API keys, or account-specific ARNs.
-- Use [infra/bedrock-policy.yaml](./talks/2026-07-amazon-bedrock-cline-agentic/infra/bedrock-policy.yaml)
+- Use [infra/bedrock-policy.yaml](./talks/2026-07-11-amazon-bedrock-cline-agentic/infra/bedrock-policy.yaml)
   as a starting point for least-privilege IAM.
 
 ---

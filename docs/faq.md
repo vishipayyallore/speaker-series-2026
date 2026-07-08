@@ -25,10 +25,10 @@ The speaker portfolio only needs title, status, and links.
 
 ## Where is the Bedrock demo code?
 
-Inside [talks/2026-07-amazon-bedrock-cline-agentic/](../talks/2026-07-amazon-bedrock-cline-agentic/).
+Inside [talks/2026-07-11-amazon-bedrock-cline-agentic/](../talks/2026-07-11-amazon-bedrock-cline-agentic/).
 
 Clone this repository, copy `.env.example` to `.env`, and follow that talk’s README and
-[cline-bedrock-setup.md](../talks/2026-07-amazon-bedrock-cline-agentic/cline-bedrock-setup.md).
+[cline-bedrock-setup.md](../talks/2026-07-11-amazon-bedrock-cline-agentic/cline-bedrock-setup.md).
 
 ---
 
@@ -44,4 +44,4 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md).
 ## Where do slides and recordings go?
 
 Under `assets/slides/` and `assets/recordings/`, named to match the talk folder
-(for example `2026-07-amazon-bedrock-cline-agentic.pdf`).
+(for example `2026-07-11-amazon-bedrock-cline-agentic.pdf`).

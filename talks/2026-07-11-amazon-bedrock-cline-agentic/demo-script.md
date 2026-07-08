@@ -11,7 +11,7 @@
 - [ ] Bedrock model access enabled; region confirmed
 - [ ] Cline configured per [cline-bedrock-setup.md](./cline-bedrock-setup.md)
 - [ ] Empty folder or small starter repo open for “build with AI” segment
-- [ ] Optional: `.env` + Python samples under `talks/2026-07-amazon-bedrock-cline-agentic/` tested
+- [ ] Optional: `.env` + Python samples under `talks/2026-07-11-amazon-bedrock-cline-agentic/` tested
 
 [meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
 

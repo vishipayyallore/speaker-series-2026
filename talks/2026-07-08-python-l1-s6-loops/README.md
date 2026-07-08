@@ -17,6 +17,10 @@ Canonical learning material lives in:
 | Code | [src/L1/S6](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S6) |
 | Recording | [YouTube](https://www.youtube.com/watch?v=vXePo4BOgPM) |
 
+## Previous in series
+
+[L1 · S5 — Mini Project: Simple Calculator](../2026-07-04-python-l1-s5-mini-calculator/)
+
 ## Next in series
 
 [S7 — Debugging](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S7.md)

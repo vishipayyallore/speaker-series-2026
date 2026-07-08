@@ -9,7 +9,7 @@
 | Meetup event | [Jul 11, 2026 · online][meetup-event] |
 | Recording | [YouTube](https://www.youtube.com/watch?v=M-bLxxdqV5I) |
 | Slides | (add when ready) |
-| This talk folder | `talks/2026-07-amazon-bedrock-cline-agentic/` |
+| This talk folder | `talks/2026-07-11-amazon-bedrock-cline-agentic/` |
 
 ---
 

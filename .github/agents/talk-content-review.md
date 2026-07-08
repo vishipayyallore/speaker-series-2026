@@ -12,7 +12,7 @@ readonly: true
 You are reviewing speaker portfolio content in **speaker-series-2026**.
 
 When invoked, the parent should name a talk folder (for example
-`talks/2026-07-amazon-bedrock-cline-agentic/`) or `templates/`. If unclear, ask.
+`talks/2026-07-11-amazon-bedrock-cline-agentic/`) or `templates/`. If unclear, ask.
 
 ## Checks
 

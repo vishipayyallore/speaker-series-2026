@@ -18,7 +18,7 @@ Planned evolution of the Speaker Series 2026 portfolio.
 
 | Date | Topic | Folder |
 | ---- | ----- | ------ |
-| Jul 11 | Amazon Bedrock + Cline + Agentic Coding | [2026-07-amazon-bedrock-cline-agentic](../talks/2026-07-amazon-bedrock-cline-agentic/) |
+| Jul 11 | Amazon Bedrock + Cline + Agentic Coding | [2026-07-11-amazon-bedrock-cline-agentic](../talks/2026-07-11-amazon-bedrock-cline-agentic/) |
 
 ---
 

@@ -19,4 +19,4 @@ Canonical learning material lives in:
 
 ## Next in series
 
-[L1 · S6 — Loops & Iteration](../2026-02-python-l1-s6-loops/)
+[L1 · S6 — Loops & Iteration](../2026-07-08-python-l1-s6-loops/)
