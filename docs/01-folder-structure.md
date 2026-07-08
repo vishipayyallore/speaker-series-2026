@@ -28,6 +28,8 @@ speaker-series-2026/
 │   ├── psscripts/            # PowerShell — CI, health, mirror sync
 │   └── pyscripts/            # Python — parity checks, optional media utils
 │
+├── scripts/                  # Backward-compat shims → tools/psscripts/
+│
 └── docs/
     ├── 01-folder-structure.md
     ├── speaker-profile.md

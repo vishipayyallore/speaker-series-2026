@@ -23,3 +23,5 @@ After editing `.github/skills/`, `.github/agents/`, or `.cursor/rules/`:
 ```
 
 See also [CONTRIBUTING.md](../CONTRIBUTING.md) and [.github/skills/ci-checks/SKILL.md](../.github/skills/ci-checks/SKILL.md).
+
+Legacy path: [`scripts/sync-assistant-mirrors.ps1`](../scripts/sync-assistant-mirrors.ps1) delegates to `tools/psscripts/`.

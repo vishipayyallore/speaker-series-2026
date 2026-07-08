@@ -13,6 +13,7 @@ Canonical learning material lives in:
 | ---- | ---- |
 | Session doc | [S5.md](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md) |
 | Code | [src/L1/S5](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S5) |
+| Recording | [YouTube](https://www.youtube.com/watch?v=ocadh9LxMos) |
 
 ## Next in series
 

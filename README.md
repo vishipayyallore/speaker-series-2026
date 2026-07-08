@@ -19,8 +19,8 @@ Each talk keeps **metadata** under `talks/`; shared media under `assets/`. Pytho
 
 | Date     | Event                  | Topic                        | Slides | Demo | Code        | Recording |
 | -------- | ---------------------- | ---------------------------- | ------ | ---- | ----------- | --------- |
-| Jan 2026 | Dot Net Learners House | [L1 · S5 — Mini Calculator](./talks/2026-01-python-l1-s5-mini-calculator/) | —      | ✅    | [External repo](https://github.com/vishipayyallore/python-fundamentals-in-practice) | —         |
-| Feb 2026 | Dot Net Learners House | [L1 · S6 — Loops](./talks/2026-02-python-l1-s6-loops/) | —      | ✅    | [External repo](https://github.com/vishipayyallore/python-fundamentals-in-practice) | —         |
+| Jan 2026 | Dot Net Learners House | [L1 · S5 — Mini Calculator](./talks/2026-01-python-l1-s5-mini-calculator/) | —      | ✅    | [External repo](https://github.com/vishipayyallore/python-fundamentals-in-practice) | [YouTube](https://www.youtube.com/watch?v=ocadh9LxMos) |
+| Feb 2026 | Dot Net Learners House | [L1 · S6 — Loops](./talks/2026-02-python-l1-s6-loops/) | —      | ✅    | [External repo](https://github.com/vishipayyallore/python-fundamentals-in-practice) | [YouTube](https://www.youtube.com/watch?v=vXePo4BOgPM) |
 | Jul 2026 | Dot Net Learners House | [Amazon Bedrock + Cline + Agentic Coding](./talks/2026-07-amazon-bedrock-cline-agentic/) | —      | ✅    | This repo   | —         |
 
 Legend: ✅ = delivered or ready · — = not yet published
@@ -39,8 +39,8 @@ Legend: ✅ = delivered or ready · — = not yet published
 
 | When     | Talk | Session doc |
 | -------- | ---- | ----------- |
-| Jan 2026 | L1 · S5 — Mini Project: Simple Calculator | [Demo script](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md) · [Code](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S5) |
-| Feb 2026 | L1 · S6 — Loops & Iteration | [Demo script](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S6.md) · [Code](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S6) |
+| Jan 2026 | L1 · S5 — Mini Project: Simple Calculator | [Demo script](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S5.md) · [Code](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S5) · [Recording](https://www.youtube.com/watch?v=ocadh9LxMos) |
+| Feb 2026 | L1 · S6 — Loops & Iteration | [Demo script](https://github.com/vishipayyallore/python-fundamentals-in-practice/blob/main/docs/sessions/L1/S6.md) · [Code](https://github.com/vishipayyallore/python-fundamentals-in-practice/tree/main/src/L1/S6) · [Recording](https://www.youtube.com/watch?v=vXePo4BOgPM) |
 
 Index stubs: [S5 folder](./talks/2026-01-python-l1-s5-mini-calculator/) · [S6 folder](./talks/2026-02-python-l1-s6-loops/)
 
