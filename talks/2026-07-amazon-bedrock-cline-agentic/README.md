@@ -1,8 +1,7 @@
 # Exploring Amazon Bedrock Models + Cline + Vibe Coding + Agentic Coding
 
 **Event:** [Dot Net Learners House (Hyderabad)](https://www.meetup.com/dot-net-learners-house-hyderabad/)  
-**Meetup:**
-[Event page](https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events)  
+**Meetup:** [Event page][meetup-event]  
 **Date:** Saturday, 11 July 2026 · 4:00 PM (online)  
 **Duration:** 30–45 minutes  
 **Format:** Live demo + interactive Q&A  
@@ -88,3 +87,5 @@ See [references.md](./references.md).
 ## Questions
 
 _Add common questions after the July 11 session._
+
+[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>

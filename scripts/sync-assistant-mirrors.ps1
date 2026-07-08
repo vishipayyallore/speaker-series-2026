@@ -26,6 +26,15 @@ function Sync-Directory {
     Copy-Item -Path (Join-Path $Source '*') -Destination $Dest -Recurse -Force
 }
 
+function Sync-File {
+    param([string]$Source, [string]$Dest)
+    if (-not (Test-Path $Source)) { throw "Missing source: $Source" }
+    if ($VerifyOnly) { return }
+    $dir = Split-Path $Dest -Parent
+    if (-not (Test-Path $dir)) { New-Item -ItemType Directory -Path $dir -Force | Out-Null }
+    Copy-Item -Path $Source -Destination $Dest -Force
+}
+
 function Convert-MdcToMd {
     param([string]$MdcPath, [string]$MdPath)
     $content = Get-Content $MdcPath -Raw
@@ -91,6 +100,10 @@ if (Test-Path $legacyAgent2) {
     if (-not $VerifyOnly) { Remove-Item $legacyAgent2 -Force }
 }
 
+# --- Top-level instruction mirrors ---
+Sync-File 'AGENTS.md' '.clinerules/AGENTS.md'
+Sync-File 'CLAUDE.md' '.claude/CLAUDE.md'
+
 # --- Rules: .cursor/rules/*.mdc -> .clinerules/rules, .opencode/rules ---
 $mdcFiles = Get-ChildItem '.cursor/rules' -Filter '*.mdc'
 foreach ($mdc in $mdcFiles) {
@@ -137,6 +150,27 @@ Get-ChildItem $gRoot -Recurse -File | ForEach-Object {
         Write-Host "MISMATCH .github vs .opencode: $rel"
         $exitCode = 1
     }
+}
+
+# --- Verify top-level instruction parity ---
+$rootAgents = Join-Path $Root 'AGENTS.md'
+$mirrorAgents = Join-Path $Root '.clinerules/AGENTS.md'
+if (-not (Test-Path $mirrorAgents)) {
+    Write-Host 'MISSING in .clinerules: AGENTS.md'
+    $exitCode = 1
+} elseif ((Get-FileHash $rootAgents -Algorithm SHA256).Hash -ne (Get-FileHash $mirrorAgents -Algorithm SHA256).Hash) {
+    Write-Host 'MISMATCH root vs .clinerules: AGENTS.md'
+    $exitCode = 1
+}
+
+$rootClaude = Join-Path $Root 'CLAUDE.md'
+$mirrorClaude = Join-Path $Root '.claude/CLAUDE.md'
+if (-not (Test-Path $mirrorClaude)) {
+    Write-Host 'MISSING in .claude: CLAUDE.md'
+    $exitCode = 1
+} elseif ((Get-FileHash $rootClaude -Algorithm SHA256).Hash -ne (Get-FileHash $mirrorClaude -Algorithm SHA256).Hash) {
+    Write-Host 'MISMATCH root vs .claude: CLAUDE.md'
+    $exitCode = 1
 }
 
 if ($VerifyOnly -and $exitCode -eq 0) {

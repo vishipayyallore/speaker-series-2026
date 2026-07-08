@@ -9,8 +9,8 @@
 | Meetup event | [Jul 11 event][meetup-event] | Jul 11, 2026 · online |
 | Dot Net Learners House | [Meetup group][dnlh-group] | Host group |
 
-[meetup-event]: https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events
-[dnlh-group]: https://www.meetup.com/dot-net-learners-house-hyderabad/
+[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
+[dnlh-group]: <https://www.meetup.com/dot-net-learners-house-hyderabad/>
 
 ---
 
@@ -23,10 +23,10 @@
 | IAM for Bedrock | [Security IAM][bedrock-iam] | Least privilege |
 | Cline | [Cline repo][cline-repo] | IDE extension |
 
-[bedrock-ug]: https://docs.aws.amazon.com/bedrock/
-[bedrock-models]: https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html
-[bedrock-iam]: https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html
-[cline-repo]: https://github.com/cline/cline
+[bedrock-ug]: <https://docs.aws.amazon.com/bedrock/>
+[bedrock-models]: <https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html>
+[bedrock-iam]: <https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html>
+[cline-repo]: <https://github.com/cline/cline>
 
 ---
 

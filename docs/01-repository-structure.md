@@ -31,7 +31,7 @@ speaker-series-2026/
 - `.copilot/`, `.cursor/`, `.claude/`, `.clinerules/`, `.opencode/`: AI assistant and editor guidance files.
 - `docs/`: supporting documentation for repository operations and planning.
 - `docs/images/`: reusable image assets for documentation.
-- `src/`: source artifacts, scripts, and implementation files.
+- `src/`: shared repo-wide utilities only; talk-specific demo code belongs under `talks/{id}/src/`.
 - `talks/`: speaker-session content and talk-specific working files.
 - `templates/`: reusable templates for planning and content creation.
 

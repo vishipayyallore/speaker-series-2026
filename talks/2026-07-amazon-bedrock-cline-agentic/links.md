@@ -11,7 +11,7 @@
 | Recording | - |
 | This talk folder | `talks/2026-07-amazon-bedrock-cline-agentic/` |
 
-[meetup-event]: https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events
+[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
 
 ---
 
@@ -27,8 +27,8 @@
 | AWS Bedrock console | [Bedrock console][bedrock-console] | Model access |
 | Cline extension | [Cline on GitHub][cline-repo] | VS Code |
 
-[bedrock-console]: https://console.aws.amazon.com/bedrock/
-[cline-repo]: https://github.com/cline/cline
+[bedrock-console]: <https://console.aws.amazon.com/bedrock/>
+[cline-repo]: <https://github.com/cline/cline>
 
 ---
 
@@ -40,4 +40,4 @@
 | Speaker FAQ | [/docs/faq.md](../../docs/faq.md) |
 | Dot Net Learners House | [Meetup group][dnlh-group] |
 
-[dnlh-group]: https://www.meetup.com/dot-net-learners-house-hyderabad/
+[dnlh-group]: <https://www.meetup.com/dot-net-learners-house-hyderabad/>

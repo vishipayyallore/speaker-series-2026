@@ -38,7 +38,7 @@ jobs:
         run: |
           set -euo pipefail
           # Run markdownlint-cli2 on the canonical documentation surfaces.
-          npx --yes markdownlint-cli2 \
+          npx --yes markdownlint-cli2 --config .markdownlint-cli2.yaml \
             "README.md" \
             "CONTRIBUTING.md" \
             "AGENTS.md" \

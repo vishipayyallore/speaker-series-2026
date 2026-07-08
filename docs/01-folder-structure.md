@@ -37,8 +37,10 @@ speaker-series-2026/
 ## Design rules
 
 1. **One folder per talk** — chronological prefix `YYYY-MM-…` for automatic sorting.
-2. **Same file set per talk** — at minimum: `README.md`, `agenda.md`, `demo-script.md`,
-   `references.md`, `links.md`.
+2. **File set depends on talk type**:
+   - **External curriculum** (Python): `README.md` only with links to session doc and code.
+   - **In-repo demo** (Bedrock and similar): `README.md`, `agenda.md`, `demo-script.md`,
+     `references.md`, `links.md` (plus optional `src/`, `prompts/`, `notebooks/`, `infra/`).
 3. **No duplicated Python labs** — link to
    [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice);
    use a thin `README.md` only under `talks/`.
@@ -50,7 +52,7 @@ speaker-series-2026/
 
 ## Talk README outline
 
-Every talk `README.md` follows the same sections:
+In-repo demo talk `README.md` files follow this section order:
 
 Title → Abstract → Audience → Prerequisites → Agenda → Demo → Hands-on Code → Slides → Recording → References → Questions
 
