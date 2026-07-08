@@ -17,6 +17,6 @@ Respond with JSON only:
 
 User message:
 
-```
+```text
 {{user_message}}
 ```

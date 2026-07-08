@@ -6,8 +6,11 @@
 
 | Resource | URL | Notes |
 | -------- | --- | ----- |
-| Meetup event | https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events | Jul 11, 2026 · online |
-| Dot Net Learners House | https://www.meetup.com/dot-net-learners-house-hyderabad/ | Host group |
+| Meetup event | [Jul 11 event][meetup-event] | Jul 11, 2026 · online |
+| Dot Net Learners House | [Meetup group][dnlh-group] | Host group |
+
+[meetup-event]: https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events
+[dnlh-group]: https://www.meetup.com/dot-net-learners-house-hyderabad/
 
 ---
 
@@ -15,10 +18,15 @@
 
 | Resource | URL | Notes |
 | -------- | --- | ----- |
-| Amazon Bedrock | https://docs.aws.amazon.com/bedrock/ | User guide |
-| Bedrock foundation models | https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html | Model IDs by region |
-| IAM for Bedrock | https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html | Least privilege |
-| Cline | https://github.com/cline/cline | IDE extension used in demo |
+| Amazon Bedrock | [User guide][bedrock-ug] | Overview |
+| Bedrock foundation models | [Model IDs][bedrock-models] | By region |
+| IAM for Bedrock | [Security IAM][bedrock-iam] | Least privilege |
+| Cline | [Cline repo][cline-repo] | IDE extension |
+
+[bedrock-ug]: https://docs.aws.amazon.com/bedrock/
+[bedrock-models]: https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html
+[bedrock-iam]: https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html
+[cline-repo]: https://github.com/cline/cline
 
 ---
 

@@ -19,6 +19,18 @@
         "/^\\$root='D:\\\\GitHub\\\\speaker-series-2026'; \\$pairs=@\\(@\\('AGENTS\\.md','\\.clinerules\\\\AGENTS\\.md'\\),@\\('CLAUDE\\.md','\\.claude\\\\CLAUDE\\.md'\\)\\); foreach\\(\\$p in \\$pairs\\)\\{ \\$a=Join-Path \\$root \\$p\\[0\\]; \\$b=Join-Path \\$root \\$p\\[1\\]; if\\(\\(Get-FileHash \\$a -Algorithm SHA256\\)\\.Hash -eq \\(Get-FileHash \\$b -Algorithm SHA256\\)\\.Hash\\)\\{ \"MATCH: \\$\\(\\$p\\[0\\]\\) == \\$\\(\\$p\\[1\\]\\)\" \\} else \\{ \"MISMATCH: \\$\\(\\$p\\[0\\]\\) != \\$\\(\\$p\\[1\\]\\)\" \\}\\}$/": {
             "approve": true,
             "matchCommandLine": true
+        },
+        "/^\\$ErrorActionPreference='Continue';\nWrite-Host 'CHECK 1: py_compile';\n\\$py = @\\(git ls-files '\\*\\.py'\\);\nif \\(\\$py\\.Count -gt 0\\) \\{ python -m py_compile @py; if \\(\\$LASTEXITCODE -eq 0\\) \\{ Write-Host 'py_compile PASS' \\} else \\{ Write-Host 'py_compile FAIL' \\} \\} else \\{ Write-Host 'No tracked \\.py files; skipping\\.' \\}\n\nWrite-Host 'CHECK 2: markdownlint';\nnpx --yes markdownlint-cli2 \"README\\.md\" \"CONTRIBUTING\\.md\" \"AGENTS\\.md\" \"CLAUDE\\.md\" \"docs/\\*\\*/\\*\\.md\" \"talks/\\*\\*/\\*\\.md\" \"templates/\\*\\*/\\*\\.md\" \"src/\\*\\*/\\*\\.md\";\nif \\(\\$LASTEXITCODE -eq 0\\) \\{ Write-Host 'markdownlint PASS' \\} else \\{ Write-Host 'markdownlint FAIL' \\}\n\nWrite-Host 'CHECK 3: assistant mirror verify';\n\\./scripts/sync-assistant-mirrors\\.ps1 -VerifyOnly;\nif \\(\\$LASTEXITCODE -eq 0\\) \\{ Write-Host 'mirror verify PASS' \\} else \\{ Write-Host 'mirror verify FAIL' \\}\n$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^\\$py = @\\(git ls-files '\\*\\.py'\\); if \\(\\$py\\.Count -gt 0\\) \\{ python -m py_compile @py; if \\(\\$LASTEXITCODE -eq 0\\) \\{ 'py_compile PASS' \\} else \\{ 'py_compile FAIL' \\} \\} else \\{ 'No tracked \\.py files; skipping\\.' \\}$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^npx --yes markdownlint-cli2 \"README\\.md\" \"CONTRIBUTING\\.md\" \"AGENTS\\.md\" \"CLAUDE\\.md\" \"docs/\\*\\*/\\*\\.md\" \"talks/\\*\\*/\\*\\.md\" \"templates/\\*\\*/\\*\\.md\" \"src/\\*\\*/\\*\\.md\"$/": {
+            "approve": true,
+            "matchCommandLine": true
         }
     }
 }
