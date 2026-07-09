@@ -19,7 +19,7 @@ Canonical learning material lives in:
 
 ## Previous in series
 
-[L1 · S5 — Mini Project: Simple Calculator](../2026-07-04-python-l1-s5-mini-calculator/)
+[L1 · S5 — Mini Project: Simple Calculator](../01-l1-s5-mini-calculator-in-python/)
 
 ## Next in series
 

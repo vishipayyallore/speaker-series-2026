@@ -13,7 +13,7 @@ description: Work on the speaker-series-2026 repository — speaker portfolio, t
 
 ## Layout
 
-- **`talks/`** — one folder per session (`YYYY-MM-name`); in-repo demo code under `talks/{id}/src/`
+- **`talks/`** — one folder per session (`NN-short-description`); in-repo demo code under `talks/{id}/src/`
 - **`assets/`** — slides, diagrams, images, recordings
 - **`templates/`** — scaffold for new in-repo talks
 - **`docs/`** — cross-talk reference

@@ -68,7 +68,7 @@ Primary live demo is **Cline + Bedrock in the IDE**; Python samples reinforce AP
 
 ## Slides
 
-- (add link when deck is ready — prefer `assets/slides/2026-07-11-amazon-bedrock-cline-agentic.pdf`)
+- (add link when deck is ready — prefer `assets/slides/03-amazon-bedrock-cline-agentic.pdf`)
 
 ---
 

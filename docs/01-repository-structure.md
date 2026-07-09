@@ -5,6 +5,6 @@ which is the canonical layout reference for Speaker Series 2026.
 
 Use that file for:
 
-- talk folder conventions (`talks/YYYY-MM-DD-…`)
+- talk folder conventions (`talks/NN-short-description`)
 - assets, templates, docs, and tools layout
 - external vs in-repo talk types

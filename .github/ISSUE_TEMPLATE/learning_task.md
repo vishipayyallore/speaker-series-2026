@@ -14,7 +14,7 @@ assignees: ''
 
 ## Folder name
 
-Proposed: `talks/YYYY-MM-…`
+Proposed: `talks/NN-short-description` (next sequence number)
 
 ## Links
 

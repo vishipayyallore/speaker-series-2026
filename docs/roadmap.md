@@ -8,9 +8,9 @@ Planned evolution of the Speaker Series 2026 portfolio.
 
 | Date | Topic | Folder |
 | ---- | ----- | ------ |
-| Jul 4 | L1 · S5 — Mini Calculator | [2026-07-04-python-l1-s5-mini-calculator](../talks/2026-07-04-python-l1-s5-mini-calculator/) |
-| Jul 8 | L1 · S6 — Loops & Iteration | [2026-07-08-python-l1-s6-loops](../talks/2026-07-08-python-l1-s6-loops/) |
-| Jul 11 | Amazon Bedrock + Cline + Agentic Coding | [2026-07-11-amazon-bedrock-cline-agentic](../talks/2026-07-11-amazon-bedrock-cline-agentic/) |
+| Jul 4 | L1 · S5 — Mini Calculator | [01-l1-s5-mini-calculator-in-python](../talks/01-l1-s5-mini-calculator-in-python/) |
+| Jul 8 | L1 · S6 — Loops & Iteration | [02-l1-s6-python-loops](../talks/02-l1-s6-python-loops/) |
+| Jul 11 | Amazon Bedrock + Cline + Agentic Coding | [03-amazon-bedrock-cline-agentic](../talks/03-amazon-bedrock-cline-agentic/) |
 
 Follow-ups for delivered talks:
 
@@ -22,13 +22,13 @@ Follow-ups for delivered talks:
 ## Upcoming (candidates)
 
 Create each folder from `templates/` when a session is confirmed. Use
-`YYYY-MM-DD-short-description` naming (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
+`NN-short-description` naming (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
 
 | Month (proposed) | Topic | Folder (proposed) |
 | ---------------- | ----- | ----------------- |
-| Aug | MCP from scratch | `2026-08-mcp-from-scratch` |
-| Sep | Agentic AI patterns | `2026-09-agentic-ai-patterns` |
-| Oct | LLMOps and observability | `2026-10-llmops-observability` |
+| Aug | MCP from scratch | `04-mcp-from-scratch` |
+| Sep | Agentic AI patterns | `05-agentic-ai-patterns` |
+| Oct | LLMOps and observability | `06-llmops-observability` |
 
 ---
 
