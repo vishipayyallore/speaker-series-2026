@@ -1,7 +1,6 @@
 # tools
 
-Repository-local helper scripts (**not** application code under `src/` or talk demos under
-`talks/{id}/`).
+Repository-local helper scripts (**not** talk demo code under `talks/{id}/`).
 
 | Folder | Purpose |
 | ------ | ------- |

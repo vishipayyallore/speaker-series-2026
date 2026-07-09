@@ -12,7 +12,7 @@ Use when auditing the repository or after importing assistant configuration.
 
 - [ ] Root `README.md` talk index matches folders under `talks/`
 - [ ] Python talks are thin indexes linking to [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice)
-- [ ] In-repo demos live under `talks/{id}/` (not root `src/`)
+- [ ] In-repo demos are self-contained under `talks/{id}/`
 - [ ] `docs/01-folder-structure.md` matches actual layout
 
 ## Assistant parity

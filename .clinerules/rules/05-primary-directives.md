@@ -27,5 +27,6 @@ This is a **speaker portfolio** repository that:
 
 ## Code maintenance
 
-- Per-talk code in `talks/{id}/`; repo-wide utilities in `src/` only when shared
+- Per-talk demo code in `talks/{id}/src/` (and related folders such as `prompts/`, `infra/`)
+- Shared repo automation in `tools/` when needed
 - Align CI with tracked files

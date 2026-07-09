@@ -52,8 +52,9 @@ speaker-series-2026/
    [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice);
    use a thin `README.md` only under `talks/`.
 4. **Self-contained demos** — original demo code (Bedrock) stays inside that talk’s folder
-   so cloning this repo is enough to reproduce.
-5. **Binaries in `assets/`** — decks and recordings are shared artifacts, not scattered across talk folders.
+   (`talks/{id}/src/`, `prompts/`, etc.) so cloning this repo is enough to reproduce.
+5. **No root `src/`** — there is no repo-wide code folder; demo code belongs under the owning talk.
+6. **Binaries in `assets/`** — decks and recordings are shared artifacts, not scattered across talk folders.
 
 ---
 

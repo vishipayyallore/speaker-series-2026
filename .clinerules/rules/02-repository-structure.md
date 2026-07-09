@@ -9,7 +9,7 @@ talks/        — per-session metadata and talk-specific demo code
 assets/       — slides, diagrams, images, recordings
 templates/    — copy before each new in-repo talk
 docs/         — speaker profile, FAQ, roadmap, folder layout
-src/          — optional repo-wide utilities only
+tools/        — repo maintenance scripts (CI, mirror sync)
 .github/ …    — assistant and CI configuration
 ```
 

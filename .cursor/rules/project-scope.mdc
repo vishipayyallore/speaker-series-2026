@@ -20,7 +20,7 @@ talks/       — per-session metadata, scripts, and talk-specific demo code
 assets/      — slides, diagrams, images, recordings
 templates/   — copy before each new talk
 docs/        — cross-talk reference (profile, FAQ, roadmap)
-src/         — optional repo-wide utilities only (not per-talk demos)
+tools/       — repo maintenance scripts (CI, mirror sync)
 ```
 
 Talk folders use chronological prefixes: `2026-07-04-python-l1-s5-mini-calculator`, `2026-07-11-amazon-bedrock-cline-agentic`, etc.

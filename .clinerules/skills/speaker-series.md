@@ -14,11 +14,11 @@ canonical: ".github/skills/speaker-series/SKILL.md"
 
 ## Layout
 
-- **`talks/`** — one folder per session (`YYYY-MM-name`)
+- **`talks/`** — one folder per session (`YYYY-MM-name`); in-repo demo code under `talks/{id}/src/`
 - **`assets/`** — slides, diagrams, images, recordings
 - **`templates/`** — scaffold for new in-repo talks
 - **`docs/`** — cross-talk reference
-- **`src/`** — repo-wide utilities only (per-talk code stays under `talks/{id}/`)
+- **`tools/`** — repo maintenance scripts
 
 ## Talk types
 

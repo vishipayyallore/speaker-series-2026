@@ -11,7 +11,7 @@ OpenCode plugin config. **Canonical:** `.github/copilot-instructions.md`, `.curs
 ## Layout
 
 ```text
-talks/  assets/  templates/  docs/  src/
+talks/  assets/  templates/  docs/  tools/
 ```
 
 ## Skills

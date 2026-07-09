@@ -21,7 +21,7 @@ talks/       — per-session metadata; in-repo demos under talks/{id}/
 assets/      — slides, diagrams, images, recordings
 templates/   — new in-repo talk scaffolding
 docs/        — speaker profile, FAQ, roadmap, folder layout
-src/         — optional repo-wide utilities only
+tools/       — repo maintenance scripts (CI, mirror sync)
 ```
 
 See `docs/01-folder-structure.md` for talk types (external index vs in-repo demo).

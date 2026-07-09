@@ -3,7 +3,7 @@
   Runs Markdown lint (markdownlint-cli2) and Lychee link checking for the repository.
 
 .DESCRIPTION
-  - Markdown lint: Uses `npx markdownlint-cli2` over README/docs/src/tools by default.
+  - Markdown lint: Uses `npx markdownlint-cli2` over README/docs/talks/tools by default.
   - Lychee: Uses the repository `lychee.toml` configuration.
 
   This script intentionally excludes `source-material/` by default (it is a staging area).
@@ -82,7 +82,6 @@ if (-not $SkipMarkdownLint) {
       "docs/**/*.md",
       "talks/**/*.md",
       "templates/**/*.md",
-      "src/**/*.md",
       "tools/**/*.md"
     )
 

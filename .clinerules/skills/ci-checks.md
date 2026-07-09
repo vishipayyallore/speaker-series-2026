@@ -44,7 +44,7 @@ Same globs as `ci-documentation.yml`:
 ```bash
 npx --yes markdownlint-cli2 --config .markdownlint-cli2.yaml `
   "README.md" "CONTRIBUTING.md" "AGENTS.md" "CLAUDE.md" `
-  "docs/**/*.md" "talks/**/*.md" "templates/**/*.md" "src/**/*.md" "tools/**/*.md"
+  "docs/**/*.md" "talks/**/*.md" "templates/**/*.md" "tools/**/*.md"
 ```
 
 ### 3. Skills parity
@@ -55,7 +55,7 @@ Run `tools/psscripts/sync-assistant-mirrors.ps1 -VerifyOnly` or see `.github/ski
 
 ```powershell
 lychee --config lychee.toml --cache --max-cache-age 1d `
-  README.md CONTRIBUTING.md docs/**/*.md talks/**/*.md templates/**/*.md src/**/*.md
+  README.md CONTRIBUTING.md docs/**/*.md talks/**/*.md templates/**/*.md tools/**/*.md
 ```
 
 ## Summary format

@@ -48,7 +48,7 @@ speaker-series-2026/
 ├── assets/       # Slides, diagrams, images, recordings (shared media)
 ├── templates/    # Copy before each new in-repo talk
 ├── docs/         # Cross-talk reference (profile, FAQ, roadmap)
-├── src/          # Optional repo-wide utilities only — not per-talk demos
+├── tools/        # Repo maintenance scripts (CI, mirror sync)
 └── .github/ …    # Assistant and CI configuration
 ```
 
@@ -73,7 +73,7 @@ Index only via links (for example `docs/sessions/L1/S5.md`).
 
 ## Code guidance
 
-- Per-talk demo code lives under `talks/{id}/src/`, not repo root `src/`.
+- Per-talk demo code lives under `talks/{id}/src/` (and related folders inside that talk).
 - Use portable paths (`pathlib`, relative paths).
 - Bedrock demos: never commit secrets; use `.env` from `.env.example`.
 - Keep Python samples minimal and runnable.
