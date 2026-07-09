@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/vishipayyallore/speaker-series-2026/discussions
+    about: Ask questions about talks and portfolio structure
+  - name: README
+    url: https://github.com/vishipayyallore/speaker-series-2026#readme
+    about: Speaker portfolio index

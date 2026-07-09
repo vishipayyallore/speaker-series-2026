@@ -1,0 +1,19 @@
+---
+# Speaker Series 2026 — markdownlint-cli2 config (aligned with ci-documentation.yml)
+config:
+  default: true
+  MD013:
+    line_length: 120
+    code_blocks: false
+    tables: false
+    headings: false
+    links: true
+  MD024:
+    siblings_only: true
+  MD033: false
+  MD041:
+    front_matter_title: "^"
+  MD060: false
+
+ignores:
+  - .archive/**

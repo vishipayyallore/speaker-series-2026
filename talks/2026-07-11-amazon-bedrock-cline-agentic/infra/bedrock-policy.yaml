@@ -1,0 +1,14 @@
+# Sample IAM policy fragment for Bedrock invoke (adjust ARNs for your account)
+#
+# Attach to a demo IAM user or role used during the session.
+# Prefer scoped model ARNs over "*" in production.
+
+Version: "2012-10-17"
+Statement:
+  - Sid: BedrockInvokeDemo
+    Effect: Allow
+    Action:
+      - bedrock:InvokeModel
+      - bedrock:InvokeModelWithResponseStream
+    Resource:
+      - arn:aws:bedrock:*::foundation-model/anthropic.claude-3-haiku-20240307-v1:0

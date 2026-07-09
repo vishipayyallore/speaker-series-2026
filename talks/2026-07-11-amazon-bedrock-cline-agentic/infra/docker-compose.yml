@@ -1,0 +1,10 @@
+# Optional local stack for session prep — not required for Bedrock (cloud API).
+# Extend if you add LocalStack or mock services for offline rehearsal.
+
+services:
+  demo-prep:
+    image: python:3.11-slim
+    working_dir: /work
+    volumes:
+      - ..:/work
+    command: ["python", "-c", "print('Demo environment ready. Configure .env for Bedrock calls.')"]

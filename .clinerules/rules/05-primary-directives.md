@@ -1,0 +1,31 @@
+﻿# Primary Directives
+
+**Professional stance:** `.cursor/rules/09_core-agent-role.mdc`
+
+## Project focus
+
+This is a **speaker portfolio** repository that:
+
+- indexes meetup sessions under `talks/`
+- stores shared media under `assets/`
+- links to external Python curriculum without duplicating it
+- hosts in-repo demos (for example Bedrock + Cline) under the owning talk folder
+- keeps assistant mirrors in parity across tooling folders
+
+## Working philosophy
+
+- **Index, don't duplicate** â€” external curriculum stays in its repo
+- **Self-contained demos** â€” clone this repo to reproduce Bedrock/Cline material
+- **Portfolio first** â€” root README is the attendee-facing entry point
+- **Small diffs** â€” prefer focused updates over imported scaffolding
+- **Remove contamination** â€” Applied Engineering references do not belong here
+
+## Documentation accuracy
+
+- README, talk folders, and assistant config must match actual layout
+- Update portfolio table when adding or delivering talks
+
+## Code maintenance
+
+- Per-talk code in `talks/{id}/`; repo-wide utilities in `src/` only when shared
+- Align CI with tracked files

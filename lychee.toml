@@ -1,0 +1,33 @@
+# https://raw.githubusercontent.com/lycheeverse/lychee/master/lychee.example.toml
+# Lychee link checker configuration for Speaker Series 2026.
+verbose = "info"
+no_progress = true
+max_retries = 2
+retry_wait_time = 2
+accept = ["200", "206", "429"]
+
+# Timeouts
+timeout = 20
+
+# Optional staged source material should be ignored by link scans when present.
+exclude_path = [
+  ".venv/**",
+  ".cursor/**",
+  ".github/**",
+  ".clinerules/**",
+  ".opencode/**"
+]
+
+# Repo-relevant excludes only. Add a new entry here when a domain or URL
+# pattern keeps producing flaky results across CI runs.
+exclude = [
+  # Loopback hosts that obviously cannot be reached from CI runners.
+  "https://localhost",
+  "http://localhost",
+  "https://127.0.0.1",
+  "http://127.0.0.1",
+  # GitHub issue URLs can rate-limit during CI link checks.
+  "^https://github\\.com/.*/issues/.*",
+  # LinkedIn rejects automated requests with 999 / 403.
+  "^https://(www\\.)?linkedin\\.com/.*"
+]
