@@ -27,6 +27,9 @@ python tools/pyscripts/verify_opencode_parity.py
 
 Prefer **`tools/psscripts/sync-assistant-mirrors.ps1`** for day-to-day mirror sync on Windows.
 
+`sync_clinerules_from_canonical.py` and `sync_opencode_from_canonical.py` are **legacy**
+imports from another repository — do not use them here. Use the PowerShell script above.
+
 ---
 
 ## Optional — speaker assets

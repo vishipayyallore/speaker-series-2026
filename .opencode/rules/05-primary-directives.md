@@ -1,4 +1,4 @@
-﻿# Primary Directives
+# Primary Directives
 
 **Professional stance:** `.cursor/rules/09_core-agent-role.mdc`
 
@@ -14,11 +14,11 @@ This is a **speaker portfolio** repository that:
 
 ## Working philosophy
 
-- **Index, don't duplicate** â€” external curriculum stays in its repo
-- **Self-contained demos** â€” clone this repo to reproduce Bedrock/Cline material
-- **Portfolio first** â€” root README is the attendee-facing entry point
-- **Small diffs** â€” prefer focused updates over imported scaffolding
-- **Remove contamination** â€” Applied Engineering references do not belong here
+- **Index, don't duplicate** — external curriculum stays in its repo
+- **Self-contained demos** — clone this repo to reproduce Bedrock/Cline material
+- **Portfolio first** — root README is the attendee-facing entry point
+- **Small diffs** — prefer focused updates over imported scaffolding
+- **Remove contamination** — Applied Engineering references do not belong here
 
 ## Documentation accuracy
 

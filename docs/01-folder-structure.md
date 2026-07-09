@@ -32,6 +32,7 @@ speaker-series-2026/
 │
 └── docs/
     ├── 01-folder-structure.md
+    ├── 01-repository-structure.md   # redirect → 01-folder-structure.md
     ├── speaker-profile.md
     ├── meetup-history.md
     ├── faq.md

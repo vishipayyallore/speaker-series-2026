@@ -1,4 +1,4 @@
-﻿# Core agent role (single stance)
+# Core agent role (single stance)
 
 **Scope first:** This is the **Speaker Series 2026** repository. The professional role below does **not** override `project-scope.mdc` or `README.md`.
 
