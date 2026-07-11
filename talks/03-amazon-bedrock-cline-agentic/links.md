@@ -19,7 +19,7 @@
 | ------- | ---- | ----- |
 | JetBrains | [jetbrains.com](https://www.jetbrains.com/) | Session sponsor — thank you for supporting Devs |
 
-[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
+[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/>
 
 ---
 
@@ -31,6 +31,7 @@
 | Demo script | [demo-script.md](./demo-script.md) | Live flow |
 | Python samples | `./src/` | Optional depth |
 | Prompts | `./prompts/` | Router, system, evaluation |
+| Vibe-coding sample | [homepage/](./homepage/) | Hospital homepage built with Cline |
 | Notebook | `./notebooks/bedrock-quickstart.ipynb` | Post-session |
 | AWS Bedrock console | [Bedrock console][bedrock-console] | Model access |
 | Cline extension | [Cline on GitHub][cline-repo] | VS Code |
@@ -44,8 +45,8 @@
 
 | Resource | Link |
 | -------- | ---- |
-| Environment variables | [/.env.example](../../.env.example) |
-| Speaker FAQ | [/docs/faq.md](../../docs/faq.md) |
+| Environment variables | [.env.example](../../.env.example) |
+| Speaker FAQ | [docs/faq.md](../../docs/faq.md) |
 | Dot Net Learners House | [Meetup group][dnlh-group] |
 
 [dnlh-group]: <https://www.meetup.com/dot-net-learners-house-hyderabad/>

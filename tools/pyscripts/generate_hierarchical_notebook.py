@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
 Generate the hierarchical clustering notebook with from-scratch implementation.
+
+DEPRECATED — Applied Engineering import residue. Not used in Speaker Series 2026.
 """
 
 import json

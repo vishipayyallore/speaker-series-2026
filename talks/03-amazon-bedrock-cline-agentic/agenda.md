@@ -44,4 +44,4 @@ Aligned with the [Meetup listing][meetup-event]:
 - Mention **JetBrains** sponsor thank-you from the Meetup page.
 - Python demos in `src/` are backup depth, not required for the full 60-minute slot.
 
-[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
+[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/>

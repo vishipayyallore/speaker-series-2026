@@ -48,9 +48,19 @@ if ($sourceFiles.Count -eq 0) {
     return
 }
 
-# Get content files to check
-$contentFiles = Get-ChildItem -Path (Join-Path $RepoRoot "src") -Filter "*.md" -Recurse -ErrorAction SilentlyContinue |
-    Where-Object { $_.FullName -notmatch '\\resources\\' }
+# Get content files to check (talks, docs, templates — speaker-series layout)
+$contentRoots = @(
+    (Join-Path $RepoRoot "talks"),
+    (Join-Path $RepoRoot "docs"),
+    (Join-Path $RepoRoot "templates")
+)
+$contentFiles = @(
+    foreach ($root in $contentRoots) {
+        if (Test-Path $root) {
+            Get-ChildItem -Path $root -Filter "*.md" -Recurse -ErrorAction SilentlyContinue
+        }
+    }
+)
 
 $contentFiles = @($contentFiles)
 
