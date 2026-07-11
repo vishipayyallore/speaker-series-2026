@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import os
 from pathlib import Path
 
@@ -14,7 +13,7 @@ from dotenv import load_dotenv
 ROOT = Path(__file__).resolve().parents[3]
 load_dotenv(ROOT / ".env")
 
-DEFAULT_MODEL_ID = os.getenv("BEDROCK_MODEL_ID", "anthropic.claude-3-haiku-20240307-v1:0")
+DEFAULT_MODEL_ID = os.getenv("BEDROCK_MODEL_ID", "qwen.qwen3-32b-instruct-v1:0")
 DEFAULT_REGION = os.getenv("AWS_REGION", "us-east-1")
 
 
@@ -24,16 +23,20 @@ def build_client() -> boto3.client:
 
 def invoke(prompt: str, *, model_id: str = DEFAULT_MODEL_ID) -> str:
     client = build_client()
-    body = json.dumps(
-        {
-            "anthropic_version": "bedrock-2023-05-31",
-            "max_tokens": 512,
-            "messages": [{"role": "user", "content": prompt}],
-        }
+    response = client.converse(
+        modelId=model_id,
+        messages=[
+            {
+                "role": "user",
+                "content": [{"text": prompt}],
+            }
+        ],
+        inferenceConfig={"maxTokens": 512},
     )
-    response = client.invoke_model(modelId=model_id, body=body)
-    payload = json.loads(response["body"].read())
-    return payload["content"][0]["text"]
+    output = response.get("output", {}).get("message", {}).get("content", [])
+    if output and isinstance(output, list) and "text" in output[0]:
+        return str(output[0]["text"])
+    raise KeyError("No text output found in Bedrock response")
 
 
 def main() -> None:
