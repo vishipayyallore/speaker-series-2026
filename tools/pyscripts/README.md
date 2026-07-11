@@ -12,7 +12,7 @@ slide conversion). Run from repo root with your virtual environment active.
 
 | Script | Purpose |
 | ------ | ------- |
-| `task_check.py` | Duplicate markdown, notebook JSON sanity, reference scan |
+| `task_check.py` | Duplicate markdown and notebook JSON sanity checks |
 | `sync_clinerules_from_canonical.py` | Regenerate `.clinerules/` from canonical sources |
 | `sync_opencode_from_canonical.py` | Regenerate `.opencode/` from canonical sources |
 | `verify_clinerules_parity.py` | Compare Cline mirror to canonical |
@@ -34,32 +34,17 @@ imports from another repository — do not use them here. Use the PowerShell scr
 
 ## Optional — speaker assets
 
-Use when processing recordings or imported decks (output typically under `assets/`).
+Use when producing portable handouts for talks.
 
 | Script | Purpose |
 | ------ | ------- |
-| `video_to_transcript.py` | Video → transcript markdown |
-| `pptx_to_md.py` | PowerPoint → markdown |
-| `pdf_to_md.py` | PDF → markdown |
 | `md_to_pdf_reportlab.py` | Markdown → PDF handout |
 
 Example:
 
 ```powershell
-python tools/pyscripts/video_to_transcript.py --input "assets/recordings/session.mp4"
+python tools/pyscripts/md_to_pdf_reportlab.py --input README.md --output assets/slides/speaker-series-overview.pdf
 ```
-
----
-
-## Legacy / optional staging
-
-These target an optional gitignored `source-material/` folder (not part of the default
-speaker-series workflow):
-
-- `html_to_md.py`, `docx_to_md.py`, `Convert-SourceMaterialToMarkdown.ps1` (PowerShell wrapper)
-- `generate_hierarchical_notebook.py`, `fix_quiz_code_fences.py`, `generate_source_material_coverage.py`
-
-Keep them for reuse if you add a staging folder; they are not required for talk indexing.
 
 ---
 

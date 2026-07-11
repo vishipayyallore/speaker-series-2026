@@ -6,10 +6,7 @@ param(
     [string]$RepoRoot = "",
 
     [Parameter()]
-    [string]$Path = "",
-
-    [Parameter()]
-    [switch]$IncludeSourceMaterial
+    [string]$Path = ""
 )
 
 Set-StrictMode -Version Latest
@@ -43,8 +40,7 @@ function Get-TrackedMarkdownFiles {
             $_.FullName -notmatch '\\.archive\\' -and
             $_.FullName -notmatch '\\.github\\workitems\\' -and
             $_.FullName -notmatch '\\node_modules\\' -and
-            $_.FullName -notmatch '\\docs\\review-reports\\' -and
-            ($IncludeSourceMaterial -or $_.FullName -notmatch '\\source-material\\')
+            $_.FullName -notmatch '\\docs\\review-reports\\'
         } |
         Sort-Object -Property FullName -Unique
 

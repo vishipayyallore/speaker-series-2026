@@ -1,10 +1,7 @@
 [CmdletBinding()]
 param(
     [Parameter()]
-    [string]$RepoRoot = $(if ($PSScriptRoot) { (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path } else { (Get-Location).Path }),
-
-    [Parameter()]
-    [switch]$IncludeSourceMaterial
+    [string]$RepoRoot = $(if ($PSScriptRoot) { (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path } else { (Get-Location).Path })
 )
 
 Set-StrictMode -Version Latest
@@ -43,8 +40,7 @@ function Get-TrackedTextFiles {
         Where-Object {
             $_.FullName -notmatch '\\.git\\' -and
             $_.FullName -notmatch '\\node_modules\\' -and
-            $_.FullName -notmatch '\\docs\\review-reports\\' -and
-            ($IncludeSourceMaterial -or $_.FullName -notmatch '\\source-material\\')
+            $_.FullName -notmatch '\\docs\\review-reports\\'
         } |
         Sort-Object -Property FullName -Unique
 }

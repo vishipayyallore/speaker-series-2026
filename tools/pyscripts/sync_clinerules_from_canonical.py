@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sync .clinerules/ from canonical .cursor/.github governance (Machine Learning)."""
+"""Sync .clinerules/ from canonical Speaker Series governance."""
 
 from __future__ import annotations
 
@@ -12,31 +12,17 @@ ROOT = Path(__file__).resolve().parents[2]
 CLINE = ROOT / ".clinerules"
 
 RULE_MAP: dict[str, str] = {
-    "01-swamy-personal-learning-only": "01_swamy_personal_learning_only",
-    "02-educational-content-rules": "02_educational-content-rules",
-    "03-repository-structure": "03_repository-structure",
-    "04-quality-assurance": "04_quality-assurance",
-    "05-markdown-standards": "05_markdown-standards",
-    "06-primary-directives": "06_primary-directives",
-    "07-source-material-rules": "07_source_material_rules",
-    "08-file-naming-conventions": "08_file-naming-conventions",
-    "09-copilot-instructions-extract": "09_copilot-instructions-extract",
+    "01-educational-content-rules": "01_educational-content-rules",
+    "02-repository-structure": "02_repository-structure",
+    "03-quality-assurance": "03_quality-assurance",
+    "04-markdown-standards": "04_markdown-standards",
+    "05-primary-directives": "05_primary-directives",
+    "06-external-curriculum-rules": "06_external_curriculum_rules",
+    "07-file-naming-conventions": "07_file-naming-conventions",
+    "08-copilot-instructions-extract": "08_copilot-instructions-extract",
+    "09-core-agent-role": "09_core-agent-role",
+    "project-scope": "project-scope",
 }
-
-SKILL_NAMES = [
-    "ci-checks",
-    "ml-algorithms-from-scratch",
-    "topic-companions",
-    "docs-verification",
-    "e2e-testing",
-    "workspace-review",
-]
-
-AGENT_NAMES = [
-    "ml-ci-verify",
-    "ml-topic-bundle-review",
-    "ml-zero-copy-review",
-]
 
 STALE_PATHS = [
     ".clinerules/CLINE.md",
@@ -54,6 +40,7 @@ STALE_PATHS = [
     ".clinerules/rules/03_repository_structure.mdc",
     ".clinerules/rules/04_quality_standards.mdc",
     ".clinerules/rules/05_content_creation.mdc",
+    ".clinerules/rules/06-source-material-rules.md",
 ]
 
 
@@ -76,7 +63,7 @@ def mdc_description(path: Path) -> str:
     for line in header.splitlines():
         if line.startswith("description:"):
             return line.split(":", 1)[1].strip()
-    return "Rule for Machine Learning"
+    return "Rule for Speaker Series 2026"
 
 
 def write_rule(kebab: str, underscore: str) -> None:
@@ -113,22 +100,9 @@ def write_skill(skill_name: str) -> None:
 
 
 def write_agent(agent_name: str) -> None:
-    src = ROOT / f".cursor/agents/{agent_name}.md"
+    src = ROOT / f".github/agents/{agent_name}.md"
     out = CLINE / "agents" / f"{agent_name}.md"
-    meta, body = split_frontmatter(src.read_text(encoding="utf-8"))
-    lines = ["---"]
-    for key in ("name", "description", "model", "readonly"):
-        if key in meta:
-            if key == "description":
-                lines.append(f"{key}: {format_frontmatter_value(meta[key])}")
-            elif key == "readonly":
-                lines.append(f"{key}: {meta[key]}")
-            else:
-                lines.append(f"{key}: {yaml_quote(meta[key])}")
-    lines.append("tags: [\"dsp\", \"agent\"]")
-    lines.append(f"canonical: .cursor/agents/{agent_name}.md")
-    lines.append("---")
-    out.write_text("\n".join(lines) + "\n\n" + body.rstrip() + "\n", encoding="utf-8")
+    out.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
 
 
 def write_skills_readme() -> None:
@@ -138,7 +112,10 @@ def write_skills_readme() -> None:
         "Keep aligned when editing policy.\n\n"
     )
     table = "| File | Purpose |\n|------|---------|\n"
-    for name in SKILL_NAMES:
+    for skill_dir in sorted((ROOT / ".github/skills").iterdir()):
+        if not skill_dir.is_dir():
+            continue
+        name = skill_dir.name
         table += f"| `{name}.md` | See `.github/skills/{name}/SKILL.md` |\n"
     (CLINE / "skills" / "README.md").write_text(header + table, encoding="utf-8")
 
@@ -175,10 +152,11 @@ def main() -> int:
 
     for kebab, underscore in RULE_MAP.items():
         write_rule(kebab, underscore)
-    for skill in SKILL_NAMES:
-        write_skill(skill)
-    for agent in AGENT_NAMES:
-        write_agent(agent)
+    for skill_dir in sorted((ROOT / ".github/skills").iterdir()):
+        if skill_dir.is_dir() and (skill_dir / "SKILL.md").is_file():
+            write_skill(skill_dir.name)
+    for agent in sorted((ROOT / ".github/agents").glob("*.md")):
+        write_agent(agent.stem)
 
     write_rules_readme()
     write_skills_readme()
