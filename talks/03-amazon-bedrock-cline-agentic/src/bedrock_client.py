@@ -31,7 +31,7 @@ def invoke(prompt: str, *, model_id: str = DEFAULT_MODEL_ID) -> str:
                 "content": [{"text": prompt}],
             }
         ],
-        inferenceConfig={"maxTokens": 512},
+        inferenceConfig={"maxTokens": 2000},
     )
     output = response.get("output", {}).get("message", {}).get("content", [])
     if output and isinstance(output, list) and "text" in output[0]:
@@ -40,17 +40,20 @@ def invoke(prompt: str, *, model_id: str = DEFAULT_MODEL_ID) -> str:
 
 
 def main() -> None:
-    prompt = os.getenv("DEMO_PROMPT", "In one sentence, what is Amazon Bedrock?")
-    try:
-        text = invoke(prompt)
-    except (ClientError, BotoCoreError, KeyError) as exc:
-        print("Bedrock invoke failed:", exc)
-        print("Check AWS credentials, region, and model access in the Bedrock console.")
-        raise SystemExit(1) from exc
+    while True:
+        prompt = input("Enter your prompt (or type 'Quit' to exit): ")
+        if prompt.lower() == "quit":
+            break
+        try:
+            text = invoke(prompt)
+        except (ClientError, BotoCoreError, KeyError) as exc:
+            print("Bedrock invoke failed:", exc)
+            print("Check AWS credentials, region, and model access in the Bedrock console.")
+            continue
 
-    print("Model:", DEFAULT_MODEL_ID)
-    print("Region:", DEFAULT_REGION)
-    print("Response:", text)
+        print("Model:", DEFAULT_MODEL_ID)
+        print("Region:", DEFAULT_REGION)
+        print("Response:", text)
 
 
 if __name__ == "__main__":
