@@ -6,11 +6,6 @@
   - Markdown lint: Uses `npx markdownlint-cli2` over README/docs/talks/tools by default.
   - Lychee: Uses the repository `lychee.toml` configuration.
 
-  This script intentionally excludes `source-material/` by default (it is a staging area).
-
-.PARAMETER IncludeSourceMaterials
-  If set, include `source-material/` in markdown linting.
-
 .PARAMETER MarkdownGlobs
   Optional override for markdownlint-cli2 globs.
 
@@ -19,14 +14,10 @@
 
 .EXAMPLE
   .\tools\psscripts\Run-MarkdownLintAndLychee.ps1
-
-.EXAMPLE
-  .\tools\psscripts\Run-MarkdownLintAndLychee.ps1 -IncludeSourceMaterials
 #>
 
 [CmdletBinding()]
 param(
-  [switch]$IncludeSourceMaterials,
   [switch]$MarkdownOnly,
   [switch]$LycheeOnly,
   [switch]$SkipMarkdownLint,
@@ -84,16 +75,6 @@ if (-not $SkipMarkdownLint) {
       "templates/**/*.md",
       "tools/**/*.md"
     )
-
-    if ($IncludeSourceMaterials) {
-      # Support both legacy and current folder names.
-      if (Test-Path (Join-Path $repoRoot 'source-material')) {
-        $MarkdownGlobs += "source-material/**/*.md"
-      }
-      if (Test-Path (Join-Path $repoRoot 'source-materials')) {
-        $MarkdownGlobs += "source-materials/**/*.md"
-      }
-    }
   }
 
   # markdownlint-cli2 treats arguments as globs. We'll install/run it via npx.

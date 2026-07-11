@@ -37,23 +37,14 @@ function Write-ZeroCopySuccess {
     Write-Host "✅ $Message" -ForegroundColor Green
 }
 
-# Get source material files
-$sourceMaterialPath = Join-Path $RepoRoot "source-material"
-$sourceFiles = @()
-
-if (Test-Path $sourceMaterialPath) {
-    $sourceFiles = @(Get-ChildItem -Path $sourceMaterialPath -Filter "*.md" -Recurse -ErrorAction SilentlyContinue)
-}
-
-if ($AdditionalSourceFiles.Count -gt 0) {
-    $sourceFiles += @($AdditionalSourceFiles | ForEach-Object { Get-Item $_ -ErrorAction SilentlyContinue })
-}
+# Get explicit external source files for originality checks.
+$sourceFiles = @($AdditionalSourceFiles | ForEach-Object { Get-Item $_ -ErrorAction SilentlyContinue })
 
 $sourceFiles = @($sourceFiles | Where-Object { $_ })
 
 if ($sourceFiles.Count -eq 0) {
     Write-Host "No source material files found to check against." -ForegroundColor Yellow
-    Write-Host "This check requires source material files in 'source-material/' directory." -ForegroundColor Yellow
+    Write-Host "Pass -AdditionalSourceFiles with explicit external source files when performing an originality spot-check." -ForegroundColor Yellow
     return
 }
 
@@ -158,7 +149,7 @@ foreach ($contentFile in $contentFiles) {
                     $warnings += [PSCustomObject]@{
                         File = $contentFile.FullName.Replace($RepoRoot, '').TrimStart('\\')
                         Type = "Potential Phrase Match"
-                        Source = "source-material"
+                        Source = "external source"
                         Quote = $phrase.Substring(0, [Math]::Min(80, $phrase.Length))
                     }
                 }

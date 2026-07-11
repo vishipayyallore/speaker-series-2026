@@ -13,7 +13,7 @@ Cursor rule files (`.mdc`) for this repository. Mirrors: `.clinerules/rules/*.md
 | `03_quality-assurance.mdc` | QA checklist |
 | `04_markdown-standards.mdc` | Markdown conventions |
 | `05_primary-directives.mdc` | Project focus |
-| `06_source_material_rules.mdc` | External Python curriculum policy |
+| `06_external_curriculum_rules.mdc` | External Python curriculum policy |
 | `07_file-naming-conventions.mdc` | Talk and asset naming |
 | `08_copilot-instructions-extract.mdc` | Copilot instructions summary |
 | `09_core-agent-role.mdc` | Professional stance |

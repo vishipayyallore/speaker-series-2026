@@ -6,7 +6,6 @@
     'assets'
     'templates'
     'docs'
-    'src'
     'tools'
     'tools\psscripts'
     'tools\pyscripts'

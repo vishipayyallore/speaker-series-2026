@@ -52,9 +52,6 @@ Markdown lint only / Lychee only:
 | `Test-ContentCompliance.ps1` | Policy checks via `RepoConfig.psd1` |
 | `Run-AllPSScripts.ps1` | Batch runner (review before use) |
 
-`Convert-SourceMaterialToMarkdown.ps1` is for optional `source-material/` staging — not used
-by default in this speaker portfolio repo.
-
 ---
 
 ## Related docs
