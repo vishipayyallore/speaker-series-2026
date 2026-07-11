@@ -6,15 +6,17 @@ globs: talks/**,assets/**,templates/**
 
 ## Talk folders
 
-Format: `YYYY-MM-DD-short-kebab-description`
+Format: `NN-short-kebab-description` (zero-padded sequence in delivery order)
 
 Examples:
 
-- `2026-07-04-python-l1-s5-mini-calculator`
-- `2026-07-08-python-l1-s6-loops`
-- `2026-07-11-amazon-bedrock-cline-agentic`
+- `01-l1-s5-mini-calculator-in-python`
+- `02-l1-s6-python-loops`
+- `03-amazon-bedrock-cline-agentic`
 
-Use the **delivery date** in the prefix so folders sort chronologically; suffix identifies the session.
+Use the **two-digit prefix** so folders sort in event order. Include session codes
+(`l1-s5`, `l1-s6`) for Python curriculum talks. Record the delivery date in each talk
+`README.md` and the root portfolio table — not in the folder name.
 
 ## Talk files
 
@@ -25,10 +27,10 @@ Use the **delivery date** in the prefix so folders sort chronologically; suffix 
 
 ## Shared assets
 
-Name media to match talk id:
+Name media to match talk folder id:
 
-- `assets/slides/2026-07-11-amazon-bedrock-cline-agentic.pdf`
-- `assets/recordings/2026-07-11-amazon-bedrock-cline-agentic.mp4`
+- `assets/slides/03-amazon-bedrock-cline-agentic.pdf`
+- `assets/recordings/03-amazon-bedrock-cline-agentic.mp4`
 
 ## Prohibited
 

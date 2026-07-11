@@ -12,9 +12,9 @@ speaker-series-2026/
 ├── .env.example              # AWS Bedrock demo variables
 │
 ├── talks/
-│   ├── 2026-07-04-python-l1-s5-mini-calculator/   # S5 · delivered Jul 4, 2026
-│   ├── 2026-07-08-python-l1-s6-loops/             # S6 · delivered Jul 8, 2026
-│   └── 2026-07-11-amazon-bedrock-cline-agentic/  # Bedrock + Cline + agentic demo
+│   ├── 01-l1-s5-mini-calculator-in-python/   # S5 · delivered Jul 4, 2026
+│   ├── 02-l1-s6-python-loops/              # S6 · delivered Jul 8, 2026
+│   └── 03-amazon-bedrock-cline-agentic/    # Bedrock + Cline · delivered Jul 11, 2026
 │
 ├── assets/
 │   ├── slides/
@@ -32,6 +32,7 @@ speaker-series-2026/
 │
 └── docs/
     ├── 01-folder-structure.md
+    ├── 01-repository-structure.md   # redirect → 01-folder-structure.md
     ├── speaker-profile.md
     ├── meetup-history.md
     ├── faq.md
@@ -42,7 +43,7 @@ speaker-series-2026/
 
 ## Design rules
 
-1. **One folder per talk** — delivery-date prefix `YYYY-MM-DD-…` for automatic sorting.
+1. **One folder per talk** — sequence prefix `NN-…` (for example `01-l1-s5-…`) for delivery order.
 2. **File set depends on talk type**:
    - **External curriculum** (Python): `README.md` only with links to session doc and code.
    - **In-repo demo** (Bedrock and similar): `README.md`, `agenda.md`, `demo-script.md`,
@@ -51,8 +52,9 @@ speaker-series-2026/
    [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice);
    use a thin `README.md` only under `talks/`.
 4. **Self-contained demos** — original demo code (Bedrock) stays inside that talk’s folder
-   so cloning this repo is enough to reproduce.
-5. **Binaries in `assets/`** — decks and recordings are shared artifacts, not scattered across talk folders.
+   (`talks/{id}/src/`, `prompts/`, etc.) so cloning this repo is enough to reproduce.
+5. **No root `src/`** — there is no repo-wide code folder; demo code belongs under the owning talk.
+6. **Binaries in `assets/`** — decks and recordings are shared artifacts, not scattered across talk folders.
 
 ---
 

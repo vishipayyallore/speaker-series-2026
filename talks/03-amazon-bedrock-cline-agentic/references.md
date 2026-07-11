@@ -47,7 +47,7 @@
 
 | Resource | URL | Notes |
 | -------- | --- | ----- |
-| Python L1 · S6 | ../2026-07-08-python-l1-s6-loops/ | Prior track session |
+| Python L1 · S6 | ../02-l1-s6-python-loops/ | Prior track session |
 | This repo (root) | ../../README.md | Speaker portfolio index |
 | Cline setup (this talk) | ./cline-bedrock-setup.md | Reproduce IDE config |
 

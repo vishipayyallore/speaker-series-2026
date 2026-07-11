@@ -1,16 +1,16 @@
-﻿# Repository Structure
+# Repository Structure
 
 **Project:** Speaker Series 2026
 
 ## Primary layout
 
 ```text
-talks/        â€” per-session metadata and talk-specific demo code
-assets/       â€” slides, diagrams, images, recordings
-templates/    â€” copy before each new in-repo talk
-docs/         â€” speaker profile, FAQ, roadmap, folder layout
-src/          â€” optional repo-wide utilities only
-.github/ â€¦    â€” assistant and CI configuration
+talks/        — per-session metadata and talk-specific demo code
+assets/       — slides, diagrams, images, recordings
+templates/    — copy before each new in-repo talk
+docs/         — speaker profile, FAQ, roadmap, folder layout
+tools/        — repo maintenance scripts (CI, mirror sync)
+.github/ …    — assistant and CI configuration
 ```
 
 ## Working rule
@@ -31,4 +31,4 @@ Follow the convention of the surface you edit:
 ## Guidance
 
 - Keep `README.md`, `docs/01-folder-structure.md`, and assistant files aligned
-- Do not add `01-knowledge/` â€¦ `07-interview-prep/` pipeline folders
+- Do not add `01-knowledge/` … `07-interview-prep/` pipeline folders

@@ -35,16 +35,26 @@ function Sync-File {
     Copy-Item -Path $Source -Destination $Dest -Force
 }
 
+function Read-Utf8Text {
+    param([string]$Path)
+    [System.IO.File]::ReadAllText($Path, [System.Text.UTF8Encoding]::new($false))
+}
+
+function Write-Utf8Text {
+    param([string]$Path, [string]$Content)
+    $dir = Split-Path $Path -Parent
+    if (-not (Test-Path $dir)) { New-Item -ItemType Directory -Path $dir -Force | Out-Null }
+    [System.IO.File]::WriteAllText($Path, $Content.TrimEnd(), [System.Text.UTF8Encoding]::new($false))
+}
+
 function Convert-MdcToMd {
     param([string]$MdcPath, [string]$MdPath)
-    $content = Get-Content $MdcPath -Raw
+    $content = Read-Utf8Text $MdcPath
     if ($content -match '(?s)^---\r?\n.*?\r?\n---\r?\n') {
         $content = $content -replace '(?s)^---\r?\n.*?\r?\n---\r?\n', ''
     }
-    $dir = Split-Path $MdPath -Parent
-    if (-not (Test-Path $dir)) { New-Item -ItemType Directory -Path $dir -Force | Out-Null }
     if (-not $VerifyOnly) {
-        Set-Content -Path $MdPath -Value $content.TrimEnd() -Encoding UTF8
+        Write-Utf8Text $MdPath $content
     }
 }
 
@@ -52,7 +62,7 @@ function Write-ClineSkillStub {
     param([string]$SkillName, [string]$SkillDir)
     $skillMd = Join-Path $SkillDir 'SKILL.md'
     if (-not (Test-Path $skillMd)) { return }
-    $body = Get-Content $skillMd -Raw
+    $body = Read-Utf8Text $skillMd
     if ($body -match '(?s)^---\r?\n(?<front>.*?)\r?\n---\r?\n(?<rest>.*)$') {
         $front = $Matches['front']
         $rest = $Matches['rest']
@@ -71,7 +81,7 @@ $($rest.Trim())
 "@
     $out = Join-Path $Root ".clinerules/skills/$SkillName.md"
     if (-not $VerifyOnly) {
-        Set-Content -Path $out -Value $stub.TrimEnd() -Encoding UTF8
+        Write-Utf8Text $out $stub
     }
 }
 

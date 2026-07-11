@@ -1,10 +1,10 @@
-﻿---
+---
 name: workspace-review
 description: Review Speaker Series 2026 for portfolio alignment, assistant mirror parity, and cross-repo contamination.
 canonical: ".github/skills/workspace-review/SKILL.md"
 ---
 
-# Workspace Review â€” Speaker Series 2026
+# Workspace Review — Speaker Series 2026
 
 Use when auditing the repository or after importing assistant configuration.
 
@@ -12,12 +12,12 @@ Use when auditing the repository or after importing assistant configuration.
 
 - [ ] Root `README.md` talk index matches folders under `talks/`
 - [ ] Python talks are thin indexes linking to [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice)
-- [ ] In-repo demos live under `talks/{id}/` (not root `src/`)
+- [ ] In-repo demos are self-contained under `talks/{id}/`
 - [ ] `docs/01-folder-structure.md` matches actual layout
 
 ## Assistant parity
 
-- [ ] `.github/skills/` â†” `.cursor/skills/` â†” `.opencode/skills/` byte-identical
+- [ ] `.github/skills/` ↔ `.cursor/skills/` ↔ `.opencode/skills/` byte-identical
 - [ ] `.cursor/rules/*.mdc` synced to `.clinerules/rules/*.md` and `.opencode/rules/*.md`
 - [ ] `.github/agents/` synced to `.clinerules/agents/` and `.opencode/agents/`
 - [ ] No references to `applied-engineering`, `01-knowledge/`, or unrelated repos

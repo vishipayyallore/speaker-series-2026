@@ -96,7 +96,7 @@ $failed = $false
 # Rule: No 00- / 00_ prefix on learning artifacts
 $allowed00Rule = Join-Path $repoRootPath '.cursor\rules\swamy_personal_learning_only.mdc'
 $scanRoots = @(
-    (Join-Path $repoRootPath 'src')
+    (Join-Path $repoRootPath 'talks')
 ) | Where-Object { Test-Path -LiteralPath $_ }
 
 $bad00 = foreach ($root in $scanRoots) {
@@ -107,7 +107,7 @@ $bad00 = foreach ($root in $scanRoots) {
 }
 if ($bad00) {
     $failed = $true
-    Write-ComplianceError "Found disallowed '00-' or '00_' file/folder prefix under src/ (topic numbering starts at 01)."
+    Write-ComplianceError "Found disallowed '00-' or '00_' file/folder prefix under talks/."
     $bad00 | ForEach-Object { Write-Host "  - $($_.FullName)" }
 }
 
@@ -125,27 +125,6 @@ if ($disallowInterview) {
         $failed = $true
         Write-ComplianceError "Found disallowed interview-language occurrences (use senior technical evaluation contexts framing)."
         $interviewHits | Sort-Object -Unique | ForEach-Object { Write-Host "  - $_" }
-    }
-}
-
-# Rule: All src markdown files start with an H1
-$srcPath = Join-Path $repoRootPath 'src'
-if (Test-Path -LiteralPath $srcPath) {
-    $srcMarkdown = Get-ChildItem -Path $srcPath -Recurse -File -Filter '*.md' -ErrorAction SilentlyContinue |
-        Where-Object {
-            $_.FullName -notmatch '\\.git\\' -and
-            $_.FullName -notmatch '\\node_modules\\' -and
-            $_.FullName -notmatch '\\\.venv\\' -and
-            $_.FullName -notmatch '\\dist\\' -and
-            $_.FullName -notmatch '\\__pycache__\\'
-        }
-    foreach ($file in $srcMarkdown) {
-        $lines = Get-Content -LiteralPath $file.FullName -ErrorAction Stop
-        $first = Get-FirstNonEmptyContentLine -Lines $lines
-        if ($null -eq $first -or $first -notmatch '^#\s+\S') {
-            $failed = $true
-            Write-ComplianceError "File must start with an H1 heading: $($file.FullName)"
-        }
     }
 }
 

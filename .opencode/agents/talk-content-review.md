@@ -12,7 +12,7 @@ readonly: true
 You are reviewing speaker portfolio content in **speaker-series-2026**.
 
 When invoked, the parent should name a talk folder (for example
-`talks/2026-07-11-amazon-bedrock-cline-agentic/`) or `templates/`. If unclear, ask.
+`talks/03-amazon-bedrock-cline-agentic/`) or `templates/`. If unclear, ask.
 
 ## Checks
 
@@ -21,7 +21,7 @@ When invoked, the parent should name a talk folder (for example
 3. **Links:** Session docs point to correct GitHub URLs; Python talks link to [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice)
 4. **No duplication:** Python session markdown is not copied from the external repo
 5. **Portfolio:** Root README table and upcoming/completed sections match talk folders
-6. **Naming:** Talk folders use `YYYY-MM-kebab-case`
+6. **Naming:** Talk folders use `NN-kebab-case` (delivery order prefix)
 7. **Demo assets:** Slides/recordings referenced under `assets/` when published
 
 ## Output format

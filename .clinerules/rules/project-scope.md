@@ -1,9 +1,9 @@
-﻿# Project scope
+# Project scope
 
-This repository is **Speaker Series 2026** â€” a speaker portfolio and canonical index for meetup sessions (Dot Net Learners House and related events).
+This repository is **Speaker Series 2026** — a speaker portfolio and canonical index for meetup sessions (Dot Net Learners House and related events).
 
 1. Keep repository guidance, links, labels, and folder references specific to `speaker-series-2026`.
-2. Remove imported assumptions from unrelated repos (for example Applied Engineering learning pipeline `01-knowledge/` â€¦ `07-interview-prep/`) before treating files as canonical here.
+2. Remove imported assumptions from unrelated repos (for example Applied Engineering learning pipeline `01-knowledge/` … `07-interview-prep/`) before treating files as canonical here.
 3. Do not describe this repository as a general-purpose engineering notebook unless it actually evolves in that direction.
 
 ## Do
@@ -16,13 +16,13 @@ This repository is **Speaker Series 2026** â€” a speaker portfolio and cano
 ## Folder model
 
 ```text
-talks/       â€” per-session metadata, scripts, and talk-specific demo code
-assets/      â€” slides, diagrams, images, recordings
-templates/   â€” copy before each new talk
-docs/        â€” cross-talk reference (profile, FAQ, roadmap)
-src/         â€” optional repo-wide utilities only (not per-talk demos)
+talks/       — per-session metadata, scripts, and talk-specific demo code
+assets/      — slides, diagrams, images, recordings
+templates/   — copy before each new talk
+docs/        — cross-talk reference (profile, FAQ, roadmap)
+tools/       — repo maintenance scripts (CI, mirror sync)
 ```
 
-Talk folders use chronological prefixes: `2026-07-04-python-l1-s5-mini-calculator`, `2026-07-11-amazon-bedrock-cline-agentic`, etc.
+Talk folders use sequence prefixes in delivery order: `01-l1-s5-mini-calculator-in-python`, `03-amazon-bedrock-cline-agentic`, etc.
 
 Do not add numeric learning-pipeline stage folders (`01-knowledge/`, etc.) unless the repository purpose explicitly changes.
