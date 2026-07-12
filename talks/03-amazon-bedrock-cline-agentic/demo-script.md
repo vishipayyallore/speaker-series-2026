@@ -13,7 +13,7 @@
 - [ ] Empty folder or small starter repo open for “build with AI” segment
 - [ ] Optional: `.env` + Python samples under `talks/03-amazon-bedrock-cline-agentic/` tested
 
-[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
+[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/>
 
 ---
 
@@ -57,8 +57,9 @@ prompt from
 **Say:** Vibe coding is iterative, conversational building — you steer intent;
 the model drafts and refines.
 
-**Do:** In Cline, describe a small feature in plain language (for example a CLI that reads
-JSON and prints a summary table). Accept/refine suggestions across 2–3 turns.
+**Do:** In Cline, describe a small feature in plain language (for example the Hospital homepage in
+[homepage/](./homepage/) or a CLI that reads JSON and prints a summary table). Accept/refine
+suggestions across 2–3 turns.
 
 **Show:** Working snippet or test run; highlight how prompts changed the output.
 
@@ -84,8 +85,8 @@ create file, add tests, run them).
 **Say:** We assemble a tiny end-to-end slice — structure, implementation, and a
 sanity check — guided by Cline.
 
-**Do:** Pick one scoped app (for example Bedrock model list helper, config validator, or
-minimal API client). Let Cline scaffold; you review and run.
+**Do:** Pick one scoped app (for example the [homepage/](./homepage/) site, a Bedrock model list
+helper, config validator, or minimal API client). Let Cline scaffold; you review and run.
 
 **Show:** Final tree, one command that succeeds, and one prompt that fixed a bug.
 
@@ -113,7 +114,7 @@ Verify: run {test command} and show output
 
 | Failure | Backup |
 | ------- | ------ |
-| Bedrock/API error | Walk through screenshots in `assets/images/` + setup doc |
+| Bedrock/API error | Walk through [cline-bedrock-setup.md](./cline-bedrock-setup.md) + recording segment |
 | Cline misconfigured | Show [cline-bedrock-setup.md](./cline-bedrock-setup.md) and pre-recorded clip |
 | Time short | Compress §6; keep §3–§5 and Q&A |
 

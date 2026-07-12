@@ -61,8 +61,10 @@ Supporting material in this talk folder (optional post-session):
 | Prompts | [prompts/](./prompts/) |
 | Notebook | [notebooks/bedrock-quickstart.ipynb](./notebooks/bedrock-quickstart.ipynb) |
 | IAM sample | [infra/bedrock-policy.yaml](./infra/bedrock-policy.yaml) |
+| Vibe-coding sample (Hospital homepage) | [homepage/](./homepage/) — open `index.html` in a browser |
 
 Primary live demo is **Cline + Bedrock in the IDE**; Python samples reinforce API and agentic concepts.
+The `homepage/` folder is the small site built during the vibe-coding segment.
 
 ---
 
@@ -93,6 +95,21 @@ See [references.md](./references.md).
 
 ## Questions
 
-_Add common questions after the session._
+**What is the difference between vibe coding and agentic coding?**  
+Vibe coding is conversational, iterative drafting — you steer intent and refine output across turns.
+Agentic coding adds tool use (files, terminal, loops) until a scoped task completes.
 
-[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
+**Do I need an AWS account to follow along?**  
+No for the live session — the presenter demo is screen-shared. To reproduce locally, enable Bedrock
+model access in your account and copy `.env.example` to `.env`.
+
+**Which Bedrock model should I start with?**  
+Start with a model enabled in your region that matches your IAM policy — this repo defaults to
+Claude 3 Haiku (`anthropic.claude-3-haiku-20240307-v1:0`). See
+[cline-bedrock-setup.md](./cline-bedrock-setup.md#4-amazon-models-vs-qwen-talking-points) for
+Amazon vs Qwen tradeoffs.
+
+**Can I use Cline without Bedrock?**  
+Yes — Cline supports other providers. This session focuses on Bedrock for AWS-native teams.
+
+[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/>

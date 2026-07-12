@@ -1,4 +1,8 @@
-"""Fix quiz markdown files that use ```text as both opening and closing fences."""
+"""Fix quiz markdown files that use ```text as both opening and closing fences.
+
+DEPRECATED — Applied Engineering import residue. This repo has no src/weekN layout.
+Use tools/psscripts/sync-assistant-mirrors.ps1 for mirror sync instead.
+"""
 
 from __future__ import annotations
 

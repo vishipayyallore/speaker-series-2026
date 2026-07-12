@@ -13,7 +13,9 @@ from dotenv import load_dotenv
 ROOT = Path(__file__).resolve().parents[3]
 load_dotenv(ROOT / ".env")
 
-DEFAULT_MODEL_ID = os.getenv("BEDROCK_MODEL_ID", "qwen.qwen3-32b-instruct-v1:0")
+DEFAULT_MODEL_ID = os.getenv(
+    "BEDROCK_MODEL_ID", "anthropic.claude-3-haiku-20240307-v1:0"
+)
 DEFAULT_REGION = os.getenv("AWS_REGION", "us-east-1")
 
 

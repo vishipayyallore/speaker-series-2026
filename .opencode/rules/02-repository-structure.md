@@ -28,6 +28,11 @@ Follow the convention of the surface you edit:
 3. Remove stale repo names, URLs, and folder models
 4. Run `tools/psscripts/sync-assistant-mirrors.ps1` after governance edits
 
+Optional local staging folder `source-material/` (if used during imports) is **not** tracked in
+git. Migrate transformed content into `talks/`, `docs/`, or `templates/` and delete the staging
+copy. The legacy rule name was `06-source-material-rules`; the current rule is
+`06_external_curriculum_rules.mdc`.
+
 ## Guidance
 
 - Keep `README.md`, `docs/01-folder-structure.md`, and assistant files aligned

@@ -30,6 +30,13 @@ Prefer **`tools/psscripts/sync-assistant-mirrors.ps1`** for day-to-day mirror sy
 `sync_clinerules_from_canonical.py` and `sync_opencode_from_canonical.py` are **legacy**
 imports from another repository — do not use them here. Use the PowerShell script above.
 
+### Deprecated (import residue — do not run)
+
+| Script | Reason |
+| ------ | ------ |
+| `fix_quiz_code_fences.py` | Expects `src/weekN/` quiz paths from Applied Engineering |
+| `generate_hierarchical_notebook.py` | ML notebook generator unrelated to speaker portfolio |
+
 ---
 
 ## Optional — speaker assets

@@ -11,7 +11,7 @@
 | Dot Net Learners House | [Meetup group][dnlh-group] | Host group |
 | JetBrains | [jetbrains.com][jetbrains] | Session sponsor |
 
-[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
+[meetup-event]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/>
 [youtube-recording]: <https://www.youtube.com/watch?v=M-bLxxdqV5I>
 [dnlh-group]: <https://www.meetup.com/dot-net-learners-house-hyderabad/>
 [jetbrains]: <https://www.jetbrains.com/>
@@ -38,8 +38,13 @@
 
 | Resource | URL | Notes |
 | -------- | --- | ----- |
-| Agentic patterns | (add curated links after session) | Tool use, planning loops |
-| Prompt engineering | (add curated links) | Code-quality prompts |
+| Bedrock prompt engineering | [Prompt engineering guidelines][bedrock-pe] | AWS user guide |
+| Cline documentation | [docs.cline.bot][cline-docs] | IDE extension setup |
+| Agentic workflows on AWS | [Build generative AI agents][bedrock-agents] | Managed agent patterns |
+
+[bedrock-pe]: <https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html>
+[cline-docs]: <https://docs.cline.bot/>
+[bedrock-agents]: <https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html>
 
 ---
 

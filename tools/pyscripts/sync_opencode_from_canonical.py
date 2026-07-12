@@ -35,14 +35,7 @@ AGENT_MAP: dict[str, str] = {
 
 OBSOLETE_PATHS = [
     ".opencode/rules/swamy-personal-learning-only.md",
-    ".opencode/rules/01-educational-content-rules.md",
-    ".opencode/rules/02-repository-structure.md",
-    ".opencode/rules/03-quality-assurance.md",
-    ".opencode/rules/04-markdown-standards.md",
-    ".opencode/rules/05-primary-directives.md",
     ".opencode/rules/06-source-material-rules.md",
-    ".opencode/rules/07-file-naming-conventions.md",
-    ".opencode/rules/08-copilot-instructions-extract.md",
     ".opencode/agents/ml-notebook-audit.md",
     ".opencode/agents/ml-ci-verify.md",
     ".opencode/agents/ml-topic-bundle-review.md",

@@ -47,7 +47,7 @@ speaker-series-2026/
 2. **File set depends on talk type**:
    - **External curriculum** (Python): `README.md` only with links to session doc and code.
    - **In-repo demo** (Bedrock and similar): `README.md`, `agenda.md`, `demo-script.md`,
-     `references.md`, `links.md` (plus optional `src/`, `prompts/`, `notebooks/`, `infra/`).
+     `references.md`, `links.md` (plus optional `src/`, `prompts/`, `notebooks/`, `infra/`, `homepage/`).
 3. **No duplicated Python labs** — link to
    [python-fundamentals-in-practice](https://github.com/vishipayyallore/python-fundamentals-in-practice);
    use a thin `README.md` only under `talks/`.

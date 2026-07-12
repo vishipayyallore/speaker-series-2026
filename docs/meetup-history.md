@@ -8,4 +8,4 @@
 
 After each delivery, add slides/recording links under `assets/` and update the talk README.
 
-[meetup-jul11]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/?eventOrigin=group_upcoming_events>
+[meetup-jul11]: <https://www.meetup.com/dot-net-learners-house-hyderabad/events/315495347/>

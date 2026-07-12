@@ -15,7 +15,8 @@ exclude_path = [
   ".cursor/**",
   ".github/**",
   ".clinerules/**",
-  ".opencode/**"
+  ".opencode/**",
+  "source-material/**"
 ]
 
 # Repo-relevant excludes only. Add a new entry here when a domain or URL
